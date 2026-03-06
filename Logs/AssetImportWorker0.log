@@ -7,19 +7,19 @@ Distro version:          #28~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Jul 25 10:47
 Kernel version:          6.14.0-28-generic
 Architecture:            x86_64
 Available memory:        15873 MB
-Date:                    2026-03-06T10:47:25Z
+Date:                    2026-03-06T12:02:50Z
 [Licensing::Module] Trying to connect to existing licensing client channel...
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-talveri" at "2026-03-06T10:47:25.053978Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-talveri" at "2026-03-06T12:02:50.887894Z"
 [SignatureVerifier] Application signature verification not supported on this platform.
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.17.4+4293ba1
-  Session Id:              6f11deac72444508bc427518899b2ae6
+  Session Id:              72b8b846af1f433e8fb87bd35a7cd3ba
   Correlation Id:          b2d6dd15afc87afda05af160c6a1301a
-  External correlation Id: 2279315723750754137
+  External correlation Id: 3178865100803464212
   Machine Id:              5ij7DnRU3SOsEfSdqzBhpLeb9sA=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-talveri" (connect: 0.00s, validation: 0.01s, handshake: 0.00s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-talveri-notifications" at "2026-03-06T10:47:25.062899Z"
-[Licensing::Module] Licensing Background thread has ended after 0.01s
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-talveri" (connect: 0.00s, validation: 0.00s, handshake: 0.00s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-talveri-notifications" at "2026-03-06T12:02:50.890043Z"
+[Licensing::Module] Licensing Background thread has ended after 0.00s
 Selected window backend: (null) 
 Desktop is 1366 x 768 @ 60 Hz
 Initialize udev device monitor.
@@ -32,19 +32,21 @@ Unity
 -name
 AssetImportWorker0
 -projectPath
-/home/talveri/Dokumente/_Studium/FH Technikum/SS2026/GameDev Grundlagen/SS1/Unity Tutorial/RoofGardenGame
+/home/talveri/Dokumente/_Studium/FH Technikum/SS2026/GameDev Grundlagen/SS1/Unity/RoofGardenGame
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-35577
+40297
+-licensingIpc
+LicenseClient-talveri
 -job-worker-count
 1
 -background-job-worker-count
 8
 -gc-helper-count
 1
-Successfully changed project path to: /home/talveri/Dokumente/_Studium/FH Technikum/SS2026/GameDev Grundlagen/SS1/Unity Tutorial/RoofGardenGame
-/home/talveri/Dokumente/_Studium/FH Technikum/SS2026/GameDev Grundlagen/SS1/Unity Tutorial/RoofGardenGame
+Successfully changed project path to: /home/talveri/Dokumente/_Studium/FH Technikum/SS2026/GameDev Grundlagen/SS1/Unity/RoofGardenGame
+/home/talveri/Dokumente/_Studium/FH Technikum/SS2026/GameDev Grundlagen/SS1/Unity/RoofGardenGame
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-allocator-temp-initial-block-size-main=262144"
     "memorysetup-allocator-temp-initial-block-size-worker=262144"
@@ -80,16 +82,16 @@ Successfully changed project path to: /home/talveri/Dokumente/_Studium/FH Techni
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [127827888290624]  Target information:
+Player connection [124619871427392]  Target information:
 
-Player connection [127827888290624]  * "[IP] 10.202.201.113 [Port] 0 [Flags] 2 [Guid] 7818436 [EditorId] 7818436 [Version] 1048832 [Id] LinuxEditor(16,10.202.201.113) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" 
+Player connection [124619871427392]  * "[IP] 10.202.201.113 [Port] 0 [Flags] 2 [Guid] 2177698326 [EditorId] 2177698326 [Version] 1048832 [Id] LinuxEditor(16,10.202.201.113) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" 
 
-Player connection [127827888290624]  * "[IP] 192.168.122.1 [Port] 0 [Flags] 2 [Guid] 7818436 [EditorId] 7818436 [Version] 1048832 [Id] LinuxEditor(16,10.202.201.113) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" 
+Player connection [124619871427392]  * "[IP] 192.168.122.1 [Port] 0 [Flags] 2 [Guid] 2177698326 [EditorId] 2177698326 [Version] 1048832 [Id] LinuxEditor(16,10.202.201.113) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" 
 
-Player connection [127827888290624]  * "[IP] 172.17.0.1 [Port] 0 [Flags] 2 [Guid] 7818436 [EditorId] 7818436 [Version] 1048832 [Id] LinuxEditor(16,10.202.201.113) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" 
+Player connection [124619871427392]  * "[IP] 172.17.0.1 [Port] 0 [Flags] 2 [Guid] 2177698326 [EditorId] 2177698326 [Version] 1048832 [Id] LinuxEditor(16,10.202.201.113) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" 
 
-Player connection [127827888290624] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [127827888290624] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [124619871427392] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [124619871427392] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 1
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -101,12 +103,11 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Unable to load player prefs
-Refreshing native plugins compatible for Editor in 2,42 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 2,89 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Initialize engine version: 6000.3.9f1 (7a9955a4f2fa)
 [Subsystems] Discovering subsystems at path /home/talveri/Unity/Hub/Editor/6000.3.9f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /home/talveri/Dokumente/_Studium/FH Technikum/SS2026/GameDev Grundlagen/SS1/Unity Tutorial/RoofGardenGame/Assets
+[Subsystems] Discovering subsystems at path /home/talveri/Dokumente/_Studium/FH Technikum/SS2026/GameDev Grundlagen/SS1/Unity/RoofGardenGame/Assets
 kGfxThreadingModeNonThreaded is not supported on OpenGL Core. Reverting to kGfxThreadingModeDirect instead.
 GfxDevice: creating device client; kGfxThreadingModeDirect
 GLX Extensions: GLX_ARB_context_flush_control GLX_ARB_create_context GLX_ARB_create_context_no_error GLX_ARB_create_context_profile GLX_ARB_create_context_robustness GLX_ARB_fbconfig_float GLX_ARB_framebuffer_sRGB GLX_ARB_get_proc_address GLX_ARB_multisample GLX_EXT_buffer_age GLX_EXT_create_context_es2_profile GLX_EXT_create_context_es_profile GLX_EXT_fbconfig_packed_float GLX_EXT_framebuffer_sRGB GLX_EXT_no_config_context GLX_EXT_swap_control GLX_EXT_swap_control_tear GLX_EXT_texture_from_pixmap GLX_EXT_visual_info GLX_EXT_visual_rating GLX_INTEL_swap_event GLX_MESA_copy_sub_buffer GLX_MESA_gl_interop GLX_MESA_query_renderer GLX_MESA_swap_control GLX_OML_sync_control GLX_SGIS_multisample GLX_SGIX_fbconfig GLX_SGIX_pbuffer GLX_SGIX_visual_select_group GLX_SGI_make_current_read GLX_SGI_swap_control GLX_SGI_video_sync 
@@ -120,18 +121,18 @@ tex GL_ARB_query_buffer_object GL_ARB_robust_buffer_access_behavior GL_ARB_robus
 bptc GL_ARB_texture_compression_rgtc GL_ARB_texture_cube_map_array GL_ARB_texture_filter_anisotropic GL_ARB_texture_float GL_ARB_texture_gather GL_ARB_texture_mirror_clamp_to_edge GL_ARB_texture_multisample GL_ARB_texture_non_power_of_two GL_ARB_texture_query_levels GL_ARB_texture_query_lod GL_ARB_texture_rectangle GL_ARB_texture_rg GL_ARB_texture_rgb10_a2ui GL_ARB_texture_stencil8 GL_ARB_texture_storage GL_ARB_texture_storage_multisample GL_ARB_texture_swizzle GL_ARB_texture_view GL_ARB_timer_query GL_ARB_transform_feedback2 GL_ARB_transform_feedback3 GL_ARB_transform_feedback_instanced GL_ARB_transform_feedback_overflow_query GL_ARB_uniform_buffer_object GL_ARB_vertex_array_bgra GL_ARB_vertex_array_object GL_ARB_vertex_attrib_64bit GL_ARB_vertex_attrib_binding GL_ARB_vertex_buffer_object GL_ARB_vertex_shader GL_ARB_vertex_type_10f_11f_11f_rev GL_ARB_vertex_type_2_10_10_10_rev GL_ARB_viewport_array GL_ATI_blend_equation_separate GL_ATI_texture_float GL_EXT_EGL_image_storage GL_EXT_EGL_image_storage_compress
 ion GL_EXT_EGL_sync GL_EXT_abgr GL_EXT_blend_equation_separate GL_EXT_debug_label GL_EXT_demote_to_helper_invocation GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXT_framebuffer_multisample_blit_scaled GL_EXT_framebuffer_object GL_EXT_framebuffer_sRGB GL_EXT_memory_object GL_EXT_memory_object_fd GL_EXT_packed_depth_stencil GL_EXT_packed_float GL_EXT_pixel_buffer_object GL_EXT_polygon_offset_clamp GL_EXT_provoking_vertex GL_EXT_semaphore GL_EXT_semaphore_fd GL_EXT_shader_framebuffer_fetch_non_coherent GL_EXT_shader_integer_mix GL_EXT_shader_samples_identical GL_EXT_texture_array GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_compression_s3tc GL_EXT_texture_filter_anisotropic GL_EXT_texture_integer GL_EXT_texture_sRGB GL_EXT_texture_sRGB_R8 GL_EXT_texture_sRGB_decode GL_EXT_texture_shadow_lod GL_EXT_texture_shared_exponent GL_EXT_texture_snorm GL_EXT_texture_storage GL_EXT_texture_swizzle GL_EXT_timer_query GL_EXT_transform
 _feedback GL_EXT_vertex_array_bgra GL_EXT_vertex_attrib_64bit GL_IBM_multimode_draw_arrays GL_INTEL_blackhole_render GL_INTEL_performance_query GL_INTEL_shader_integer_functions2 GL_KHR_blend_equation_advanced GL_KHR_context_flush_control GL_KHR_debug GL_KHR_no_error GL_KHR_parallel_shader_compile GL_KHR_robust_buffer_access_behavior GL_KHR_robustness GL_KHR_texture_compression_astc_ldr GL_KHR_texture_compression_astc_sliced_3d GL_MESA_framebuffer_flip_y GL_MESA_pack_invert GL_MESA_shader_integer_functions GL_MESA_texture_const_bandwidth GL_MESA_texture_signed_rgba GL_NV_alpha_to_coverage_dither_control GL_NV_compute_shader_derivatives GL_NV_conditional_render GL_NV_copy_image GL_NV_depth_clamp GL_NV_packed_depth_stencil GL_NV_texture_barrier GL_OES_EGL_image GL_S3_s3tc
-OPENGL LOG: Creating OpenGL 4.6 graphics device ; Context level  <OpenGL 4.5> ; Context handle -1118070224
+OPENGL LOG: Creating OpenGL 4.6 graphics device ; Context level  <OpenGL 4.5> ; Context handle 1395717648
 Initialize mono
 Mono path[0] = '/home/talveri/Unity/Hub/Editor/6000.3.9f1/Editor/Data/Managed'
 Mono path[1] = '/home/talveri/Unity/Hub/Editor/6000.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-linux'
 Mono config path = '/home/talveri/Unity/Hub/Editor/6000.3.9f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56535
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56078
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /home/talveri/Unity/Hub/Editor/6000.3.9f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: /home/talveri/Unity/Hub/Editor/6000.3.9f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0,002929 seconds.
-- Loaded All Assemblies, in  0,649 seconds
+Registered in 0,002710 seconds.
+- Loaded All Assemblies, in  0,766 seconds
 Native extension for LinuxStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
@@ -140,35 +141,35 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0,987 seconds
-Domain Reload Profiling: 1636ms
-	BeginReloadAssembly (143ms)
+- Finished resetting the current domain, in  0,835 seconds
+Domain Reload Profiling: 1600ms
+	BeginReloadAssembly (136ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (2ms)
-	RebuildCommonClasses (70ms)
-	RebuildNativeTypeToScriptingClass (17ms)
-	initialDomainReloadingComplete (86ms)
-	LoadAllAssembliesAndSetupDomain (332ms)
-		LoadAssemblies (141ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (73ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (93ms)
+	LoadAllAssembliesAndSetupDomain (443ms)
+		LoadAssemblies (135ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (327ms)
-			TypeCache.Refresh (325ms)
-				TypeCache.ScanAssembly (302ms)
+		AnalyzeDomain (438ms)
+			TypeCache.Refresh (436ms)
+				TypeCache.ScanAssembly (410ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (987ms)
+	FinalizeReload (835ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (892ms)
+		SetupLoadedEditorAssemblies (754ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (108ms)
-			SetLoadedEditorAssemblies (7ms)
-			BeforeProcessingInitializeOnLoad (242ms)
-			ProcessInitializeOnLoadAttributes (399ms)
-			ProcessInitializeOnLoadMethodAttributes (135ms)
+			InitializePlatformSupportModulesInManaged (131ms)
+			SetLoadedEditorAssemblies (12ms)
+			BeforeProcessingInitializeOnLoad (176ms)
+			ProcessInitializeOnLoadAttributes (307ms)
+			ProcessInitializeOnLoadMethodAttributes (127ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -183,8 +184,8 @@ Begin MonoManager ReloadAssembly
   Product: Unity Personal
   Type: Assigned
   Expiration: Unlimited
-- Loaded All Assemblies, in  1,711 seconds
-Refreshing native plugins compatible for Editor in 0,84 ms, found 1 plugins.
+- Loaded All Assemblies, in  1,289 seconds
+Refreshing native plugins compatible for Editor in 0,80 ms, found 1 plugins.
 Native extension for LinuxStandalone target not found
 Native extension for WebGL target not found
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
@@ -192,117 +193,236 @@ Native extension for WebGL target not found
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1,691 seconds
-Domain Reload Profiling: 3398ms
-	BeginReloadAssembly (326ms)
+- Finished resetting the current domain, in  1,357 seconds
+Domain Reload Profiling: 2639ms
+	BeginReloadAssembly (252ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (12ms)
+		DisableScriptedObjects (10ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (69ms)
-	RebuildCommonClasses (126ms)
-	RebuildNativeTypeToScriptingClass (30ms)
-	initialDomainReloadingComplete (94ms)
-	LoadAllAssembliesAndSetupDomain (1131ms)
-		LoadAssemblies (608ms)
+		CreateAndSetChildDomain (58ms)
+	RebuildCommonClasses (72ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (80ms)
+	LoadAllAssembliesAndSetupDomain (858ms)
+		LoadAssemblies (479ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (674ms)
-			TypeCache.Refresh (448ms)
-				TypeCache.ScanAssembly (424ms)
-			BuildScriptInfoCaches (193ms)
-			ResolveRequiredComponents (26ms)
-	FinalizeReload (1692ms)
+		AnalyzeDomain (489ms)
+			TypeCache.Refresh (333ms)
+				TypeCache.ScanAssembly (310ms)
+			BuildScriptInfoCaches (133ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (1357ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1392ms)
+		SetupLoadedEditorAssemblies (1134ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (4ms)
-			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (470ms)
-			ProcessInitializeOnLoadAttributes (672ms)
-			ProcessInitializeOnLoadMethodAttributes (232ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (289ms)
+			ProcessInitializeOnLoadAttributes (619ms)
+			ProcessInitializeOnLoadMethodAttributes (210ms)
 			AfterProcessingInitializeOnLoad (7ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (7ms)
 AutoLocale: current locale expects 'C' but got 'de_AT.UTF-8'Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
-Refreshing native plugins compatible for Editor in 1.15 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.85 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6913 unused Assets / (6.8 MB). Loaded Objects now: 7731.
-Memory consumption went from 131.4 MB to 124.6 MB.
-Total: 31.167006 ms (FindLiveObjects: 0.872313 ms CreateObjectMapping: 2.178961 ms MarkObjects: 14.482869 ms  DeleteObjects: 13.631023 ms)
+Unloading 6913 unused Assets / (6.6 MB). Loaded Objects now: 7731.
+Memory consumption went from 131.4 MB to 124.8 MB.
+Total: 26.119158 ms (FindLiveObjects: 0.954141 ms CreateObjectMapping: 1.942630 ms MarkObjects: 14.484547 ms  DeleteObjects: 8.736021 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1452.841379 seconds.
-  path: Assets/DefaultVolumeProfile.asset
-  artifactKey: Guid(3f9215ea0144899419cfbc0957140d3f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/DefaultVolumeProfile.asset using Guid(3f9215ea0144899419cfbc0957140d3f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd2a479f7def68e8d8cfbd9395493bcd0') in 0.180582407 seconds
-Number of updated asset objects reloaded before import = 4Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Settings/Lit2DSceneTemplate.scenetemplate
-  artifactKey: Guid(d03ed43fc9d8a4f2e9fa70c1c7916eb9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Settings/Lit2DSceneTemplate.scenetemplate using Guid(d03ed43fc9d8a4f2e9fa70c1c7916eb9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '189383e2d1f64d3161015fd6499200b6') in 0.161367795 seconds
+  Time since last request: 5973.729956 seconds.
+  path: Assets/Sprites/Table/Table.png
+  artifactKey: Guid(5d229a3b8b0120d1fb4e03252a47e8f4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/Table/Table.png using Guid(5d229a3b8b0120d1fb4e03252a47e8f4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9b2e2bf5f5c8b0adc5deff8f1998181c') in 0.21606018 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/Settings/Renderer2D.asset
-  artifactKey: Guid(424799608f7334c24bf367e4bbfa7f9a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Settings/Renderer2D.asset using Guid(424799608f7334c24bf367e4bbfa7f9a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5ed836dcb6bacc53e701a9a1df8437e0') in 0.075195947 seconds
+  Time since last request: 0.000026 seconds.
+  path: Assets/Sprites/Garden Fork.png
+  artifactKey: Guid(a520f18cd594be0248105bd011955e5b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/Garden Fork.png using Guid(a520f18cd594be0248105bd011955e5b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fd30b69a5dbc4b43f365149755e25336') in 0.010879601 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Sprites/Roof Access
+  artifactKey: Guid(77452609cbb2ddbd085fca7df22a1b37) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/Roof Access using Guid(77452609cbb2ddbd085fca7df22a1b37) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '673b893c411870f5fb44495169ed71fc') in 0.003982949 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Settings/Scenes/URP2DSceneTemplate.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Settings/Scenes/URP2DSceneTemplate.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a4b6a23e0e46b9026eb1950eeb872db6') in 0.007640322 seconds
+  Time since last request: 0.000042 seconds.
+  path: Assets/Sprites/Rooftop
+  artifactKey: Guid(b753338ea70421d2384dcdff48c85e02) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/Rooftop using Guid(b753338ea70421d2384dcdff48c85e02) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a871ffd5a6bcd195ab40a737177160a3') in 0.003027875 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(8c9cfa26abfee488c85f1582747f6a02) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/SampleScene.unity using Guid(8c9cfa26abfee488c85f1582747f6a02) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '64942875386158d9b58ed00cae15e474') in 0.005282297 seconds
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/Water Tap
+  artifactKey: Guid(61cf2feb4f50d4e0ca9921b6bdfffc88) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/Water Tap using Guid(61cf2feb4f50d4e0ca9921b6bdfffc88) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8238c28e16a36acb4a232afbc3720e91') in 0.003508788 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000059 seconds.
-  path: Assets/Settings/UniversalRP.asset
-  artifactKey: Guid(681886c5eb7344803b6206f758bf0b1c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Settings/UniversalRP.asset using Guid(681886c5eb7344803b6206f758bf0b1c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '43903e1b7605afa88da7efeccddb6f1e') in 0.158884842 seconds
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sprites/Patch/Soil.png
+  artifactKey: Guid(0456026931e7942fe88c2c05d3b41249) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/Patch/Soil.png using Guid(0456026931e7942fe88c2c05d3b41249) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2df652f819ce41099730406dc89ac6a7') in 0.018941035 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/Hand Trowel.png
+  artifactKey: Guid(fd5c1836a0d3b4091955d20ccd7275c0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/Hand Trowel.png using Guid(fd5c1836a0d3b4091955d20ccd7275c0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f2dec87ca8b3e8317810eb0d165a97fa') in 0.010669977 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sprites/Watering Can
+  artifactKey: Guid(0f7506bc0ba7bcf8aaefb45272705484) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/Watering Can using Guid(0f7506bc0ba7bcf8aaefb45272705484) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8c89c77870d04c48420018af8dea411a') in 0.002966463 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Sprites/Rooftop/Rooftop.png
+  artifactKey: Guid(e0dfc0155c672aeee99d5c7fe4ae84bf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/Rooftop/Rooftop.png using Guid(e0dfc0155c672aeee99d5c7fe4ae84bf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9203a6e9999ba9600fdb2097c9dd6d01') in 0.012015123 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Sprites/Seed Box.png
+  artifactKey: Guid(4ac9a9dcc8fc37035b9e3a9e5d475055) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/Seed Box.png using Guid(4ac9a9dcc8fc37035b9e3a9e5d475055) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e109db2b68a4fbb52856d6706e91e25c') in 0.013503302 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/Roof Access/Access.png
+  artifactKey: Guid(2c182f1fb84d043c69d34f37d994aad8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/Roof Access/Access.png using Guid(2c182f1fb84d043c69d34f37d994aad8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9ec55eaea234a3abd1245a8829a9e24f') in 0.012300908 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Sprites/TablewDrawer.png
+  artifactKey: Guid(c084bc5bdd90148b6b7118d600556915) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/TablewDrawer.png using Guid(c084bc5bdd90148b6b7118d600556915) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '72f1b012a580bcef7ccc52d2dd6b7017') in 0.009184939 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Sprites/Table
+  artifactKey: Guid(d6db36c42c412c2eea3aed41c7ed30a6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/Table using Guid(d6db36c42c412c2eea3aed41c7ed30a6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '104480db2c5e8a4195576702a328e401') in 0.002619831 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000029 seconds.
-  path: Assets/InputSystem_Actions.inputactions
-  artifactKey: Guid(2bcd2660ca9b64942af0de543d8d7100) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/InputSystem_Actions.inputactions using Guid(2bcd2660ca9b64942af0de543d8d7100) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter)UpdateMenuTitleForLanguage: 10
- -> (artifact id: '4698eca8c995f1bb37cf15e734c6253b') in 0.318577392 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
+  path: Assets/Sprites/Table Vertical.png
+  artifactKey: Guid(48e8adb3939ec49cda2ec68226928ec5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/Table Vertical.png using Guid(48e8adb3939ec49cda2ec68226928ec5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a8bb72390089b8c62ea97e8aabbf3007') in 0.010045606 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/Patch
+  artifactKey: Guid(4b4b59161e67ff8a2b932d203379e07b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/Patch using Guid(4b4b59161e67ff8a2b932d203379e07b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f6ceb24cc4763fd7ce228b1ee3b68678') in 0.003043782 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/Watering Can/Can.png
+  artifactKey: Guid(80603518862f9955f9aef5f2c6ca34f4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/Watering Can/Can.png using Guid(80603518862f9955f9aef5f2c6ca34f4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '76dd6c97c528eea118a19b63f44a7f93') in 0.00992388 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sprites/Fertilizer.png
+  artifactKey: Guid(ecac8d7ba4e1ee89bb7e84a621120e9b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/Fertilizer.png using Guid(ecac8d7ba4e1ee89bb7e84a621120e9b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6572d689fd87d5ae307e6675ae7f4ae7') in 0.013699121 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Sprites/Water Tap/Water Tap.png
+  artifactKey: Guid(890b4f1a7f360f7cc9f52d83afe441fc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/Water Tap/Water Tap.png using Guid(890b4f1a7f360f7cc9f52d83afe441fc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ba355899e69abdfe47a42a6cfb296749') in 0.012047626 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Sprites/Guy/Guy.png
+  artifactKey: Guid(c0d01b4886d82576e9cb6d5e45c745f6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/Guy/Guy.png using Guid(c0d01b4886d82576e9cb6d5e45c745f6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8d52a26723c25ebf93df24042ccb2770') in 0.010470904 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/Patch/Empty Patch.png
+  artifactKey: Guid(275a2fb739c99e82599236bb50687187) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/Patch/Empty Patch.png using Guid(275a2fb739c99e82599236bb50687187) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '913f21bad3cd15742cbe11253ed85f52') in 0.010969479 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Sprites/Guy
+  artifactKey: Guid(52098d58260830ff7a30b1a5424f9a5c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/Guy using Guid(52098d58260830ff7a30b1a5424f9a5c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '36cad5370ebecd9255199b518b0d48a0') in 0.00300534 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000033 seconds.
-  path: Assets/UniversalRenderPipelineGlobalSettings.asset
-  artifactKey: Guid(93b439a37f63240aca3dd4e01d978a9f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/UniversalRenderPipelineGlobalSettings.asset using Guid(93b439a37f63240aca3dd4e01d978a9f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0f65082004442a508cfe29298ffec6a5') in 0.106075477 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  path: Assets/Sprites/Pruning Shears.png
+  artifactKey: Guid(c963eb10e596eb8bfb04e7efe2488906) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/Pruning Shears.png using Guid(c963eb10e596eb8bfb04e7efe2488906) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e4e5d35cd89985738eabd62f2c95d814') in 0.012983774 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 182.629342 seconds.
-  path: Packages/com.unity.2d.animation
-  artifactKey: Guid(3daecccd2e0586cc1fa74b45e15f0402) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation using Guid(3daecccd2e0586cc1fa74b45e15f0402) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8622bccfe72477888797ca341437c30f') in 0.000589232 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 1.399970 seconds.
+  path: Assets/Sprites/Fertilizer.png
+  artifactKey: Guid(ecac8d7ba4e1ee89bb7e84a621120e9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Fertilizer.png using Guid(ecac8d7ba4e1ee89bb7e84a621120e9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd825b24f107a70020b49e60d5207613b') in 0.099468216 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 42.789349 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(8c9cfa26abfee488c85f1582747f6a02) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/SampleScene.unity using Guid(8c9cfa26abfee488c85f1582747f6a02) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b22cba38ed5408438bdd3fb2584889b3') in 0.006845769 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
