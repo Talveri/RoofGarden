@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b962421e09bb21531bb70c1dcbc81f63
+guid: 4f8861fe40415eb5ebbfb3c49b604256
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -127,7 +127,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: SoilPlantsl
+  - name: Frame_0
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -139,7 +139,7 @@ ScriptedImporter:
       y: 4
       width: 16
       height: 16
-    spriteID: a3ca0ea973b66ef25bb16c070b01a339
+    spriteID: 18eb8fbfa28312da19590e54e04fd568
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -160,7 +160,7 @@ ScriptedImporter:
       y: 28
       width: 16
       height: 16
-    spriteID: 5e6d1d759439558c29d2060cc02b18a7
+    spriteID: 2fe5f68bdb1cb2c14b7922d5a15e6b43
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -177,74 +177,11 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 4
-      y: 52
-      width: 16
-      height: 16
-    spriteID: 7452e33a2b52597cfa88c560afb4a317
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 52}
-  - name: Frame_3
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 76
-      width: 16
-      height: 16
-    spriteID: 78c4c732fe54aad4587a35faecc459c0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 76}
-  - name: Frame_4
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 100
-      width: 16
-      height: 16
-    spriteID: fa12c4dc4d086d2d48c7d80e7afa8d64
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 100}
-  - name: Frame_5
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
       x: 28
       y: 4
       width: 16
       height: 16
-    spriteID: a8fb53ae832538c80b077670c6241448
+    spriteID: 0b5bce6f9f4a884bbae1a5dffeaa74e7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -258,12 +195,12 @@ ScriptedImporter:
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 3685087049
+      value0: 51037994
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: SoilPlantsl
+    name: Inventory
     layerFlags: 0
     layerType: 0
     blendMode: 0
@@ -276,7 +213,7 @@ ScriptedImporter:
         y: 0
         width: 16
         height: 16
-      spriteId: a3ca0ea973b66ef25bb16c070b01a339
+      spriteId: 18eb8fbfa28312da19590e54e04fd568
     - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
@@ -285,7 +222,7 @@ ScriptedImporter:
         y: 0
         width: 16
         height: 16
-      spriteId: 5e6d1d759439558c29d2060cc02b18a7
+      spriteId: 2fe5f68bdb1cb2c14b7922d5a15e6b43
     - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
@@ -294,34 +231,7 @@ ScriptedImporter:
         y: 0
         width: 16
         height: 16
-      spriteId: 7452e33a2b52597cfa88c560afb4a317
-    - name: Frame_3
-      frameIndex: 3
-      additiveSortOrder: 0
-      cellRect:
-        x: 0
-        y: 0
-        width: 16
-        height: 16
-      spriteId: 78c4c732fe54aad4587a35faecc459c0
-    - name: Frame_4
-      frameIndex: 4
-      additiveSortOrder: 0
-      cellRect:
-        x: 0
-        y: 0
-        width: 16
-        height: 16
-      spriteId: fa12c4dc4d086d2d48c7d80e7afa8d64
-    - name: Frame_5
-      frameIndex: 5
-      additiveSortOrder: 0
-      cellRect:
-        x: 0
-        y: 0
-        width: 16
-        height: 16
-      spriteId: a8fb53ae832538c80b077670c6241448
+      spriteId: 0b5bce6f9f4a884bbae1a5dffeaa74e7
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
@@ -332,4 +242,4 @@ ScriptedImporter:
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 16, y: 16}
-  previousTextureSize: {x: 64, y: 128}
+  previousTextureSize: {x: 64, y: 64}
