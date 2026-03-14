@@ -1,5 +1,9 @@
 // Custom
 *.vsconfig
+*.puml
+.vscode/
+*.slnx
+/Logs/
 
 # =============== #
 # Unity generated #
