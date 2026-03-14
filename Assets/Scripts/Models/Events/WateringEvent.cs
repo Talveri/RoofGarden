@@ -3,12 +3,12 @@ namespace RoofGardenGame.Models.Events
     public class WateringEvent
     {
         public float WaterAmount { get; private set; }
-        public Tile Tile { get; private set; }
+        public Field Field { get; private set; }
 
-        public WateringEvent(Tile tile, float waterAmount)
+        public WateringEvent(Field tile, float waterAmount)
         {
             WaterAmount = waterAmount;
-            Tile = tile;
+            Field = tile;
         }
     }
 }

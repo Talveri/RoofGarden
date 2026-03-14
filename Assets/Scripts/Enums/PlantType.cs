@@ -2,10 +2,9 @@ namespace RoofGardenGame.Enums
 {
     public enum PlantType
     {
-        Tomato,
-        Lettuce,
+        Onion,
         Carrot,
-        Cucumber,
-        Pepper
+        Tomato,
+        Peas
     }
 }

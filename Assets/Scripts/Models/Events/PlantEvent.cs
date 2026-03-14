@@ -3,12 +3,12 @@ namespace RoofGardenGame.Models.Events
     public class PlantEvent
     {
         public Plant Plant { get; private set; }
-        public Tile Tile { get; private set; }
+        public Field Field { get; private set; }
 
-        public PlantEvent(Tile tile, Plant plant)
+        public PlantEvent(Field _field, Plant _plant)
         {
-            Plant = plant;
-            Tile = tile;
+            Plant = _plant;
+            Field = _field;
         }
     }
 }
