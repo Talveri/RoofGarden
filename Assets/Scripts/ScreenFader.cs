@@ -18,7 +18,6 @@ public class ScreenFader : MonoBehaviour
             fadeImage.color = new Color(0,0,0,alpha);
             yield return null;
         }
-        Debug.Log("FadeOut Done");
     }
 
     public IEnumerator FadeIn()

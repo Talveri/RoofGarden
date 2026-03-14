@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 
 public class DoorTrigger : MonoBehaviour
 {
@@ -10,15 +11,23 @@ public class DoorTrigger : MonoBehaviour
     private Transform player;
     public Camera mainCamera;
     public ScreenFader fader;
+    private VisualElement tooltip;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Awake()
+    {
+        UIDocument ui = GetComponentInChildren<UIDocument>();
+        tooltip = ui.rootVisualElement.Q<Label>("tooltip");
+    }
+
     void Start()
     {
         // Adds the z value to the cameraPosition from the main Camera
         cameraPosition.position = new Vector3(cameraPosition.position.x,
                                               cameraPosition.position.y,
                                               mainCamera.transform.position.z);
+        tooltip.style.display = DisplayStyle.None;
     }
 
     // Update is called once per frame
@@ -45,7 +54,7 @@ public class DoorTrigger : MonoBehaviour
         if (player == null || exitPosition == null)
             return;
 
-        
+
         player.position = exitPosition.position;
         if (mainCamera != null)
         {
@@ -57,6 +66,7 @@ public class DoorTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            tooltip.style.display = DisplayStyle.Flex;
             playerInside = true;
             player = other.transform;
         }
@@ -66,6 +76,7 @@ public class DoorTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            tooltip.style.display = DisplayStyle.None;
             playerInside = false;
             player = null;
         }
