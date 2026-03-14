@@ -4,6 +4,7 @@
 .vscode/
 *.slnx
 /Logs/
+*.dwlt
 
 # =============== #
 # Unity generated #
