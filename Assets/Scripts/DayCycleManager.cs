@@ -2,28 +2,27 @@ using RoofGardenGame.Models.Events;
 
 namespace RoofGardenGame
 {
-
-    public class DayCycleManager
+    public static class DayCycleManager
     {
-        private int currentDay = 0;
+        static private int currentDay = 0;
 
-        public void EndDay()
+        static public void EndDay()
         {
             EndDayCycle();
             StartDayCycle();
         }
 
-        public int GetCurrentDay()
+        static public int GetCurrentDay()
         {
             return currentDay;
         }
 
-        private void StartDayCycle()
+        static private void StartDayCycle()
         {
             EventBus.RaiseDayStart(new DayEvent(currentDay));
         }
 
-        private void EndDayCycle()
+        static private void EndDayCycle()
         {
             EventBus.RaiseDayEnd(new DayEvent(currentDay));
             currentDay++;

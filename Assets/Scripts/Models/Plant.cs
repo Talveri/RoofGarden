@@ -1,36 +1,86 @@
+
+using UnityEngine;
 using RoofGardenGame.Enums;
 using RoofGardenGame.Models.Events;
+using Unity.VisualScripting;
 
 namespace RoofGardenGame.Models
 {
 
-    public class Plant
+    public class Plant: MonoBehaviour
     {
-        public bool IsGrown => Age >= GrowTime;
+        [SerializeField]
+        private PlantType type;
+        
+        [SerializeField]
+        private Nutrients consumption;
 
-        private PlantType Type;
-        private int plantDay;
-        private int Age;
-        private int GrowTime = 10;
+        [SerializeField]
+        private int finalGrowthStage;
 
-        public Plant(PlantType type)
+        [SerializeField]
+        private int growthDuration;
+
+        [SerializeField]
+        private int spriteIndex;
+
+        [SerializeField]
+        private int health;
+
+        private int dayPlanted;
+
+
+        void Awake()
         {
-            Type = type;
-            plantDay = 0;
-            Age = 0;
+            // runs the moment the plant is instantiated during the game
+            dayPlanted = DayCycleManager.GetCurrentDay();
         }
 
-        public void ProgressDay(DayEvent dayEvent, WaterLevel waterLevel)
+        public bool IsGrown()
         {
-            Age = dayEvent.Day - plantDay;
-            if (!IsGrown)
+            int currentDay = DayCycleManager.GetCurrentDay();
+            return currentDay / growthDuration <= finalGrowthStage;
+        }
+
+        
+        public Nutrients GetConsumption()
+        {
+            return consumption;
+        }
+
+        public void Progress()
+        {
+            // TODO: buncha stuff
+            // should be called after ReceiveNutrients()
+            // code goes here that changes the sprite depending
+            // on how many days the plant has been growing
+
+            // pseudocode:
+            // spritegameobject.index = spriteIndex + GetAge() / growthDuration
+        }
+
+        /// <summary>
+        /// age in days
+        /// </summary>
+        public int GetAge()
+        {
+            return DayCycleManager.GetCurrentDay() - dayPlanted;
+        }
+
+        public void ReceiveNutrients(ref Nutrients nutrients)
+        {
+            if (!IsGrown())
             {
-                AbsorbWater(waterLevel);
-                ConsumeNutrients();
+                if(!nutrients.Contains(consumption))
+                {
+                    health -= 1;
+                }
+                nutrients -= consumption;
             }
             else
             {
-                int grownDays = dayEvent.Day - (plantDay + GrowTime);
+                int dayWhenGrowthEnds = dayPlanted + finalGrowthStage*growthDuration;
+                int grownDays = DayCycleManager.GetCurrentDay() - dayWhenGrowthEnds;
                 if (grownDays > 0)
                 {
                     // Placeholder for post-growth logic, such as fruit production or decay
@@ -38,24 +88,15 @@ namespace RoofGardenGame.Models
             }
         }
 
-        public void GetConsumption()
+        public static Relationship operator+(Plant left, Plant right)
         {
-            // Placeholder for nutrient consumption logic based on plant type and age
-        }
-
-        public void GiveNutrients()
-        {
-            // Placeholder for nutrient absorption logic
-        }
-
-        private void ConsumeNutrients()
-        {
-            // Placeholder for nutrient consumption logic
-        }
-
-        private void AbsorbWater(WaterLevel waterLevel)
-        {
-            // Placeholder for water absorption logic based on water level
+            // this is arbitrary math. feel free to implement the relationships
+            // how you see fit.
+            if ((int)left.type % 2 == (int)right.type % 2)
+            {
+                return Relationship.Beneficial;
+            }
+            return Relationship.Neutral;
         }
     }
 
