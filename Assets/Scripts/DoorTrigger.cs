@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,6 +9,7 @@ public class DoorTrigger : MonoBehaviour
     public Transform cameraPosition;
     private Transform player;
     public Camera mainCamera;
+    public ScreenFader fader;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -24,8 +26,19 @@ public class DoorTrigger : MonoBehaviour
     {
         if (playerInside && Keyboard.current.eKey.wasPressedThisFrame)
         {
-            MovePlayer();
+            StartCoroutine(UseDoor());
         }
+    }
+
+    private IEnumerator UseDoor()
+    {
+        //Fade out
+        yield return StartCoroutine(fader.FadeOut());
+
+        // Move Player
+        MovePlayer();
+
+        yield return StartCoroutine(fader.FadeIn());
     }
     private void MovePlayer()
     {
