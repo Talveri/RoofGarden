@@ -11,7 +11,8 @@ public class DoorTrigger : MonoBehaviour
     private Transform player;
     public Camera mainCamera;
     public ScreenFader fader;
-    private VisualElement tooltip;
+    private Label tooltip;
+    public string tooltipText = "Open (E)";
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -19,6 +20,7 @@ public class DoorTrigger : MonoBehaviour
     {
         UIDocument ui = GetComponentInChildren<UIDocument>();
         tooltip = ui.rootVisualElement.Q<Label>("tooltip");
+        tooltip.text = tooltipText;
     }
 
     void Start()

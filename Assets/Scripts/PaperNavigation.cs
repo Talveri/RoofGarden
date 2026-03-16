@@ -1,42 +1,55 @@
+using System;
+using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
 
 public class PaperNavigation : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    private Button nextButton;
     private UIDocument uiDocument;
     public Camera mainCamera;
     public Transform cameraPosition;
+    private Transform selfPosition;
+    public ScreenFader fader;
+    [SerializeField] private bool showResults = false;
     void Start()
     {
-        //Configure Button
-        uiDocument = GetComponent<UIDocument>();
-        nextButton = uiDocument.rootVisualElement.Q<Button>("nextDayButton");
-        nextButton.clicked += nextDay;
-
         // Set Cameraposition
         cameraPosition.position = new Vector3(cameraPosition.position.x,
                                       cameraPosition.position.y,
                                       mainCamera.transform.position.z);
+        uiDocument = GetComponentInChildren<UIDocument>();
+        selfPosition = GetComponent<Transform>();
     }
+
 
     // Update is called once per frame
     void Update()
     {
+        showResults = mainCamera.transform.position.x == selfPosition.position.x;
 
+        if (showResults && Keyboard.current.fKey.wasPressedThisFrame)
+            {
+                StartCoroutine(nextDay());
+            }
     }
 
-    void nextDay()
+    IEnumerator nextDay()
     {
+        yield return StartCoroutine(fader.FadeOut());
         moveCamera();
+        yield return StartCoroutine(fader.FadeIn());
     }
 
     void moveCamera()
     {
+        Debug.Log("Move Camera");
         if (mainCamera != null)
         {
             mainCamera.transform.position = cameraPosition.position;
         }
     }
+
+
 }
