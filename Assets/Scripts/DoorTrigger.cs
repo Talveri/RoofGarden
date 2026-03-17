@@ -1,4 +1,7 @@
 using System.Collections;
+using Unity.Mathematics;
+using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
@@ -14,6 +17,7 @@ public class DoorTrigger : MonoBehaviour
     private Label tooltip;
     public string tooltipText = "Open (E)";
 
+    [SerializeField] StyleLength fontSize;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -21,6 +25,8 @@ public class DoorTrigger : MonoBehaviour
         UIDocument ui = GetComponentInChildren<UIDocument>();
         tooltip = ui.rootVisualElement.Q<Label>("tooltip");
         tooltip.text = tooltipText;
+
+
     }
 
     void Start()

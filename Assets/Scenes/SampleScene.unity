@@ -598,6 +598,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1826526221170955276, guid: af5de4cceb01c5ef89191fdd889603af, type: 3}
+      propertyPath: m_HorizontalFit
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1832065812547883903, guid: af5de4cceb01c5ef89191fdd889603af, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -606,9 +610,21 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 4345928469850223278, guid: af5de4cceb01c5ef89191fdd889603af, type: 3}
+      propertyPath: m_PivotReferenceSize
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4345928469850223278, guid: af5de4cceb01c5ef89191fdd889603af, type: 3}
+      propertyPath: m_WorldSpaceSizeMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4739473466860086358, guid: af5de4cceb01c5ef89191fdd889603af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.5
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739473466860086358, guid: af5de4cceb01c5ef89191fdd889603af, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 5335649499996927635, guid: af5de4cceb01c5ef89191fdd889603af, type: 3}
       propertyPath: fader
@@ -793,7 +809,7 @@ MonoBehaviour:
   sourceAsset: {fileID: 9197481963319205126, guid: a291155079021ced1b629cf087cf1b3f, type: 3}
   m_SortingOrder: 0
   m_Position: 0
-  m_WorldSpaceSizeMode: 1
+  m_WorldSpaceSizeMode: 0
   m_WorldSpaceWidth: 2
   m_WorldSpaceHeight: 2
   m_PivotReferenceSize: 0
