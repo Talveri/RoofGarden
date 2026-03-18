@@ -1,24 +1,30 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 
-class Tooltip : MonoBehaviour
+public class Tooltip : MonoBehaviour
 {
-    public UIDocument tooltipUI;
-    private Label tooltip;
+    UIDocument tooltipUI;
+    Label tooltip;
 
 
     void Awake()
     {
-        tooltip = tooltipUI.GetComponent<Label>();
+        tooltipUI = GetComponent<UIDocument>();
+        tooltip = tooltipUI.rootVisualElement.Q<Label>("tooltip");
+        hideTooltip();
     }
 
+    public void UpdateText(string tooltipText)
+    {
+        tooltip.text = tooltipText;
+    }
 
-    void showTooltip()
+    public void showTooltip()
     {
         tooltip.style.display = DisplayStyle.Flex;
     }
 
-    void hideTooltip()
+    public void hideTooltip()
     {
         tooltip.style.display = DisplayStyle.None;
     }

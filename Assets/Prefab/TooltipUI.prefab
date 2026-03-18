@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4925390225574073082}
   - component: {fileID: 4166015177533047810}
   - component: {fileID: 2073452130224005792}
+  - component: {fileID: -6525703410278866995}
   m_Layer: 0
   m_Name: TooltipUI
   m_TagString: Untagged
@@ -74,3 +75,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ContentSizeFitter
   m_HorizontalFit: 2
   m_VerticalFit: 0
+--- !u!114 &-6525703410278866995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5650425362665927652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d8c6ac2bca3f5da48bea9d3a944043e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Tooltip
+  tooltipUI: {fileID: 0}

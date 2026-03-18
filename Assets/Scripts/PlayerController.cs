@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public KeyCode useKey = KeyCode.E;
 
     private SpriteRenderer sr;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     void Start()

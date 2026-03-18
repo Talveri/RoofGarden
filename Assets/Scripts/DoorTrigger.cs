@@ -14,19 +14,13 @@ public class DoorTrigger : MonoBehaviour
     private Transform player;
     public Camera mainCamera;
     public ScreenFader fader;
-    private Label tooltip;
+    private Tooltip tooltip;
     public string tooltipText = "Open (E)";
-
-    [SerializeField] StyleLength fontSize;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
-        UIDocument ui = GetComponentInChildren<UIDocument>();
-        tooltip = ui.rootVisualElement.Q<Label>("tooltip");
-        tooltip.text = tooltipText;
-
-
+        tooltip = GetComponentInChildren<Tooltip>();
     }
 
     void Start()
@@ -35,7 +29,7 @@ public class DoorTrigger : MonoBehaviour
         cameraPosition.position = new Vector3(cameraPosition.position.x,
                                               cameraPosition.position.y,
                                               mainCamera.transform.position.z);
-        tooltip.style.display = DisplayStyle.None;
+        tooltip.UpdateText(tooltipText);
     }
 
     // Update is called once per frame
@@ -74,7 +68,7 @@ public class DoorTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            tooltip.style.display = DisplayStyle.Flex;
+            tooltip.showTooltip();
             playerInside = true;
             player = other.transform;
         }
@@ -84,7 +78,7 @@ public class DoorTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            tooltip.style.display = DisplayStyle.None;
+            tooltip.hideTooltip();
             playerInside = false;
             player = null;
         }

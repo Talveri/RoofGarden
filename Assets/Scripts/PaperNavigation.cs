@@ -29,7 +29,7 @@ public class PaperNavigation : MonoBehaviour
     {
         showResults = mainCamera.transform.position.x == selfPosition.position.x;
 
-        if (showResults && Keyboard.current.fKey.wasPressedThisFrame)
+        if (showResults && Keyboard.current.eKey.wasPressedThisFrame)
             {
                 StartCoroutine(nextDay());
             }
