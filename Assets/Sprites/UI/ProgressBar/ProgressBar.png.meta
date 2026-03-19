@@ -1,19 +1,40 @@
 fileFormatVersion: 2
-guid: 3f90d1057b556a75284bc5355c6107f0
+guid: 59dce421865b85f14853c24bb0e32eb3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4633132239851490067
-    second: raised bed_0
+      213: 6026151842308396209
+    second: ProgressBar_0
   - first:
-      213: -1544813198936580031
-    second: raised bed_1
+      213: 7467354128804517314
+    second: ProgressBar_1
   - first:
-      213: -4978921933040941788
-    second: raised bed_2
+      213: 4192064334297964773
+    second: ProgressBar_2
   - first:
-      213: -8103735248886693259
-    second: raised bed_3
+      213: 872752157469293035
+    second: ProgressBar_3
+  - first:
+      213: -2624969483758068100
+    second: ProgressBar_4
+  - first:
+      213: -1238026910689060425
+    second: ProgressBar_5
+  - first:
+      213: -4551736821716839808
+    second: ProgressBar_6
+  - first:
+      213: 5809122735164149887
+    second: ProgressBar_7
+  - first:
+      213: 2930369334602674290
+    second: ProgressBar_8
+  - first:
+      213: -4968547069824079916
+    second: ProgressBar_9
+  - first:
+      213: 5365304042337879348
+    second: ProgressBar_10
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +67,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -60,7 +81,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -84,7 +105,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -122,243 +143,243 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: raised bed_0
+      name: ProgressBar_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
-        width: 16
-        height: 16
+        y: 163
+        width: 80
+        height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: de4fd3676cec3bfb0800000000000000
-      internalID: -4633132239851490067
+      spriteID: 1b49b533c2131a350800000000000000
+      internalID: 6026151842308396209
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: raised bed_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 140ec019498bf8ae0800000000000000
-      internalID: -1544813198936580031
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: raised bed_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 42581b0a1e057eab0800000000000000
-      internalID: -4978921933040941788
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: raised bed_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5720c400abfb98f80800000000000000
-      internalID: -8103735248886693259
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: raised bed_4
+      name: ProgressBar_1
       rect:
         serializedVersion: 2
         x: 0
-        y: 16
-        width: 16
-        height: 16
+        y: 147
+        width: 80
+        height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c87280799090ff68e836b65b39199005
-      internalID: -1383681152
+      spriteID: 2c59073340f51a760800000000000000
+      internalID: 7467354128804517314
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: raised bed_5
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 958ebe68cce0228f5917fb6189ff62a0
-      internalID: 1504928824
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: raised bed_6
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5a77653dd675aeb3c98b636dd7741dbe
-      internalID: 920563709
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: raised bed_7
+      name: ProgressBar_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 16
-        height: 16
+        y: 131
+        width: 80
+        height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: dfeea5b84c19262ec8327f180267c70e
-      internalID: 870546129
+      spriteID: 5e02a613d443d2a30800000000000000
+      internalID: 4192064334297964773
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: raised bed_8
+      name: ProgressBar_3
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
+        x: 0
+        y: 115
+        width: 80
+        height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4d14d0cb02b071a4da8a6c273ed18017
-      internalID: 397395590
+      spriteID: be9b9e29673ac1c00800000000000000
+      internalID: 872752157469293035
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: raised bed_9
+      name: ProgressBar_4
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 16
+        x: 0
+        y: 99
+        width: 80
+        height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7f1fdd7a720a16556abe7a2141b01732
-      internalID: -1506965818
+      spriteID: c7e1c56892c329bd0800000000000000
+      internalID: -2624969483758068100
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: raised bed_10
+      name: ProgressBar_5
       rect:
         serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 16
+        x: 0
+        y: 83
+        width: 80
+        height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4c41b6b6611e3533186c48e1e674605b
-      internalID: 1976417361
+      spriteID: 7b911068515a1dee0800000000000000
+      internalID: -1238026910689060425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProgressBar_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 67
+        width: 80
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 082908e0a7bf4d0c0800000000000000
+      internalID: -4551736821716839808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProgressBar_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 51
+        width: 80
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f70da1e79562e9050800000000000000
+      internalID: 5809122735164149887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProgressBar_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 35
+        width: 80
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 270b0b15263caa820800000000000000
+      internalID: 2930369334602674290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProgressBar_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 19
+        width: 80
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d7e355b3cc2c0bb0800000000000000
+      internalID: -4968547069824079916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProgressBar_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3
+        width: 80
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43544839993657a40800000000000000
+      internalID: 5365304042337879348
       vertices: []
       indices: 
       edges: []
@@ -367,7 +388,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: e67f1833f08446d7e902fb3f6cb4e3b2
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -375,21 +396,19 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":3.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      raised bed_0: -4633132239851490067
-      raised bed_1: -1544813198936580031
-      raised bed_10: 1976417361
-      raised bed_2: -4978921933040941788
-      raised bed_3: -8103735248886693259
-      raised bed_4: -1383681152
-      raised bed_5: 1504928824
-      raised bed_6: 920563709
-      raised bed_7: 870546129
-      raised bed_8: 397395590
-      raised bed_9: -1506965818
+      ProgressBar_0: 6026151842308396209
+      ProgressBar_1: 7467354128804517314
+      ProgressBar_10: 5365304042337879348
+      ProgressBar_2: 4192064334297964773
+      ProgressBar_3: 872752157469293035
+      ProgressBar_4: -2624969483758068100
+      ProgressBar_5: -1238026910689060425
+      ProgressBar_6: -4551736821716839808
+      ProgressBar_7: 5809122735164149887
+      ProgressBar_8: 2930369334602674290
+      ProgressBar_9: -4968547069824079916
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
