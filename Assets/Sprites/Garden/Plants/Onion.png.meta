@@ -67,7 +67,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -81,7 +81,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,7 +105,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -146,12 +146,12 @@ TextureImporter:
       name: Onion_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1
-        width: 30
-        height: 13
+        x: 0
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -168,12 +168,12 @@ TextureImporter:
       name: Onion_1
       rect:
         serializedVersion: 2
-        x: 33
-        y: 9
-        width: 7
-        height: 7
+        x: 16
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -190,12 +190,12 @@ TextureImporter:
       name: Onion_2
       rect:
         serializedVersion: 2
-        x: 38
-        y: 1
-        width: 9
-        height: 9
+        x: 32
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -212,12 +212,12 @@ TextureImporter:
       name: Onion_3
       rect:
         serializedVersion: 2
-        x: 40
-        y: 9
-        width: 7
-        height: 7
+        x: 48
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -234,12 +234,12 @@ TextureImporter:
       name: Onion_4
       rect:
         serializedVersion: 2
-        x: 49
-        y: 9
-        width: 7
-        height: 7
+        x: 64
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -256,12 +256,12 @@ TextureImporter:
       name: Onion_5
       rect:
         serializedVersion: 2
-        x: 49
-        y: 1
-        width: 7
-        height: 9
+        x: 80
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -274,121 +274,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Onion_6
-      rect:
-        serializedVersion: 2
-        x: 54
-        y: 1
-        width: 10
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1adcfe04f2abaca50800000000000000
-      internalID: 6542246120824753569
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Onion_7
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 1
-        width: 7
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9559af7e05b029730800000000000000
-      internalID: 4004275460803040601
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Onion_8
-      rect:
-        serializedVersion: 2
-        x: 70
-        y: 1
-        width: 10
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7608846916b634d50800000000000000
-      internalID: 6720333135844245607
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Onion_9
-      rect:
-        serializedVersion: 2
-        x: 79
-        y: 1
-        width: 17
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2460156cd14f49650800000000000000
-      internalID: 6238879792533407298
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Onion_10
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 1
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8816e306b31591480800000000000000
-      internalID: -8928015470825676408
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 92b5543298d6b776b934a2055e882bfd
     internalID: 0
     vertices: []
     indices: 
@@ -396,19 +286,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Onion_0: 5465580561085644368
       Onion_1: -3477578526051336873
-      Onion_10: -8928015470825676408
       Onion_2: -2332356855530425355
       Onion_3: 3899546548142004079
       Onion_4: -3390221917031993903
       Onion_5: -9063029999227916591
-      Onion_6: 6542246120824753569
-      Onion_7: 4004275460803040601
-      Onion_8: 6720333135844245607
-      Onion_9: 6238879792533407298
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

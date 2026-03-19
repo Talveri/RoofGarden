@@ -1,28 +1,31 @@
 fileFormatVersion: 2
-guid: d6e6903934f9e4969805a894f623a7af
+guid: d9e8235a6cb05d116b642edafd955f3d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8113185096396602001
-    second: Tomato_0
+      213: -5859083586626064994
+    second: Carrot_0
   - first:
-      213: -1257518098505440576
-    second: Tomato_1
+      213: -2094157912208876536
+    second: Carrot_1
   - first:
-      213: 3336444044123149764
-    second: Tomato_2
+      213: -830467699528618894
+    second: Carrot_2
   - first:
-      213: -6966369517673316951
-    second: Tomato_3
+      213: 3721053832486967156
+    second: Carrot_3
   - first:
-      213: -4667150655987312241
-    second: Tomato_4
+      213: -3855089239954288668
+    second: Carrot_4
   - first:
-      213: -6770858775108089496
-    second: Tomato_5
+      213: 1746509244472477445
+    second: Carrot_5
   - first:
-      213: -7506016618634473757
-    second: Tomato_6
+      213: 3928329487851121431
+    second: Carrot_6
+  - first:
+      213: -1664143722742511458
+    second: Carrot_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,7 +58,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -69,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -93,7 +96,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -131,155 +134,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tomato_0
+      name: Carrot_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1
-        width: 25
-        height: 7
+        x: 0
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f65894ce32d286f80800000000000000
-      internalID: -8113185096396602001
+      spriteID: e9de4dd458a50bea0800000000000000
+      internalID: -5859083586626064994
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tomato_1
+      name: Carrot_1
       rect:
         serializedVersion: 2
-        x: 23
-        y: 4
-        width: 9
-        height: 6
+        x: 16
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0c265f7b3f56c8ee0800000000000000
-      internalID: -1257518098505440576
+      spriteID: 80c5733697e00f2e0800000000000000
+      internalID: -2094157912208876536
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tomato_2
+      name: Carrot_2
       rect:
         serializedVersion: 2
-        x: 33
-        y: 1
-        width: 9
-        height: 7
+        x: 32
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4c59dee4e2e6d4e20800000000000000
-      internalID: 3336444044123149764
+      spriteID: 27c292cf6069974f0800000000000000
+      internalID: -830467699528618894
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tomato_3
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 4
-        width: 9
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9adf8f445db725f90800000000000000
-      internalID: -6966369517673316951
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tomato_4
+      name: Carrot_3
       rect:
         serializedVersion: 2
         x: 48
-        y: 1
+        y: 0
         width: 16
-        height: 13
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f8915acb433fa3fb0800000000000000
-      internalID: -4667150655987312241
+      spriteID: 477dd73eeb6d3a330800000000000000
+      internalID: 3721053832486967156
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tomato_5
+      name: Carrot_4
       rect:
         serializedVersion: 2
         x: 64
-        y: 1
-        width: 17
-        height: 15
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 869885d41d31902a0800000000000000
-      internalID: -6770858775108089496
+      spriteID: 4ef081be2c8ff7ac0800000000000000
+      internalID: -3855089239954288668
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tomato_6
+      name: Carrot_5
       rect:
         serializedVersion: 2
-        x: 79
-        y: 1
-        width: 17
-        height: 10
+        x: 80
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3ee0d1867a545d790800000000000000
-      internalID: -7506016618634473757
+      spriteID: 507c7b987e8dc3810800000000000000
+      internalID: 1746509244472477445
       vertices: []
       indices: 
       edges: []
@@ -288,7 +269,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 8c2f15ebb1a112c75865e7c790e55ebc
     internalID: 0
     vertices: []
     indices: 
@@ -296,15 +277,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Tomato_0: -8113185096396602001
-      Tomato_1: -1257518098505440576
-      Tomato_2: 3336444044123149764
-      Tomato_3: -6966369517673316951
-      Tomato_4: -4667150655987312241
-      Tomato_5: -6770858775108089496
-      Tomato_6: -7506016618634473757
+      Carrot_0: -5859083586626064994
+      Carrot_1: -2094157912208876536
+      Carrot_2: -830467699528618894
+      Carrot_3: 3721053832486967156
+      Carrot_4: -3855089239954288668
+      Carrot_5: 1746509244472477445
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

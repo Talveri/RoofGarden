@@ -12190,12 +12190,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1858747053181285253, guid: 43a47b971739a030b99c6855faf1a50d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3327010871456243339, guid: 43a47b971739a030b99c6855faf1a50d, type: 3}
       propertyPath: m_Name
       value: DialogueBox
       objectReference: {fileID: 0}
     - target: {fileID: 3327010871456243339, guid: 43a47b971739a030b99c6855faf1a50d, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5281562835866326086, guid: 43a47b971739a030b99c6855faf1a50d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5281562835866326086, guid: 43a47b971739a030b99c6855faf1a50d, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
