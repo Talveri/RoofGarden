@@ -17,7 +17,6 @@ public class Dialogue : MonoBehaviour
     {
         textComponent.text = string.Empty;
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -70,5 +69,10 @@ public class Dialogue : MonoBehaviour
             textComponent.text += c;
             yield return new WaitForSeconds(textSpeed);
         }
+    }
+
+    public void UpdateText(string[] script)
+    {
+        lines = script;
     }
 }
