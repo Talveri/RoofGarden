@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6104109043514655352}
   - component: {fileID: 6254696348117541834}
+  - component: {fileID: 2847843995796473701}
   m_Layer: 0
   m_Name: UseCollider
   m_TagString: Untagged
@@ -78,6 +79,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 0.5}
   m_EdgeRadius: 0
+--- !u!114 &2847843995796473701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1956946117831332051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc3d327754d5f4543bb06f742d1bf541, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractionManager
 --- !u!1 &6289156705555395790
 GameObject:
   m_ObjectHideFlags: 0
@@ -367,6 +380,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 91eeba5d-b5a2-4999-aa76-d04110f1d029
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 2afc5af0-7811-4201-9537-b27ea4ae8be1
+    m_ActionName: 'Player/Accept[/Keyboard/enter]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard&Mouse
   m_DefaultActionMap: Player

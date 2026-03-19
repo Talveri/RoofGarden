@@ -3,22 +3,33 @@ using System.Reflection.Emit;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class NeighbourDoor : MonoBehaviour
+public class NeighbourDoor : MonoBehaviour, IInteractable
 {
-
     public NeighbourData neighbourData;
     public static event Action<NeighbourData> onDoorInteracted;
     public string tooltipText = "Knock [E]";
+
     public void Interact()
     {
         onDoorInteracted?.Invoke(neighbourData);
         neighbourData.ShowStats();
+
+        // Code copied and modified from Update(), idk what you exactly planned for this implementation
+        // You can remove it if you want to delegate the dialague stuff to the NeighbourUI script
+        if (!dialogue.inDialogue)
+        {
+            tooltip.hideTooltip();
+            dialogue.UpdateText(script);
+            dialogue.StartDialogue();
+            neighbourData.ShowStats();
+        }
     }
 
-    // TEST CODE DELETE LATER 
-    bool playerInside;
+    // TEST CODE DELETE LATER
+    //bool playerInside;
     public Dialogue dialogue;
     public string[] script;
+
     //
     Tooltip tooltip;
 
@@ -29,8 +40,7 @@ public class NeighbourDoor : MonoBehaviour
         neighbourData = GetComponentInChildren<NeighbourData>(true);
     }
 
-
-    void Update()
+    /*void Update()
     {
         if (playerInside && Keyboard.current.eKey.wasPressedThisFrame && !dialogue.inDialogue)
         {
@@ -40,6 +50,7 @@ public class NeighbourDoor : MonoBehaviour
             neighbourData.ShowStats();
         }
     }
+    */
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -47,7 +58,7 @@ public class NeighbourDoor : MonoBehaviour
 
         if (other.CompareTag("Player"))
         {
-            playerInside = true;
+            //playerInside = true;
         }
     }
 
@@ -57,9 +68,8 @@ public class NeighbourDoor : MonoBehaviour
 
         if (other.CompareTag("Player"))
         {
-            playerInside = false;
+            //playerInside = false;
             neighbourData.HideStats();
         }
     }
-    //
 }

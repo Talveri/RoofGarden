@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
 
     private SpriteRenderer sr;
 
+    private InteractionManager interactionManager;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     void Start()
@@ -18,6 +20,8 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+
+        interactionManager = GetComponentInChildren<InteractionManager>();
     }
 
     // Update is called once per frame
@@ -36,11 +40,23 @@ public class PlayerController : MonoBehaviour
         if (xy_direction.x < 0)
             sr.flipX = true;
         else if (xy_direction.x > 0)
-            sr.flipX = false;        
+            sr.flipX = false;
     }
 
     public void Use()
     {
-        anim.SetTrigger("use");
+        if (interactionManager == null)
+        {
+            Debug.LogError("InteractionManager not found on PlayerController");
+            return;
+        }
+
+        IInteractable interactable;
+
+        if ((interactable = interactionManager.GetInteractable()) != null)
+        {
+            anim.SetTrigger("use");
+            interactable.Interact();
+        }
     }
 }
