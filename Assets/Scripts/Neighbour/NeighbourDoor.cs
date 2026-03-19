@@ -13,10 +13,11 @@ public class NeighbourDoor : MonoBehaviour
     public void Interact()
     {
         onDoorInteracted?.Invoke(neighbourData);
+        neighbourData.ShowStats();
     }
 
     // TEST CODE DELETE LATER 
-    [SerializeField] bool playerInside;
+    bool playerInside;
     public Dialogue dialogue;
     //
     Tooltip tooltip;
@@ -25,9 +26,8 @@ public class NeighbourDoor : MonoBehaviour
     {
         tooltip = GetComponentInChildren<Tooltip>();
         tooltip.UpdateText(tooltipText);
+        neighbourData = GetComponentInChildren<NeighbourData>(true);
     }
-
-
 
     void Update()
     {
@@ -35,6 +35,7 @@ public class NeighbourDoor : MonoBehaviour
         {
             tooltip.hideTooltip();
             dialogue.StartDialogue();
+            neighbourData.ShowStats();
         }
     }
 
@@ -55,6 +56,7 @@ public class NeighbourDoor : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInside = false;
+            neighbourData.HideStats();
         }
     }
     //

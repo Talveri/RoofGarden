@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
         if (xy_direction.x < 0)
             sr.flipX = true;
         else if (xy_direction.x > 0)
-            sr.flipX = false;
+            sr.flipX = false;        
     }
 
     public void Use()

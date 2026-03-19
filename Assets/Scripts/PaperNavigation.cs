@@ -10,7 +10,7 @@ public class PaperNavigation : MonoBehaviour
     private UIDocument uiDocument;
     public Camera mainCamera;
     public Transform cameraPosition;
-    private Transform selfPosition;
+    public Transform selfPosition;
     public ScreenFader fader;
     [SerializeField] private bool showResults = false;
     void Start()
@@ -20,7 +20,6 @@ public class PaperNavigation : MonoBehaviour
                                       cameraPosition.position.y,
                                       mainCamera.transform.position.z);
         uiDocument = GetComponentInChildren<UIDocument>();
-        selfPosition = GetComponent<Transform>();
     }
 
 
@@ -44,7 +43,7 @@ public class PaperNavigation : MonoBehaviour
 
     void moveCamera()
     {
-        Debug.Log("Move Camera");
+        showResults = false;
         if (mainCamera != null)
         {
             mainCamera.transform.position = cameraPosition.position;

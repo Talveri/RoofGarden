@@ -125,10 +125,10 @@ TextureImporter:
       name: raised bed_0
       rect:
         serializedVersion: 2
-        x: 48
-        y: 40
-        width: 8
-        height: 8
+        x: 0
+        y: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,10 +147,10 @@ TextureImporter:
       name: raised bed_1
       rect:
         serializedVersion: 2
-        x: 56
-        y: 40
-        width: 8
-        height: 8
+        x: 16
+        y: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,10 +169,10 @@ TextureImporter:
       name: raised bed_2
       rect:
         serializedVersion: 2
-        x: 8
+        x: 32
         y: 32
-        width: 8
-        height: 8
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,10 +191,10 @@ TextureImporter:
       name: raised bed_3
       rect:
         serializedVersion: 2
-        x: 16
+        x: 48
         y: 32
-        width: 8
-        height: 8
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,10 +213,10 @@ TextureImporter:
       name: raised bed_4
       rect:
         serializedVersion: 2
-        x: 24
-        y: 32
-        width: 8
-        height: 8
+        x: 0
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -225,8 +225,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b99ac928e8d5f8de804269aac4eaf0b
-      internalID: -1087087311
+      spriteID: c87280799090ff68e836b65b39199005
+      internalID: -1383681152
       vertices: []
       indices: 
       edges: []
@@ -236,9 +236,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 32
-        width: 8
-        height: 8
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,8 +247,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d34a08dcdf714cbbbb45b10060c30a76
-      internalID: 1957964645
+      spriteID: 958ebe68cce0228f5917fb6189ff62a0
+      internalID: 1504928824
       vertices: []
       indices: 
       edges: []
@@ -257,10 +257,10 @@ TextureImporter:
       name: raised bed_6
       rect:
         serializedVersion: 2
-        x: 8
-        y: 24
-        width: 8
-        height: 8
+        x: 48
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,8 +269,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38dd9cfa87c49243a8e7b4ee9cf2d688
-      internalID: 439615052
+      spriteID: 5a77653dd675aeb3c98b636dd7741dbe
+      internalID: 920563709
       vertices: []
       indices: 
       edges: []
@@ -279,10 +279,10 @@ TextureImporter:
       name: raised bed_7
       rect:
         serializedVersion: 2
-        x: 32
-        y: 24
-        width: 8
-        height: 8
+        x: 0
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -291,8 +291,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28ed9a963451d9714928392a862e1634
-      internalID: -2058790859
+      spriteID: dfeea5b84c19262ec8327f180267c70e
+      internalID: 870546129
       vertices: []
       indices: 
       edges: []
@@ -301,10 +301,10 @@ TextureImporter:
       name: raised bed_8
       rect:
         serializedVersion: 2
-        x: 48
-        y: 24
-        width: 8
-        height: 8
+        x: 16
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -313,8 +313,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8497b14658f43db9989fa65ae2d3459e
-      internalID: 286450030
+      spriteID: 4d14d0cb02b071a4da8a6c273ed18017
+      internalID: 397395590
       vertices: []
       indices: 
       edges: []
@@ -323,10 +323,10 @@ TextureImporter:
       name: raised bed_9
       rect:
         serializedVersion: 2
-        x: 56
-        y: 24
-        width: 8
-        height: 8
+        x: 32
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -335,8 +335,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 578ca36505a04975a9116c5a185f33de
-      internalID: 784477002
+      spriteID: 7f1fdd7a720a16556abe7a2141b01732
+      internalID: -1506965818
       vertices: []
       indices: 
       edges: []
@@ -345,142 +345,10 @@ TextureImporter:
       name: raised bed_10
       rect:
         serializedVersion: 2
-        x: 8
-        y: 16
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 231facd6150bbfa959e222f0d0d4fcd7
-      internalID: 1380004751
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: raised bed_11
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 16
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7e066b7487928800ab9f0ce1a8870691
-      internalID: 722116531
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: raised bed_12
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 8
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 912952dec25a7acaba295b5bff80b0fa
-      internalID: -750978791
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: raised bed_13
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 8
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d52ff7e6b74b06ff6b34b56e273e0e11
-      internalID: -1487649906
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: raised bed_14
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 8
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9061c908d09a5aa7c931fd646c392305
-      internalID: -732141326
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: raised bed_15
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 8
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 79bee703451c4c763897d39d10d655d1
-      internalID: 1023345585
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: raised bed_16
-      rect:
-        serializedVersion: 2
         x: 48
-        y: 8
-        width: 8
-        height: 8
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -489,30 +357,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6f10badc0baf3b998e2af9a213617f1
-      internalID: 2092039536
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: raised bed_17
-      rect:
-        serializedVersion: 2
-        x: 56
-        y: 8
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4fc40654f98e1632c92019b5f439c6fc
-      internalID: -1314454904
+      spriteID: 4c41b6b6611e3533186c48e1e674605b
+      internalID: 1976417361
       vertices: []
       indices: 
       edges: []
@@ -521,7 +367,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 8b72cd34edb0d936bb63d6ef97b3a115
+    spriteID: e67f1833f08446d7e902fb3f6cb4e3b2
     internalID: 0
     vertices: []
     indices: 
@@ -531,26 +377,19 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":6.0},"gridSpriteSize":{"x":8.0,"y":8.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":3.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       raised bed_0: -4633132239851490067
       raised bed_1: -1544813198936580031
-      raised bed_10: 1380004751
-      raised bed_11: 722116531
-      raised bed_12: -750978791
-      raised bed_13: -1487649906
-      raised bed_14: -732141326
-      raised bed_15: 1023345585
-      raised bed_16: 2092039536
-      raised bed_17: -1314454904
+      raised bed_10: 1976417361
       raised bed_2: -4978921933040941788
       raised bed_3: -8103735248886693259
-      raised bed_4: -1087087311
-      raised bed_5: 1957964645
-      raised bed_6: 439615052
-      raised bed_7: -2058790859
-      raised bed_8: 286450030
-      raised bed_9: 784477002
+      raised bed_4: -1383681152
+      raised bed_5: 1504928824
+      raised bed_6: 920563709
+      raised bed_7: 870546129
+      raised bed_8: 397395590
+      raised bed_9: -1506965818
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
