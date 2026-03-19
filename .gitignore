@@ -5,6 +5,7 @@
 *.slnx
 /Logs/
 *.dwlt
+UserSettings/*
 
 # =============== #
 # Unity generated #
