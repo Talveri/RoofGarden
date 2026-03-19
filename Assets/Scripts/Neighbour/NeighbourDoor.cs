@@ -9,7 +9,6 @@ public class NeighbourDoor : MonoBehaviour
     public NeighbourData neighbourData;
     public static event Action<NeighbourData> onDoorInteracted;
     public string tooltipText = "Knock [E]";
-
     public void Interact()
     {
         onDoorInteracted?.Invoke(neighbourData);
@@ -19,6 +18,7 @@ public class NeighbourDoor : MonoBehaviour
     // TEST CODE DELETE LATER 
     bool playerInside;
     public Dialogue dialogue;
+    public string[] script;
     //
     Tooltip tooltip;
 
@@ -29,11 +29,13 @@ public class NeighbourDoor : MonoBehaviour
         neighbourData = GetComponentInChildren<NeighbourData>(true);
     }
 
+
     void Update()
     {
         if (playerInside && Keyboard.current.eKey.wasPressedThisFrame && !dialogue.inDialogue)
         {
             tooltip.hideTooltip();
+            dialogue.UpdateText(script);
             dialogue.StartDialogue();
             neighbourData.ShowStats();
         }
