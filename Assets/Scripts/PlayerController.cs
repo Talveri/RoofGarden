@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     public KeyCode useKey = KeyCode.E;
 
     private SpriteRenderer sr;
-    
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     void Start()
@@ -18,13 +18,10 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
-
     }
+
     // Update is called once per frame
-    void Update()
-    {
-
-    }
+    void Update() { }
 
     public void Move(InputAction.CallbackContext context)
     {
@@ -32,7 +29,7 @@ public class PlayerController : MonoBehaviour
 
         xy_direction.Normalize();
         rb.linearVelocity = xy_direction * speed;
-        
+
         // Animation
         anim.SetBool("isRunning", rb.linearVelocity.magnitude != 0);
 
