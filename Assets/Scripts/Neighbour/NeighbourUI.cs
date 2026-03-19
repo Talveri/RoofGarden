@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class NeighbourDialogueUI : MonoBehaviour
+public class NeighbourUI : MonoBehaviour
 {
     public Dialogue dialogue;
     void OnEnable()
@@ -17,4 +17,5 @@ public class NeighbourDialogueUI : MonoBehaviour
     {
         dialogue.StartDialogue();
     }
+
 }
