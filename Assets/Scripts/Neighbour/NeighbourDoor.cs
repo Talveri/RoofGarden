@@ -40,17 +40,6 @@ public class NeighbourDoor : MonoBehaviour, IInteractable
         neighbourData = GetComponentInChildren<NeighbourData>(true);
     }
 
-    /*void Update()
-    {
-        if (playerInside && Keyboard.current.eKey.wasPressedThisFrame && !dialogue.inDialogue)
-        {
-            tooltip.hideTooltip();
-            dialogue.UpdateText(script);
-            dialogue.StartDialogue();
-            neighbourData.ShowStats();
-        }
-    }
-    */
 
     private void OnTriggerEnter2D(Collider2D other)
     {

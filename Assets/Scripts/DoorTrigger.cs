@@ -1,4 +1,5 @@
 using System.Collections;
+using Microsoft.VisualBasic;
 using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEditor;
@@ -6,7 +7,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
 
-public class DoorTrigger : MonoBehaviour
+public class DoorTrigger : MonoBehaviour, IInteractable
 {
     bool playerInside = false;
     public Transform exitPosition;
@@ -18,6 +19,12 @@ public class DoorTrigger : MonoBehaviour
     public string tooltipText = "Open (E)";
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    public void Interact()
+    {
+        Debug.Log("Uses Door");
+        StartCoroutine(UseDoor());
+    }
     void Awake()
     {
         tooltip = GetComponentInChildren<Tooltip>();
@@ -32,17 +39,9 @@ public class DoorTrigger : MonoBehaviour
         tooltip.UpdateText(tooltipText);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (playerInside && Keyboard.current.eKey.wasPressedThisFrame)
-        {
-            StartCoroutine(UseDoor());
-        }
-    }
-
     private IEnumerator UseDoor()
     {
+       
         //Fade out
         yield return StartCoroutine(fader.FadeOut());
 
