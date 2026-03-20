@@ -82,4 +82,9 @@ public class DoorTrigger : MonoBehaviour, IInteractable
             player = null;
         }
     }
+
+    public void Interact<T>(T data)
+    {
+        throw new System.NotImplementedException();
+    }
 }

@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     Animator anim;
     public KeyCode useKey = KeyCode.E;
 
-    public ParticleSystem particles;
+    private ParticleSystem particles;
 
     private SpriteRenderer sr;
 
@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
 
         interactionManager = GetComponentInChildren<InteractionManager>();
+        particles = GetComponentInChildren<ParticleSystem>();
     }
 
     // Update is called once per frame

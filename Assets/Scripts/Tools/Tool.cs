@@ -1,5 +1,5 @@
 
-public interface Tool
+public interface Tool 
 {
     public void UseTool();
 }
