@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
     Animator anim;
     public KeyCode useKey = KeyCode.E;
 
+    public ParticleSystem particles;
+
     private SpriteRenderer sr;
 
     private InteractionManager interactionManager;
@@ -36,6 +38,15 @@ public class PlayerController : MonoBehaviour
 
         // Animation
         anim.SetBool("isRunning", rb.linearVelocity.magnitude != 0);
+
+        if(rb.linearVelocity.magnitude != 0)
+        {
+            particles.gameObject.SetActive(true);
+        }
+        else
+        {
+             particles.gameObject.SetActive(false);
+        }
 
         if (xy_direction.x < 0)
             sr.flipX = true;
