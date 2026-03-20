@@ -56,7 +56,7 @@ public class PlayerController : MonoBehaviour
         if ((interactable = interactionManager.GetInteractable()) != null)
         {
             anim.SetTrigger("use");
-            interactable.Interact();
+            interactable.Interact<object>(null);
         }
     }
 }

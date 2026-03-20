@@ -9,7 +9,7 @@ public class NeighbourDoor : MonoBehaviour, IInteractable
     public static event Action<NeighbourData> onDoorInteracted;
     public string tooltipText = "Knock [E]";
 
-    public void Interact()
+    public void Interact<T>(T data)
     {
         onDoorInteracted?.Invoke(neighbourData);
         neighbourData.ShowStats();

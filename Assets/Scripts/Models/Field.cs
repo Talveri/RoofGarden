@@ -1,10 +1,11 @@
 // To mimick minimal unity object class idk for tiles
+using UnityEngine;
 using RoofGardenGame.Enums;
 using RoofGardenGame.Models.Events;
 
 namespace RoofGardenGame.Models
 {
-    public class Field
+    public class Field : MonoBehaviour, IInteractable
     {
         Plant plant;
 
@@ -30,6 +31,16 @@ namespace RoofGardenGame.Models
             if (nutrients.water < Nutrients.MAX_WATER)
             {
                 nutrients.water++;
+            }
+        }
+
+        public void Interact<T>(T data)
+        { 
+            if(typeof(T) == typeof(PlantType))
+            {
+                EventBus.RaisePlayerPlanting(
+                    new PlantingEvent(this, (PlantType)(object)data)
+                );
             }
         }
 

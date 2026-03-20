@@ -2,5 +2,6 @@ using UnityEngine;
 
 public interface IInteractable
 {
-    void Interact();
+#nullable enable
+    void Interact<T>(T data);
 }
