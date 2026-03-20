@@ -3,43 +3,58 @@ using UnityEngine;
 using RoofGardenGame.Enums;
 using RoofGardenGame.Models.Events;
 using Unity.VisualScripting;
+using System;
 
 namespace RoofGardenGame.Models
 {
 
     public class Plant: MonoBehaviour
     {
+        [Tooltip("Which plant is it?")]
         [SerializeField]
-        private PlantType type;
+        PlantType type;
         
+        [Tooltip("What nutrients does the plant consume daily?")]
         [SerializeField]
-        private Nutrients consumption;
+        Nutrients consumption;
 
+        [Tooltip("How many times can I still fuck up")]
         [SerializeField]
-        private int finalGrowthStage;
+        int maxHealth;
 
+        [Tooltip("How many days does it take for the next sprite to appear?")]
         [SerializeField]
-        private int growthDuration;
+        int growthDurationInDays;
 
+        [Tooltip("How many sprites belong to this plant type?")]
         [SerializeField]
-        private int spriteIndex;
+        int spriteCount;
 
+        [Tooltip("What is this plant type's first sprite in the sprite array?")]
         [SerializeField]
-        private int health;
+        int spriteStartIndex;
 
-        private int dayPlanted;
+        [Tooltip("All plant sprites")]
+        [SerializeField]
+        Sprite[] sprites;
 
+        SpriteRenderer spriteRenderer;
+
+        int dayPlanted;
+
+        int health;
 
         void Awake()
         {
             // runs the moment the plant is instantiated during the game
             dayPlanted = DayCycleManager.GetCurrentDay();
+            spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         }
 
         public bool IsGrown()
         {
             int currentDay = DayCycleManager.GetCurrentDay();
-            return currentDay / growthDuration <= finalGrowthStage;
+            return currentDay / growthDurationInDays <= spriteCount;
         }
 
         
@@ -50,13 +65,8 @@ namespace RoofGardenGame.Models
 
         public void Progress()
         {
-            // TODO: buncha stuff
-            // should be called after ReceiveNutrients()
-            // code goes here that changes the sprite depending
-            // on how many days the plant has been growing
-
-            // pseudocode:
-            // spritegameobject.index = spriteIndex + GetAge() / growthDuration
+            int index = Math.Min(spriteStartIndex + GetAge() / growthDurationInDays, spriteStartIndex + spriteCount);
+            spriteRenderer.sprite = sprites[index];
         }
 
         /// <summary>
@@ -71,7 +81,7 @@ namespace RoofGardenGame.Models
         {
             if (!IsGrown())
             {
-                if(!nutrients.Contains(consumption))
+                if(!nutrients.Contains(consumption)) // insufficient nutrients
                 {
                     health -= 1;
                 }
@@ -79,13 +89,16 @@ namespace RoofGardenGame.Models
             }
             else
             {
-                int dayWhenGrowthEnds = dayPlanted + finalGrowthStage*growthDuration;
-                int grownDays = DayCycleManager.GetCurrentDay() - dayWhenGrowthEnds;
-                if (grownDays > 0)
+                int dayWhenGrowthEnds = dayPlanted + spriteCount * growthDurationInDays;
+                int daysSpentInGrownState = DayCycleManager.GetCurrentDay() - dayWhenGrowthEnds;
+                if (daysSpentInGrownState > 0)
                 {
                     // Placeholder for post-growth logic, such as fruit production or decay
                 }
+                health += 1;
+                
             }
+            health = Math.Clamp(health, 0, maxHealth);
         }
 
         public static Relationship operator+(Plant left, Plant right)
