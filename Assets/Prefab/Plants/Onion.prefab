@@ -1,0 +1,141 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4403083152786362394
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7887984949938144168}
+  - component: {fileID: 3263264056433657115}
+  - component: {fileID: 8901879269737643852}
+  m_Layer: 0
+  m_Name: Onion
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7887984949938144168
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4403083152786362394}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3263264056433657115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4403083152786362394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 141d66eb298f1754aa947b912c51f05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RoofGardenGame.Models.Plant
+  type: 0
+  consumption:
+    potassium: 0
+    nitrogen: 0
+    phosphor: 0
+    water: 0
+  maxHealth: 3
+  growthDurationInDays: 1
+  spriteCount: 6
+  spriteStartIndex: 6
+  sprites:
+  - {fileID: -8113185096396602001, guid: d6e6903934f9e4969805a894f623a7af, type: 3}
+  - {fileID: -1257518098505440576, guid: d6e6903934f9e4969805a894f623a7af, type: 3}
+  - {fileID: 3336444044123149764, guid: d6e6903934f9e4969805a894f623a7af, type: 3}
+  - {fileID: -6966369517673316951, guid: d6e6903934f9e4969805a894f623a7af, type: 3}
+  - {fileID: -4667150655987312241, guid: d6e6903934f9e4969805a894f623a7af, type: 3}
+  - {fileID: -6770858775108089496, guid: d6e6903934f9e4969805a894f623a7af, type: 3}
+  - {fileID: 5465580561085644368, guid: a536282e7ffc0bb5183eed4e4e56c9d9, type: 3}
+  - {fileID: -3477578526051336873, guid: a536282e7ffc0bb5183eed4e4e56c9d9, type: 3}
+  - {fileID: -2332356855530425355, guid: a536282e7ffc0bb5183eed4e4e56c9d9, type: 3}
+  - {fileID: 3899546548142004079, guid: a536282e7ffc0bb5183eed4e4e56c9d9, type: 3}
+  - {fileID: -3390221917031993903, guid: a536282e7ffc0bb5183eed4e4e56c9d9, type: 3}
+  - {fileID: -9063029999227916591, guid: a536282e7ffc0bb5183eed4e4e56c9d9, type: 3}
+  - {fileID: -5859083586626064994, guid: d9e8235a6cb05d116b642edafd955f3d, type: 3}
+  - {fileID: -2094157912208876536, guid: d9e8235a6cb05d116b642edafd955f3d, type: 3}
+  - {fileID: -830467699528618894, guid: d9e8235a6cb05d116b642edafd955f3d, type: 3}
+  - {fileID: 3721053832486967156, guid: d9e8235a6cb05d116b642edafd955f3d, type: 3}
+  - {fileID: -3855089239954288668, guid: d9e8235a6cb05d116b642edafd955f3d, type: 3}
+  - {fileID: 1746509244472477445, guid: d9e8235a6cb05d116b642edafd955f3d, type: 3}
+  - {fileID: -6047047222667411204, guid: ebd55fc60a8e7e1b6b3d232a1913ffcd, type: 3}
+  - {fileID: 574887418754436268, guid: ebd55fc60a8e7e1b6b3d232a1913ffcd, type: 3}
+  - {fileID: -7856354762995769397, guid: ebd55fc60a8e7e1b6b3d232a1913ffcd, type: 3}
+  - {fileID: 3491930038161472266, guid: ebd55fc60a8e7e1b6b3d232a1913ffcd, type: 3}
+  - {fileID: -1883652306569284604, guid: ebd55fc60a8e7e1b6b3d232a1913ffcd, type: 3}
+  - {fileID: 1161809606635047902, guid: ebd55fc60a8e7e1b6b3d232a1913ffcd, type: 3}
+--- !u!212 &8901879269737643852
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4403083152786362394}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 5465580561085644368, guid: a536282e7ffc0bb5183eed4e4e56c9d9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.42, y: 0.16}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
