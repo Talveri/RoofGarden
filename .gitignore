@@ -6,6 +6,7 @@
 /Logs/
 *.dwlt
 UserSettings/*
+.vs/
 
 # =============== #
 # Unity generated #

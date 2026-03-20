@@ -1,0 +1,23 @@
+{
+  "plants":
+  {
+    "name": "carrot",
+    "good_companions": ["onion", "peas", "tomato"],
+    "bad_companions": []
+  },
+  {
+    "name": "tomato",
+    "good_companions": ["carrot", "onion"],
+    "bad_companions": []
+  },
+  {
+    "name": "onion",
+    "companions": ["carrot", "tomato"],
+    "bad_companions": ["peas"]
+  },
+  {
+    "name": "peas",
+    "good_companions": ["carrot", "tomato"],
+    "bad_companions": ["onion"]
+  }
+}

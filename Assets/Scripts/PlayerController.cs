@@ -10,6 +10,9 @@ public class PlayerController : MonoBehaviour
     public KeyCode useKey = KeyCode.E;
 
     private SpriteRenderer sr;
+
+    private InteractionManager interactionManager;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     void Start()
@@ -18,12 +21,11 @@ public class PlayerController : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
 
+        interactionManager = GetComponentInChildren<InteractionManager>();
     }
-    // Update is called once per frame
-    void Update()
-    {
 
-    }
+    // Update is called once per frame
+    void Update() { }
 
     public void Move(InputAction.CallbackContext context)
     {
@@ -31,7 +33,7 @@ public class PlayerController : MonoBehaviour
 
         xy_direction.Normalize();
         rb.linearVelocity = xy_direction * speed;
-        
+
         // Animation
         anim.SetBool("isRunning", rb.linearVelocity.magnitude != 0);
 
@@ -39,13 +41,22 @@ public class PlayerController : MonoBehaviour
             sr.flipX = true;
         else if (xy_direction.x > 0)
             sr.flipX = false;
-
-
-        
     }
 
     public void Use()
     {
-        anim.SetTrigger("use");
+        if (interactionManager == null)
+        {
+            Debug.LogError("InteractionManager not found on PlayerController");
+            return;
+        }
+
+        IInteractable interactable;
+
+        if ((interactable = interactionManager.GetInteractable()) != null)
+        {
+            anim.SetTrigger("use");
+            interactable.Interact();
+        }
     }
 }

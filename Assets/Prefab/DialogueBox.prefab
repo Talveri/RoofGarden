@@ -93,6 +93,8 @@ MonoBehaviour:
   lines:
   - '[Insert Text here]'
   textSpeed: 0.025
+  playerInput: {fileID: 0}
+  inDialogue: 0
 --- !u!1 &5281562835866326086
 GameObject:
   m_ObjectHideFlags: 0
