@@ -49,6 +49,7 @@ namespace RoofGardenGame.Models
             // runs the moment the plant is instantiated during the game
             dayPlanted = DayCycleManager.GetCurrentDay();
             spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+            spriteRenderer.sprite = sprites[spriteStartIndex];
         }
 
         public bool IsGrown()
