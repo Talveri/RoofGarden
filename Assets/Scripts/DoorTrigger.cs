@@ -35,7 +35,6 @@ public class DoorTrigger : MonoBehaviour, IInteractable
 
     public void Interact<T>(T data)
     {
-        Debug.Log("Uses Door: ", this);
         StartCoroutine(UseDoor());
     }
 

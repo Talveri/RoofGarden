@@ -330,7 +330,7 @@ MonoBehaviour:
       - m_Target: {fileID: 1726129968335809491}
         m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
         m_MethodName: Use
-        m_Mode: 1
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -342,53 +342,21 @@ MonoBehaviour:
     m_ActionId: 1f2f6c01-f3d1-4025-b9e9-8e8ba7d8235e
     m_ActionName: 'Player/Use[/Keyboard/e]'
   - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 00300c21-1b39-4982-aae5-f681b19d8e2c
-    m_ActionName: 'UI/Navigate[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: e8ddb947-9119-4305-a4a2-f4c22e8082c3
-    m_ActionName: 'UI/Submit[/Keyboard/enter]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: e711cc71-a2ec-4d23-bcfb-4435c86874ac
-    m_ActionName: 'UI/Cancel[/Keyboard/escape]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 8f45b8a9-5a33-4775-b802-0c98aec90e8b
-    m_ActionName: 'UI/Point[/Mouse/position]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: c520af0e-3936-4112-9b13-41b493785fef
-    m_ActionName: 'UI/Click[/Mouse/leftButton]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 872f51c2-a5df-4c2e-88e4-377253882044
-    m_ActionName: 'UI/ScrollWheel[/Mouse/scroll]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 53cba0f0-8b80-4680-8e0e-501c4066dc2e
-    m_ActionName: 'UI/MiddleClick[/Mouse/middleButton]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: a456ca5d-1461-4b7f-a92f-eb7990c63443
-    m_ActionName: 'UI/RightClick[/Mouse/rightButton]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 492e7707-a7f4-46f5-b65a-8e3a0bae8fdc
-    m_ActionName: UI/TrackedDevicePosition
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 91eeba5d-b5a2-4999-aa76-d04110f1d029
-    m_ActionName: UI/TrackedDeviceOrientation
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 2afc5af0-7811-4201-9537-b27ea4ae8be1
-    m_ActionName: 'Player/Accept[/Keyboard/enter]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 439bcd91-7516-4edb-aa60-617a1572eede
-    m_ActionName: Player/InventoryNavigation
+      m_Calls:
+      - m_Target: {fileID: 1726129968335809491}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: Open_Inventory
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 18925dbc-84d7-450e-8d31-1ed15213b0a6
+    m_ActionName: 'Player/Open Inventory[/Keyboard/tab]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard&Mouse
   m_DefaultActionMap: Player
@@ -407,7 +375,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   speed: 5
-  useKey: 101
 --- !u!1 &8448596128829285611
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,7 +7,6 @@ public class PlayerController : MonoBehaviour
     Vector2 xy_direction;
     public float speed = 5f;
     Animator anim;
-    public KeyCode useKey = KeyCode.E;
 
     private ParticleSystem dustParticles;
 
@@ -22,15 +21,13 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+        InputMapManager.playerInput = GetComponent<PlayerInput>();
 
         interactionManager = GetComponentInChildren<InteractionManager>();
         dustParticles = GetComponentInChildren<ParticleSystem>();
         dustParticles.gameObject.SetActive(false);
         anim.SetBool("isRunning", false);
     }
-
-    // Update is called once per frame
-    void Update() { }
 
     public void Move(InputAction.CallbackContext context)
     {
@@ -61,8 +58,10 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void Use()
+    public void Use(InputAction.CallbackContext context)
     {
+        if(!context.performed) return;
+
         if (interactionManager == null)
         {
             Debug.LogError("InteractionManager not found on PlayerController");
@@ -76,5 +75,10 @@ public class PlayerController : MonoBehaviour
             anim.SetTrigger("use");
             interactable.Interact<object>(null);
         }
+    }
+
+    public void Open_Inventory(InputAction.CallbackContext context)
+    {
+        
     }
 }

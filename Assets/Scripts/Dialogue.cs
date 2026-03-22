@@ -10,7 +10,6 @@ public class Dialogue : MonoBehaviour
     public string[] lines;
     public float textSpeed;
     private int index = 0;
-    public PlayerInput playerInput;
     public bool inDialogue;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -47,14 +46,14 @@ public class Dialogue : MonoBehaviour
         {
             inDialogue = false;
             textComponent.text = string.Empty;
-            playerInput.SwitchCurrentActionMap("Player");
+            InputMapManager.setToPlayer();
             gameObject.SetActive(false);
         }
     }
     public void StartDialogue()
     {
         inDialogue = true;
-        playerInput.SwitchCurrentActionMap("UI");
+        InputMapManager.setToUI();
         gameObject.SetActive(true);
         index = 0;
         StartCoroutine(TypeLine());
