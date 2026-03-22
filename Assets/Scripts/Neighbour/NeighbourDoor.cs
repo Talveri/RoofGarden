@@ -44,11 +44,6 @@ public class NeighbourDoor : MonoBehaviour, IInteractable
     private void OnTriggerEnter2D(Collider2D other)
     {
         tooltip.showTooltip();
-
-        if (other.CompareTag("Player"))
-        {
-            //playerInside = true;
-        }
     }
 
     private void OnTriggerExit2D(Collider2D other)

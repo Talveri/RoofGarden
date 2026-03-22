@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     Animator anim;
     public KeyCode useKey = KeyCode.E;
 
-    private ParticleSystem particles;
+    private ParticleSystem dustParticles;
 
     private SpriteRenderer sr;
 
@@ -24,7 +24,8 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
 
         interactionManager = GetComponentInChildren<InteractionManager>();
-        particles = GetComponentInChildren<ParticleSystem>();
+        dustParticles = GetComponentInChildren<ParticleSystem>();
+        anim.SetBool("isRunning", false);
     }
 
     // Update is called once per frame
@@ -42,17 +43,21 @@ public class PlayerController : MonoBehaviour
 
         if(rb.linearVelocity.magnitude != 0)
         {
-            particles.gameObject.SetActive(true);
+            dustParticles.gameObject.SetActive(true);
         }
         else
         {
-             particles.gameObject.SetActive(false);
+             dustParticles.gameObject.SetActive(false);
         }
 
-        if (xy_direction.x < 0)
+        if (xy_direction.x < 0){
             sr.flipX = true;
-        else if (xy_direction.x > 0)
+            dustParticles.transform.localScale = new Vector3(1,1,1);
+        }
+        else if (xy_direction.x > 0){
             sr.flipX = false;
+            dustParticles.transform.localScale = new Vector3(-1,1,1);
+        }
     }
 
     public void Use()

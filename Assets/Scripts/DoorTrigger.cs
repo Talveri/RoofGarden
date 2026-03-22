@@ -9,10 +9,9 @@ using UnityEngine.UIElements;
 
 public class DoorTrigger : MonoBehaviour, IInteractable
 {
-    bool playerInside = false;
     public Transform exitPosition;
     public Transform cameraPosition;
-    private Transform player;
+    public Transform player;
     public Camera mainCamera;
     public ScreenFader fader;
     private Tooltip tooltip;
@@ -20,11 +19,6 @@ public class DoorTrigger : MonoBehaviour, IInteractable
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
-    public void Interact()
-    {
-        Debug.Log("Uses Door");
-        StartCoroutine(UseDoor());
-    }
     void Awake()
     {
         tooltip = GetComponentInChildren<Tooltip>();
@@ -39,9 +33,14 @@ public class DoorTrigger : MonoBehaviour, IInteractable
         tooltip.UpdateText(tooltipText);
     }
 
+    public void Interact<T>(T data)
+    {
+        Debug.Log("Uses Door");
+        StartCoroutine(UseDoor());
+    }
+
     private IEnumerator UseDoor()
     {
-       
         //Fade out
         yield return StartCoroutine(fader.FadeOut());
 
@@ -53,8 +52,10 @@ public class DoorTrigger : MonoBehaviour, IInteractable
     private void MovePlayer()
     {
         if (player == null || exitPosition == null)
+            {
+            Debug.Log("No player found");
             return;
-
+            }
 
         player.position = exitPosition.position;
         if (mainCamera != null)
@@ -63,28 +64,12 @@ public class DoorTrigger : MonoBehaviour, IInteractable
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D()
     {
-        if (other.CompareTag("Player"))
-        {
-            tooltip.showTooltip();
-            playerInside = true;
-            player = other.transform;
-        }
+        tooltip.showTooltip();
     }
-
-    private void OnTriggerExit2D(Collider2D other)
+    void O2D(Collider2D collision)
     {
-        if (other.CompareTag("Player"))
-        {
-            tooltip.hideTooltip();
-            playerInside = false;
-            player = null;
-        }
-    }
-
-    public void Interact<T>(T data)
-    {
-        throw new System.NotImplementedException();
+        tooltip.hideTooltip();
     }
 }
