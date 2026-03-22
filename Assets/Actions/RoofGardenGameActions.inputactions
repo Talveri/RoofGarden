@@ -21,7 +21,7 @@
                     "id": "1f2f6c01-f3d1-4025-b9e9-8e8ba7d8235e",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": "Press",
+                    "interactions": "",
                     "initialStateCheck": false
                 },
                 {
@@ -32,15 +32,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
-                },
-                {
-                    "name": "InventoryNavigation",
-                    "type": "Value",
-                    "id": "439bcd91-7516-4edb-aa60-617a1572eede",
-                    "expectedControlType": "Axis",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -195,17 +186,6 @@
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
                     "action": "Accept",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "b85bdbb3-668c-46f2-8452-9ce0b845c3a7",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "InventoryNavigation",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
