@@ -35,7 +35,7 @@ public class DoorTrigger : MonoBehaviour, IInteractable
 
     public void Interact<T>(T data)
     {
-        Debug.Log("Uses Door");
+        Debug.Log("Uses Door: ", this);
         StartCoroutine(UseDoor());
     }
 
@@ -68,7 +68,7 @@ public class DoorTrigger : MonoBehaviour, IInteractable
     {
         tooltip.showTooltip();
     }
-    void O2D(Collider2D collision)
+    void OnTriggerExit2D()
     {
         tooltip.hideTooltip();
     }

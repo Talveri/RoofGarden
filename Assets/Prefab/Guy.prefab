@@ -385,6 +385,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 2afc5af0-7811-4201-9537-b27ea4ae8be1
     m_ActionName: 'Player/Accept[/Keyboard/enter]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 439bcd91-7516-4edb-aa60-617a1572eede
+    m_ActionName: Player/InventoryNavigation
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard&Mouse
   m_DefaultActionMap: Player
@@ -404,7 +408,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   speed: 5
   useKey: 101
-  particles: {fileID: 0}
 --- !u!1 &8448596128829285611
 GameObject:
   m_ObjectHideFlags: 0

@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
 
         interactionManager = GetComponentInChildren<InteractionManager>();
         dustParticles = GetComponentInChildren<ParticleSystem>();
+        dustParticles.gameObject.SetActive(false);
         anim.SetBool("isRunning", false);
     }
 
