@@ -13,15 +13,14 @@ public class MenuController : MonoBehaviour
         menuCanvas.gameObject.SetActive(false);
     }
 
-    void Update()
+    public void openInventory(InputAction.CallbackContext context)
     {
-        if (Keyboard.current.tabKey.wasPressedThisFrame)
-        {
-            ToggleInventory();
-        }
+        Debug.Log("Open Inventory");
+        if(!context.performed) return;
+        ToggleInventory();
     }
 
-    void ToggleInventory()
+    public void ToggleInventory()
     {
         menuCanvas.gameObject.SetActive(!menuCanvas.activeSelf);
         inventoryOpen = menuCanvas.activeSelf;

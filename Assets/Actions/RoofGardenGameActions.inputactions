@@ -23,15 +23,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
-                },
-                {
-                    "name": "Open Inventory",
-                    "type": "Button",
-                    "id": "18925dbc-84d7-450e-8d31-1ed15213b0a6",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -169,17 +160,6 @@
                 },
                 {
                     "name": "",
-                    "id": "6d7ba3b8-c296-4a25-a8d1-33f62b7ed308",
-                    "path": "<Keyboard>/tab",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Keyboard&Mouse",
-                    "action": "Open Inventory",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "0c86a807-8bd1-44f1-a9d4-3b4d36f80881",
                     "path": "<Keyboard>/e",
                     "interactions": "",
@@ -196,6 +176,34 @@
             "id": "080b8fa0-ba93-4977-8f04-29970375a784",
             "actions": [],
             "bindings": []
+        },
+        {
+            "name": "Global",
+            "id": "b3c888e1-6fc7-4174-8b6d-f9b664b3033e",
+            "actions": [
+                {
+                    "name": "Open Inventory",
+                    "type": "Button",
+                    "id": "24691b94-2733-48ed-9bfb-b2d02c3cd581",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "4e0927fb-8984-40b4-9a3e-cfb517dbdbd2",
+                    "path": "<Keyboard>/tab",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Open Inventory",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [

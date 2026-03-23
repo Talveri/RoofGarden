@@ -31,6 +31,8 @@ public class HotbarController : MonoBehaviour
         }
     }
 
+    
+
     public static void hideHotbar()
     {
        Hotbar.SetActive(false);

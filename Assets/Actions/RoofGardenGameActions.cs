@@ -109,15 +109,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Open Inventory"",
-                    ""type"": ""Button"",
-                    ""id"": ""18925dbc-84d7-450e-8d31-1ed15213b0a6"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -255,17 +246,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""6d7ba3b8-c296-4a25-a8d1-33f62b7ed308"",
-                    ""path"": ""<Keyboard>/tab"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""Open Inventory"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""0c86a807-8bd1-44f1-a9d4-3b4d36f80881"",
                     ""path"": ""<Keyboard>/e"",
                     ""interactions"": """",
@@ -282,6 +262,34 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             ""id"": ""080b8fa0-ba93-4977-8f04-29970375a784"",
             ""actions"": [],
             ""bindings"": []
+        },
+        {
+            ""name"": ""Global"",
+            ""id"": ""b3c888e1-6fc7-4174-8b6d-f9b664b3033e"",
+            ""actions"": [
+                {
+                    ""name"": ""Open Inventory"",
+                    ""type"": ""Button"",
+                    ""id"": ""24691b94-2733-48ed-9bfb-b2d02c3cd581"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""4e0927fb-8984-40b4-9a3e-cfb517dbdbd2"",
+                    ""path"": ""<Keyboard>/tab"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""Open Inventory"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": [
@@ -351,15 +359,18 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
         m_Player_Use = m_Player.FindAction("Use", throwIfNotFound: true);
-        m_Player_OpenInventory = m_Player.FindAction("Open Inventory", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
+        // Global
+        m_Global = asset.FindActionMap("Global", throwIfNotFound: true);
+        m_Global_OpenInventory = m_Global.FindAction("Open Inventory", throwIfNotFound: true);
     }
 
     ~@PlayerControls()
     {
         UnityEngine.Debug.Assert(!m_Player.enabled, "This will cause a leak and performance issues, PlayerControls.Player.Disable() has not been called.");
         UnityEngine.Debug.Assert(!m_UI.enabled, "This will cause a leak and performance issues, PlayerControls.UI.Disable() has not been called.");
+        UnityEngine.Debug.Assert(!m_Global.enabled, "This will cause a leak and performance issues, PlayerControls.Global.Disable() has not been called.");
     }
 
     /// <summary>
@@ -437,7 +448,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     private List<IPlayerActions> m_PlayerActionsCallbackInterfaces = new List<IPlayerActions>();
     private readonly InputAction m_Player_Move;
     private readonly InputAction m_Player_Use;
-    private readonly InputAction m_Player_OpenInventory;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -457,10 +467,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Player/Use".
         /// </summary>
         public InputAction @Use => m_Wrapper.m_Player_Use;
-        /// <summary>
-        /// Provides access to the underlying input action "Player/OpenInventory".
-        /// </summary>
-        public InputAction @OpenInventory => m_Wrapper.m_Player_OpenInventory;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -493,9 +499,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Use.started += instance.OnUse;
             @Use.performed += instance.OnUse;
             @Use.canceled += instance.OnUse;
-            @OpenInventory.started += instance.OnOpenInventory;
-            @OpenInventory.performed += instance.OnOpenInventory;
-            @OpenInventory.canceled += instance.OnOpenInventory;
         }
 
         /// <summary>
@@ -513,9 +516,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Use.started -= instance.OnUse;
             @Use.performed -= instance.OnUse;
             @Use.canceled -= instance.OnUse;
-            @OpenInventory.started -= instance.OnOpenInventory;
-            @OpenInventory.performed -= instance.OnOpenInventory;
-            @OpenInventory.canceled -= instance.OnOpenInventory;
         }
 
         /// <summary>
@@ -634,6 +634,102 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     /// Provides a new <see cref="UIActions" /> instance referencing this action map.
     /// </summary>
     public UIActions @UI => new UIActions(this);
+
+    // Global
+    private readonly InputActionMap m_Global;
+    private List<IGlobalActions> m_GlobalActionsCallbackInterfaces = new List<IGlobalActions>();
+    private readonly InputAction m_Global_OpenInventory;
+    /// <summary>
+    /// Provides access to input actions defined in input action map "Global".
+    /// </summary>
+    public struct GlobalActions
+    {
+        private @PlayerControls m_Wrapper;
+
+        /// <summary>
+        /// Construct a new instance of the input action map wrapper class.
+        /// </summary>
+        public GlobalActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
+        /// <summary>
+        /// Provides access to the underlying input action "Global/OpenInventory".
+        /// </summary>
+        public InputAction @OpenInventory => m_Wrapper.m_Global_OpenInventory;
+        /// <summary>
+        /// Provides access to the underlying input action map instance.
+        /// </summary>
+        public InputActionMap Get() { return m_Wrapper.m_Global; }
+        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Enable()" />
+        public void Enable() { Get().Enable(); }
+        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Disable()" />
+        public void Disable() { Get().Disable(); }
+        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.enabled" />
+        public bool enabled => Get().enabled;
+        /// <summary>
+        /// Implicitly converts an <see ref="GlobalActions" /> to an <see ref="InputActionMap" /> instance.
+        /// </summary>
+        public static implicit operator InputActionMap(GlobalActions set) { return set.Get(); }
+        /// <summary>
+        /// Adds <see cref="InputAction.started"/>, <see cref="InputAction.performed"/> and <see cref="InputAction.canceled"/> callbacks provided via <param cref="instance" /> on all input actions contained in this map.
+        /// </summary>
+        /// <param name="instance">Callback instance.</param>
+        /// <remarks>
+        /// If <paramref name="instance" /> is <c>null</c> or <paramref name="instance"/> have already been added this method does nothing.
+        /// </remarks>
+        /// <seealso cref="GlobalActions" />
+        public void AddCallbacks(IGlobalActions instance)
+        {
+            if (instance == null || m_Wrapper.m_GlobalActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_GlobalActionsCallbackInterfaces.Add(instance);
+            @OpenInventory.started += instance.OnOpenInventory;
+            @OpenInventory.performed += instance.OnOpenInventory;
+            @OpenInventory.canceled += instance.OnOpenInventory;
+        }
+
+        /// <summary>
+        /// Removes <see cref="InputAction.started"/>, <see cref="InputAction.performed"/> and <see cref="InputAction.canceled"/> callbacks provided via <param cref="instance" /> on all input actions contained in this map.
+        /// </summary>
+        /// <remarks>
+        /// Calling this method when <paramref name="instance" /> have not previously been registered has no side-effects.
+        /// </remarks>
+        /// <seealso cref="GlobalActions" />
+        private void UnregisterCallbacks(IGlobalActions instance)
+        {
+            @OpenInventory.started -= instance.OnOpenInventory;
+            @OpenInventory.performed -= instance.OnOpenInventory;
+            @OpenInventory.canceled -= instance.OnOpenInventory;
+        }
+
+        /// <summary>
+        /// Unregisters <param cref="instance" /> and unregisters all input action callbacks via <see cref="GlobalActions.UnregisterCallbacks(IGlobalActions)" />.
+        /// </summary>
+        /// <seealso cref="GlobalActions.UnregisterCallbacks(IGlobalActions)" />
+        public void RemoveCallbacks(IGlobalActions instance)
+        {
+            if (m_Wrapper.m_GlobalActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        /// <summary>
+        /// Replaces all existing callback instances and previously registered input action callbacks associated with them with callbacks provided via <param cref="instance" />.
+        /// </summary>
+        /// <remarks>
+        /// If <paramref name="instance" /> is <c>null</c>, calling this method will only unregister all existing callbacks but not register any new callbacks.
+        /// </remarks>
+        /// <seealso cref="GlobalActions.AddCallbacks(IGlobalActions)" />
+        /// <seealso cref="GlobalActions.RemoveCallbacks(IGlobalActions)" />
+        /// <seealso cref="GlobalActions.UnregisterCallbacks(IGlobalActions)" />
+        public void SetCallbacks(IGlobalActions instance)
+        {
+            foreach (var item in m_Wrapper.m_GlobalActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_GlobalActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    /// <summary>
+    /// Provides a new <see cref="GlobalActions" /> instance referencing this action map.
+    /// </summary>
+    public GlobalActions @Global => new GlobalActions(this);
     private int m_KeyboardMouseSchemeIndex = -1;
     /// <summary>
     /// Provides access to the input control scheme.
@@ -720,13 +816,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnUse(InputAction.CallbackContext context);
-        /// <summary>
-        /// Method invoked when associated input action "Open Inventory" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-        /// </summary>
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnOpenInventory(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "UI" which allows adding and removing callbacks.
@@ -735,5 +824,20 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     /// <seealso cref="UIActions.RemoveCallbacks(IUIActions)" />
     public interface IUIActions
     {
+    }
+    /// <summary>
+    /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "Global" which allows adding and removing callbacks.
+    /// </summary>
+    /// <seealso cref="GlobalActions.AddCallbacks(IGlobalActions)" />
+    /// <seealso cref="GlobalActions.RemoveCallbacks(IGlobalActions)" />
+    public interface IGlobalActions
+    {
+        /// <summary>
+        /// Method invoked when associated input action "Open Inventory" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnOpenInventory(InputAction.CallbackContext context);
     }
 }
