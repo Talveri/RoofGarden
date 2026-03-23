@@ -20,6 +20,7 @@ namespace RoofGardenGame
         private void HandleTick()
         {
             currentTick++;
+            Debug.Log($"Tick: {currentTick}/{ticksPerDay} of Day {currentDay}");
 
             if (currentTick == ticksPerDay)
             {
