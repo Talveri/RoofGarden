@@ -15,9 +15,7 @@ public class InventoryController : MonoBehaviour
             Slot slot = Instantiate(slotPrefab, inventoryPanel.transform).GetComponent<Slot>();
             if (i < itemPrefabs.Length && itemPrefabs[i] != null)
             {
-                Debug.Log($"Prefab at index {i} is: {itemPrefabs[i]} (Is prefab: {PrefabUtility.IsPartOfPrefabAsset(itemPrefabs[i])})");
                 GameObject item = Instantiate(itemPrefabs[i], slot.transform);
-                Debug.Log(item.GetComponent<RectTransform>());
 
                 item.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
                 slot.currentItem = item;

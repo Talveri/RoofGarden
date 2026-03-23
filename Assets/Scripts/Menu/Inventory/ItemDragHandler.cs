@@ -1,14 +1,14 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler,IEndDragHandler
+public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
-    
+
     Transform originalParent;   // previous Slot
     CanvasGroup canvasGroup;
     void Start()
     {
-       canvasGroup = GetComponent<CanvasGroup>();
+        canvasGroup = GetComponent<CanvasGroup>();
     }
     public void OnBeginDrag(PointerEventData eventData)
     {
@@ -30,30 +30,28 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler,IE
 
         Slot dropSlot = eventData.pointerEnter?.GetComponent<Slot>(); //slot where item dropped
 
-        if(dropSlot == null)
+        if (dropSlot == null)
         {
             GameObject dropItem = eventData.pointerEnter;
-            if(dropItem != null)
+            if (dropItem != null)
             {
-                dropSlot = dropItem.GetComponent<Slot>();
+                dropSlot = dropItem.GetComponentInParent<Slot>();
             }
         }
-        
+
         Slot originalSlot = originalParent.GetComponent<Slot>();
 
-        if(dropSlot != null)
+        if (dropSlot != null)
         {
-            if(dropSlot.currentItem != null)
+            if (dropSlot.currentItem != null)
             {
                 // Slot has item -> swap items
-                Debug.Log("Attempt Swap...");
                 dropSlot.currentItem.transform.SetParent(originalSlot.transform);
                 originalSlot.currentItem = dropSlot.currentItem;
                 dropSlot.currentItem.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
             }
             else
             {
-                Debug.Log("No swap");
                 originalSlot.currentItem = null;
             }
 
