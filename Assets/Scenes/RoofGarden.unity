@@ -721,10 +721,16 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25da8aa407f4566b09f49a1851d4ad75, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: '::'
+  m_EditorClassIdentifier: Assembly-CSharp::HotbarController
   hotbarPanel: {fileID: 101596848}
-  slotPrefab: {fileID: 2773190064263929213, guid: bfab9d60f5240452c99f0fecdb4467d9, type: 3}
-  slotCount: 8
+  ToolPrefabs:
+  - {fileID: 7784469461961775574, guid: 3ec96ebf072307a72a9b487da75b723b, type: 3}
+  - {fileID: 3656172800978538448, guid: bc0bfbc498945a1d9bc6a2b3bb608ed2, type: 3}
+  - {fileID: 1410427345669992950, guid: b5241aec1e32d92c7b110b3d5294b3b5, type: 3}
+  - {fileID: 3592222489898762736, guid: 8a3349a9b89966006a8c9cdbc27a1f91, type: 3}
+  - {fileID: 4672894709476268758, guid: 13b757d4d28cd56bd9366b554797fe2c, type: 3}
+  - {fileID: 7848139266569207215, guid: 199cc4ccf6d340a679ba56086e01b6f4, type: 3}
+  - {fileID: 4942215226735279925, guid: ba0796e2285bfce5d8e06d997b963780, type: 3}
 --- !u!1 &112275425
 GameObject:
   m_ObjectHideFlags: 0
