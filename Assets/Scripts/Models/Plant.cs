@@ -14,6 +14,10 @@ namespace RoofGardenGame.Models
         [SerializeField]
         PlantType type;
         
+        [Tooltip("How wet does the plant want the soil to be?")]
+        [SerializeField]
+        WaterLevel optimalWaterLevel;
+
         [Tooltip("What nutrients does the plant consume daily?")]
         [SerializeField]
         Nutrients consumption;
@@ -78,11 +82,11 @@ namespace RoofGardenGame.Models
             return DayCycleManager.GetCurrentDay() - dayPlanted;
         }
 
-        public void ReceiveNutrients(ref Nutrients nutrients)
+        public void ReceiveNutrientsAndWater(ref Nutrients nutrients, int waterAmount)
         {
             if (!IsGrown())
             {
-                if(!nutrients.Contains(consumption)) // insufficient nutrients
+                if(!nutrients.Contains(consumption) || (Water.Level(waterAmount) != optimalWaterLevel)) // insufficient nutrients
                 {
                     health -= 1;
                 }
@@ -111,6 +115,7 @@ namespace RoofGardenGame.Models
                 return Relationship.Beneficial;
             }
             return Relationship.Neutral;
+            throw new NotImplementedException();
         }
     }
 

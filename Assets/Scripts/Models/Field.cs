@@ -11,6 +11,7 @@ namespace RoofGardenGame.Models
         Plant plant;
 
         Nutrients nutrients;
+        int waterAmount;
 
         public List<Sprite> soilSprites;
         SpriteRenderer sr;
@@ -32,11 +33,11 @@ namespace RoofGardenGame.Models
             }
         }
 
-        public void Water()
+        public void Irrigate()
         {
-            if (nutrients.water < Nutrients.MAX_WATER)
+            if (waterAmount < Water.MAX)
             {
-                nutrients.water++;
+                waterAmount ++;
                 ChangeAlpha(0.3f);
             }
         }
@@ -71,7 +72,7 @@ namespace RoofGardenGame.Models
 
         private void FeedPlant()
         {
-            plant.ReceiveNutrients(ref nutrients);
+            plant.ReceiveNutrientsAndWater(ref nutrients, waterAmount);
             // plant automatically removes nutrients
         }
 
