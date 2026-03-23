@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class GardenShears : Tool
+public class GardenShears : MonoBehaviour, ITool
 {
     public void UseTool()
     {
