@@ -9009,6 +9009,99 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &776382147
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1247580490}
+    m_Modifications:
+    - target: {fileID: 4004326654003984395, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_Name
+      value: JennyDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 280873892}
+    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: script.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[0]'
+      value: Hey, Mr. Player!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[1]'
+      value: I'm Jenny!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[2]'
+      value: I heard you are working on the garden on the rooftop!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[3]'
+      value: Could you lend me some of the vegetables you grow?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[4]'
+      value: That would be very nice!
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4799094165245811471, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+  m_SourcePrefab: {fileID: 100100000, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+--- !u!4 &776382148 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+  m_PrefabInstance: {fileID: 776382147}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &885696123
 GameObject:
   m_ObjectHideFlags: 0
@@ -12895,6 +12988,9 @@ Transform:
   m_Children:
   - {fileID: 2288852435617784238}
   - {fileID: 1256856661}
+  - {fileID: 776382148}
+  - {fileID: 2141137963}
+  - {fileID: 1381906435}
   m_Father: {fileID: 1469734956}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1256856660
@@ -13107,6 +13203,107 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1858196632977270898, guid: f59a21116e5afac7480ae1f555095a4a, type: 3}
   m_PrefabInstance: {fileID: 1333804185}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1381906434
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1247580490}
+    m_Modifications:
+    - target: {fileID: 4004326654003984395, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_Name
+      value: JimmyDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4862468417742979661, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5235743568763107857, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 280873892}
+    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: script.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[0]'
+      value: Yo, Mr. Player!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[1]'
+      value: Time's been really tough these days...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[2]'
+      value: Everything has been so expensive!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[3]'
+      value: I can hardly afford anything!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[4]'
+      value: If only a cheaper option exists for us...
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4799094165245811471, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+  m_SourcePrefab: {fileID: 100100000, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+--- !u!4 &1381906435 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+  m_PrefabInstance: {fileID: 1381906434}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1450812355
 GameObject:
@@ -14469,6 +14666,108 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e40eff5429ac68600ad793530ea67d25, type: 3}
+--- !u!1001 &2141137962
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1247580490}
+    m_Modifications:
+    - target: {fileID: 4004326654003984395, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_Name
+      value: JasperDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4862468417742979661, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5235743568763107857, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 280873892}
+    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: script.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[0]'
+      value: What's up? Some Ketchup!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[1]'
+      value: I'm Jasper!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[2]'
+      value: I see that you are working hard up there, Mr. Player!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[3]'
+      value: If you catch a break, do show me some of the stuff you're growing up
+        there!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[4]'
+      value: Cheers!
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4799094165245811471, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+  m_SourcePrefab: {fileID: 100100000, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+--- !u!4 &2141137963 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+  m_PrefabInstance: {fileID: 2141137962}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2288852435617784238 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}

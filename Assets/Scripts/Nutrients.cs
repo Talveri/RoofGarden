@@ -10,17 +10,15 @@ public class Nutrients
     public const int MAX_POTASSIUM = 5;
     public const int MAX_NITROGEN = 5;
     public const int MAX_PHOSPHOR = 5;
-    public const int MAX_WATER = 5;
     public int potassium;
     public int nitrogen;
     public int phosphor;
-    public int water;
 
     public bool Contains(Nutrients other)
     {
-        int[] fields  = {potassium, nitrogen, phosphor, water};
-        int[] other_fields = {other.potassium, other.nitrogen, other.phosphor, other.water};
-        for(int i = 0; i < 4; i++)
+        int[] fields  = {potassium, nitrogen, phosphor};
+        int[] other_fields = {other.potassium, other.nitrogen, other.phosphor};
+        for(int i = 0; i < 3; i++)
         {
             if(fields[i] < other_fields[i])
             {
@@ -32,11 +30,11 @@ public class Nutrients
 
     public static Nutrients operator+(Nutrients left, Nutrients right)
     {
-        int[] left_fields = {left.potassium, left.nitrogen, left.phosphor, left.water};
-        int[] right_fields ={right.potassium, right.nitrogen, right.phosphor, right.water};
-        int[] fields = new int[4];
-        int[] MAX = {MAX_POTASSIUM, MAX_NITROGEN, MAX_PHOSPHOR, MAX_WATER};
-        for(int i = 0; i < 4 ;i++)
+        int[] left_fields = {left.potassium, left.nitrogen, left.phosphor};
+        int[] right_fields ={right.potassium, right.nitrogen, right.phosphor};
+        int[] fields = new int[3];
+        int[] MAX = {MAX_POTASSIUM, MAX_NITROGEN, MAX_PHOSPHOR};
+        for(int i = 0; i < 3 ;i++)
         {
             fields[i] = left_fields[i] - right_fields[i];
             fields[i] = Math.Clamp(fields[i], 0, MAX[i]);
@@ -47,17 +45,16 @@ public class Nutrients
             potassium = fields[0],
             nitrogen = fields[1],
             phosphor = fields[2],
-            water = fields[3]
         };
     }
 
     public static Nutrients operator-(Nutrients left, Nutrients right)
     {
-        int[] left_fields = {left.potassium, left.nitrogen, left.phosphor, left.water};
-        int[] right_fields ={right.potassium, right.nitrogen, right.phosphor, right.water};
-        int[] fields = new int[4];
-        int[] MAX = {MAX_POTASSIUM, MAX_NITROGEN, MAX_PHOSPHOR, MAX_WATER};
-        for(int i = 0; i < 4 ;i++)
+        int[] left_fields = {left.potassium, left.nitrogen, left.phosphor};
+        int[] right_fields ={right.potassium, right.nitrogen, right.phosphor};
+        int[] fields = new int[3];
+        int[] MAX = {MAX_POTASSIUM, MAX_NITROGEN, MAX_PHOSPHOR};
+        for(int i = 0; i < 3 ;i++)
         {
             fields[i] = left_fields[i] + right_fields[i];
             fields[i] = Math.Clamp(fields[i], 0, MAX[i]);
@@ -68,7 +65,6 @@ public class Nutrients
             potassium = fields[0],
             nitrogen = fields[1],
             phosphor = fields[2],
-            water = fields[3]
         };
     }
 }
