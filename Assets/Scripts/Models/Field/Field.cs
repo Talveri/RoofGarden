@@ -13,15 +13,22 @@ namespace RoofGardenGame.Models
         Nutrients nutrients;
         int waterAmount;
 
-        public List<Sprite> soilSprites;
-        SpriteRenderer sr;
+        public FieldSpriteManager fieldSpriteManager;
 
         void Awake()
         {
             plant = null;
             EventBus.OnDayProgressed += ProgressDay;
 
-            sr = GetComponent<SpriteRenderer>();
+        }
+
+        public void TillField()
+        {
+            fieldSpriteManager.Tilled();
+        }
+        public void Harvest()
+        {
+            fieldSpriteManager.Untilled();
         }
 
         public void ReceivePlant(Plant _plant)
@@ -37,8 +44,12 @@ namespace RoofGardenGame.Models
         {
             if (waterAmount < Water.MAX)
             {
+<<<<<<< HEAD:Assets/Scripts/Models/Field.cs
                 waterAmount ++;
                 ChangeAlpha(0.3f);
+=======
+                nutrients.water++;
+>>>>>>> 9cf54f3869a601d82b17c200d3c2d949815e5ae2:Assets/Scripts/Models/Field/Field.cs
             }
         }
 
@@ -76,10 +87,5 @@ namespace RoofGardenGame.Models
             // plant automatically removes nutrients
         }
 
-        private void ChangeAlpha(float alpha){
-            Color c = sr.color;
-            c.a = alpha;
-            sr.color = c;
-        }
     }
 }

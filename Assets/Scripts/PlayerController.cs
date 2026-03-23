@@ -21,12 +21,15 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
-        InputMapManager.playerInput = GetComponent<PlayerInput>();
+        InputMapManager.Initialize(GetComponent<PlayerInput>());
+        
 
         interactionManager = GetComponentInChildren<InteractionManager>();
         dustParticles = GetComponentInChildren<ParticleSystem>();
         dustParticles.gameObject.SetActive(false);
         anim.SetBool("isRunning", false);
+
+
     }
 
     public void Move(InputAction.CallbackContext context)
