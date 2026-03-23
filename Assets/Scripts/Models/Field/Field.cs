@@ -12,7 +12,7 @@ namespace RoofGardenGame.Models
 
         Nutrients nutrients;
 
-        [SerializeField] FieldSpriteManager fieldSpriteManager;
+        public FieldSpriteManager fieldSpriteManager;
 
         void Awake()
         {

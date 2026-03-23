@@ -7,12 +7,13 @@ public class FieldSpriteManager : MonoBehaviour
     
     SpriteRenderer sr;
 
-    [SerializeField] float moistLevel;
-    [SerializeField] Sprite untilledField;
-    [SerializeField] Sprite tilledField;
-    void Start()
+    public float moistLevel;
+    public Sprite untilledField;
+    public Sprite tilledField;
+    void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
+        sr.sprite = untilledField;
     }
 
     public void Untilled()
