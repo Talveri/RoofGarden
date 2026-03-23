@@ -1,9 +1,10 @@
 using UnityEngine;
 
-public class Harvest : Tool
+public class Harvest : MonoBehaviour, ITool
 {
     public void UseTool()
     {
         Debug.Log("Uses Harvest");
     }
 }
+

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class WateringCan : Tool
+public class WateringCan : MonoBehaviour, ITool
 {
     public void UseTool()
     {

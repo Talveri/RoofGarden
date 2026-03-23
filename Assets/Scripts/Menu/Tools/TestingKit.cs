@@ -1,6 +1,7 @@
 using UnityEngine;
 
-public class TestingKit : Tool
+
+public class TestingKit : MonoBehaviour, ITool
 {
     public void UseTool()
     {

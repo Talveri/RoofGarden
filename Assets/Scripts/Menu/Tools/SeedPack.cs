@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SeedPack : Tool
+public class SeedPack : MonoBehaviour, ITool
 {
     public void UseTool()
     {

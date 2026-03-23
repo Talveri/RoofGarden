@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Fertilizer : Tool
+public class Fertilizer : MonoBehaviour, ITool
 {
     public void UseTool()
     {

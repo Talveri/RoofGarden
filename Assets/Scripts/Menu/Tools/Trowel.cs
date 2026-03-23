@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Trowel : Tool
+public class Trowel : MonoBehaviour, ITool
 {
     public void UseTool()
     {
