@@ -5,6 +5,17 @@ namespace RoofGardenGame
 {
     public class EventBus
     {
+        #region Time Events
+
+        #region Tick Events
+        public static event Action OnTick;
+
+        public static void RaiseTick()
+        {
+            OnTick?.Invoke();
+        }
+        #endregion
+
         #region Day Events
         public static event Action<DayEvent> OnDayEnd;
         public static event Action<DayEvent> OnDayProgressed;
@@ -24,6 +35,8 @@ namespace RoofGardenGame
         {
             OnDayStart?.Invoke(dayEvent);
         }
+        #endregion
+
         #endregion
 
         #region Plant Events

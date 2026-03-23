@@ -2,6 +2,7 @@ namespace RoofGardenGame.Models.Events
 {
     public class WateringEvent
     {
+        //public WaterLevel waterLevel { get; private set; }
         public float WaterAmount { get; private set; }
         public Field Field { get; private set; }
 
