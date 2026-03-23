@@ -1,26 +1,43 @@
 
+using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class HotbarController : MonoBehaviour
 {
     public GameObject hotbarPanel;
-    public GameObject slotPrefab;
-    public int slotCount = 8;
+    static GameObject Hotbar;
+    public List<Image> ToolPrefabs;
+    private int toolCount;
     //private ItemDictionary itemDictionary;
     private Key[] hotbarKeys;
 
     void Awake()
     {
+        Hotbar = hotbarPanel;
+        toolCount = ToolPrefabs.Count;
         //itemDictionary = FindAnyObjectByType<ItemDictionary>();
-        hotbarKeys = new Key[slotCount];
+        hotbarKeys = new Key[toolCount];
 
-        for (int i = 0; i < slotCount; i++)
+        for (int i = 0; i < toolCount; i++)
         {
-            Slot slot = Instantiate(slotPrefab, hotbarPanel.transform).GetComponent<Slot>();
+            GameObject tool = Instantiate(ToolPrefabs[i].GameObject(),hotbarPanel.transform);
+
+            tool.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
             //Keys form 0 to i;
             hotbarKeys[i] = i < 9 ? (Key)((int)Key.Digit1 + i) : Key.Digit0;
         }
+    }
+
+    public static void hideHotbar()
+    {
+       Hotbar.SetActive(false);
+    }
+    public static void showHotbar()
+    {
+       Hotbar.SetActive(true);
     }
 
     void UseItemInSlot(int index)

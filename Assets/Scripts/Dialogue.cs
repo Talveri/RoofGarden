@@ -44,6 +44,9 @@ public class Dialogue : MonoBehaviour
         }
         else
         {
+            // End Dialogue
+            HotbarController.showHotbar();
+            
             inDialogue = false;
             textComponent.text = string.Empty;
             InputMapManager.setToPlayer();
@@ -52,7 +55,10 @@ public class Dialogue : MonoBehaviour
     }
     public void StartDialogue()
     {
+        HotbarController.hideHotbar();
+
         inDialogue = true;
+        
         InputMapManager.setToUI();
         gameObject.SetActive(true);
         index = 0;

@@ -2,6 +2,7 @@
 using UnityEngine;
 using RoofGardenGame.Enums;
 using RoofGardenGame.Models.Events;
+using System.Collections.Generic;
 
 namespace RoofGardenGame.Models
 {
@@ -11,10 +12,22 @@ namespace RoofGardenGame.Models
 
         Nutrients nutrients;
 
+        public FieldSpriteManager fieldSpriteManager;
+
         void Awake()
         {
             plant = null;
             EventBus.OnDayProgressed += ProgressDay;
+
+        }
+
+        public void TillField()
+        {
+            fieldSpriteManager.Tilled();
+        }
+        public void Harvest()
+        {
+            fieldSpriteManager.Untilled();
         }
 
         public void ReceivePlant(Plant _plant)
@@ -67,5 +80,6 @@ namespace RoofGardenGame.Models
             plant.ReceiveNutrients(ref nutrients);
             // plant automatically removes nutrients
         }
+
     }
 }
