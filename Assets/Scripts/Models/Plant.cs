@@ -16,13 +16,10 @@ namespace RoofGardenGame.Models
         [Tooltip("Which plant is it?")]
         [SerializeField]
         PlantType type;
-<<<<<<< HEAD
         
         [Tooltip("How wet does the plant want the soil to be?")]
         [SerializeField]
         WaterLevel optimalWaterLevel;
-=======
->>>>>>> 9cf54f3869a601d82b17c200d3c2d949815e5ae2
 
         [Tooltip("What nutrients does the plant consume daily?")]
         [SerializeField]
@@ -94,11 +91,7 @@ namespace RoofGardenGame.Models
         {
             if (!IsGrown())
             {
-<<<<<<< HEAD
                 if(!nutrients.Contains(consumption) || (Water.Level(waterAmount) != optimalWaterLevel)) // insufficient nutrients
-=======
-                if (!nutrients.Contains(consumption)) // insufficient nutrients
->>>>>>> 9cf54f3869a601d82b17c200d3c2d949815e5ae2
                 {
                     health -= 1;
                 }

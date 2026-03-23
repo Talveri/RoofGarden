@@ -44,12 +44,7 @@ namespace RoofGardenGame.Models
         {
             if (waterAmount < Water.MAX)
             {
-<<<<<<< HEAD:Assets/Scripts/Models/Field.cs
                 waterAmount ++;
-                ChangeAlpha(0.3f);
-=======
-                nutrients.water++;
->>>>>>> 9cf54f3869a601d82b17c200d3c2d949815e5ae2:Assets/Scripts/Models/Field/Field.cs
             }
         }
 
