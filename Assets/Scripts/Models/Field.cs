@@ -2,6 +2,7 @@
 using UnityEngine;
 using RoofGardenGame.Enums;
 using RoofGardenGame.Models.Events;
+using System.Collections.Generic;
 
 namespace RoofGardenGame.Models
 {
@@ -11,10 +12,15 @@ namespace RoofGardenGame.Models
 
         Nutrients nutrients;
 
+        public List<Sprite> soilSprites;
+        SpriteRenderer sr;
+
         void Awake()
         {
             plant = null;
             EventBus.OnDayProgressed += ProgressDay;
+
+            sr = GetComponent<SpriteRenderer>();
         }
 
         public void ReceivePlant(Plant _plant)
@@ -31,6 +37,7 @@ namespace RoofGardenGame.Models
             if (nutrients.water < Nutrients.MAX_WATER)
             {
                 nutrients.water++;
+                ChangeAlpha(0.3f);
             }
         }
 
@@ -66,6 +73,12 @@ namespace RoofGardenGame.Models
         {
             plant.ReceiveNutrients(ref nutrients);
             // plant automatically removes nutrients
+        }
+
+        private void ChangeAlpha(float alpha){
+            Color c = sr.color;
+            c.a = alpha;
+            sr.color = c;
         }
     }
 }
