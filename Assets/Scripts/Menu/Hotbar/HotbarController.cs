@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class HotbarController : MonoBehaviour
 {
     public GameObject hotbarPanel;
+    static GameObject Hotbar;
     public List<Image> ToolPrefabs;
     private int toolCount;
     //private ItemDictionary itemDictionary;
@@ -15,6 +16,7 @@ public class HotbarController : MonoBehaviour
 
     void Awake()
     {
+        Hotbar = hotbarPanel;
         toolCount = ToolPrefabs.Count;
         //itemDictionary = FindAnyObjectByType<ItemDictionary>();
         hotbarKeys = new Key[toolCount];
@@ -27,6 +29,15 @@ public class HotbarController : MonoBehaviour
             //Keys form 0 to i;
             hotbarKeys[i] = i < 9 ? (Key)((int)Key.Digit1 + i) : Key.Digit0;
         }
+    }
+
+    public static void hideHotbar()
+    {
+       Hotbar.SetActive(false);
+    }
+    public static void showHotbar()
+    {
+       Hotbar.SetActive(true);
     }
 
     void UseItemInSlot(int index)
