@@ -38,13 +38,9 @@ public class HotbarController : MonoBehaviour
         selector = Instantiate(selectorPrefab, tools[selectedIndex].transform);
     }
 
-    public static void hideHotbar()
+    public static void activeHotbar(bool active)
     {
-        Hotbar.SetActive(false);
-    }
-    public static void showHotbar()
-    {
-        Hotbar.SetActive(true);
+        Hotbar.SetActive(active);
     }
 
     // INPUT SYSTEM

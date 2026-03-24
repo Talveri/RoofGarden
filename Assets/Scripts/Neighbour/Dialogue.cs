@@ -45,7 +45,6 @@ public class Dialogue : MonoBehaviour
         else
         {
             // End Dialogue
-            HotbarController.showHotbar();
             
             inDialogue = false;
             textComponent.text = string.Empty;
@@ -55,8 +54,6 @@ public class Dialogue : MonoBehaviour
     }
     public void StartDialogue()
     {
-        HotbarController.hideHotbar();
-
         inDialogue = true;
         
         InputMapManager.setToUI();

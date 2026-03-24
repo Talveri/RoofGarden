@@ -17,6 +17,7 @@ public class DoorTrigger : MonoBehaviour, IInteractable
     public ScreenFader fader;
     private Tooltip tooltip;
     public string tooltipText = "Open (E)";
+    public bool activateHotbar = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
@@ -62,6 +63,7 @@ public class DoorTrigger : MonoBehaviour, IInteractable
         {
             mainCamera.transform.position = cameraPosition.position;
         }
+        HotbarController.activeHotbar(activateHotbar);
     }
 
     void OnTriggerEnter2D()
