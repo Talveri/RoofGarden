@@ -9,6 +9,7 @@ using UnityEngine.UIElements;
 
 public class DoorTrigger : MonoBehaviour, IInteractable
 {
+    
     public Transform exitPosition;
     public Transform cameraPosition;
     public Transform player;
