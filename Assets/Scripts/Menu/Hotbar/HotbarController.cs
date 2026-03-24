@@ -54,7 +54,8 @@ public class HotbarController : MonoBehaviour
 
         float x = ctx.ReadValue<float>();
         selectedIndex += Mathf.RoundToInt(x);
-        selectedIndex %= toolCount;
+        if (selectedIndex < 0) selectedIndex = toolCount - 1;
+        else{selectedIndex %= toolCount;}
         Debug.Log($"Current Tool: {tools[selectedIndex].name}");
         selector.transform.SetParent(tools[selectedIndex].transform);
         selector.GetComponent<RectTransform>().anchoredPosition = Vector2.zero; //Center
