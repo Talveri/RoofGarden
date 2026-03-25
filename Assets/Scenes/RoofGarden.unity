@@ -10412,7 +10412,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b729d081ee593c14c9271d398f1c780b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TickSystem
-  tickInterval: 1
+  tickInterval: 0.1
 --- !u!1 &870058611
 GameObject:
   m_ObjectHideFlags: 0
@@ -12645,7 +12645,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 250c672a66176e2409c21fe50c77b119, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoofGardenGame.DayCycleManager
-  ticksPerDay: 300
+  ticksPerDay: 3000
 --- !u!4 &1052850224 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6439523572649280344, guid: e40eff5429ac68600ad793530ea67d25, type: 3}

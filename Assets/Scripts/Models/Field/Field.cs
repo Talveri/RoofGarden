@@ -8,8 +8,8 @@ namespace RoofGardenGame.Models
     {
         public FieldState FieldState;
         Plant plant;
-        Nutrients nutrients;
-        int waterAmount;
+        Nutrients nutrients = new Nutrients();
+        int waterAmount = 0;
 
         FieldSpriteManager spriteManager;
 
