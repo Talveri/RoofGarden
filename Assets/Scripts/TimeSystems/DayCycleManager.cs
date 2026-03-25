@@ -17,7 +17,7 @@ namespace RoofGardenGame
             EventBus.OnTick += HandleTick;
         }
 
-        private void HandleTick()
+        private void HandleTick(TickEvent tickEvent)
         {
             currentTick++;
             Debug.Log($"Tick: {currentTick}/{ticksPerDay} of Day {currentDay}");
