@@ -87,4 +87,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d8c6ac2bca3f5da48bea9d3a944043e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tooltip
-  tooltipUI: {fileID: 0}

@@ -4,6 +4,6 @@ public class SeedPack : MonoBehaviour, ITool
 {
     public void UseTool()
     {
-        Debug.Log("Uses Seed Pack");
+        PlayerMessage.Instance.MessageTooltip("Using SeedPack",2f);
     }
 }

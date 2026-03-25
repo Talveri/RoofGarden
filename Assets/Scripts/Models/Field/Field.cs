@@ -21,16 +21,19 @@ namespace RoofGardenGame.Models
             EventBus.OnDayProgressed += ProgressDay;
 
         }
-
+        
         public void TillField()
         {
             fieldSpriteManager.Tilled();
         }
+
+        // Harvest Interaction
         public void Harvest()
         {
             fieldSpriteManager.Untilled();
         }
 
+        // Seeds Interaction
         public void ReceivePlant(Plant _plant)
         {
             if (plant == null)
@@ -40,6 +43,7 @@ namespace RoofGardenGame.Models
             }
         }
 
+        // Watering Can Interaction
         public void Irrigate()
         {
             if (waterAmount < Water.MAX)
