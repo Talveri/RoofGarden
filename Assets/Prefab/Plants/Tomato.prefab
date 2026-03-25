@@ -52,7 +52,7 @@ MonoBehaviour:
     nitrogen: 0
     phosphor: 0
   maxHealth: 3
-  growthDurationInTicks: 20
+  growthDurationInTicks: 200
   growthStageSprites:
   - {fileID: -8113185096396602001, guid: d6e6903934f9e4969805a894f623a7af, type: 3}
   - {fileID: -1257518098505440576, guid: d6e6903934f9e4969805a894f623a7af, type: 3}
