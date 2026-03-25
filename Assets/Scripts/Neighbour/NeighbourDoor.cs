@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class NeighbourDoor : MonoBehaviour, IInteractable
 {
     public NeighbourData neighbourData;
+    public NeighbourDialogue neighbourDialogue;
     public static event Action<NeighbourData> onDoorInteracted;
     public string tooltipText = "Knock [E]";
 
@@ -28,7 +29,7 @@ public class NeighbourDoor : MonoBehaviour, IInteractable
     // TEST CODE DELETE LATER
     //bool playerInside;
     public Dialogue dialogue;
-    public string[] script;
+    private string[] script;
 
     //
     Tooltip tooltip;
@@ -36,10 +37,15 @@ public class NeighbourDoor : MonoBehaviour, IInteractable
     void Awake()
     {
         tooltip = GetComponentInChildren<Tooltip>();
-        tooltip.UpdateText(tooltipText);
         neighbourData = GetComponentInChildren<NeighbourData>(true);
+        neighbourDialogue = GetComponentInChildren<NeighbourDialogue>(true);
     }
 
+    void Start()
+    {
+        tooltip.UpdateText(tooltipText);
+        script = neighbourDialogue.script;
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
