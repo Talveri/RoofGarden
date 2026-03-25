@@ -1,9 +1,6 @@
-// To mimick minimal unity object class idk for tiles
-using UnityEngine;
 using RoofGardenGame.Enums;
 using RoofGardenGame.Models.Events;
-using Unity.VisualScripting;
-
+using UnityEngine;
 
 namespace RoofGardenGame.Models
 {
@@ -23,7 +20,7 @@ namespace RoofGardenGame.Models
         void Awake()
         {
             plant = null;
-            EventBus.OnDayProgressed += ProgressDay;
+            EventBus.OnTick += ProgressTick;
             spriteManager = GetComponent<FieldSpriteManager>();
         }
 
@@ -65,30 +62,24 @@ namespace RoofGardenGame.Models
         }
 
         public void Interact<T>(T data)
-        { 
-            if(typeof(T) == typeof(PlantType))
+        {
+            if (typeof(T) == typeof(PlantType))
             {
-                EventBus.RaisePlayerPlanting(
-                    new PlantingEvent(this, (PlantType)(object)data)
-                );
+                EventBus.RaisePlayerPlanting(new PlantingEvent(this, (PlantType)(object)data));
             }
         }
 
-        private void ProgressDay(DayEvent dayEvent)
+        private void ProgressTick(TickEvent tickEvent)
         {
             if (plant)
             {
-                var required = plant.GetConsumption();
                 FeedPlant();
                 plant.Progress();
-            }
-        }
 
-        private void StartDay()
-        {
-            if (plant.IsGrown())
-            {
-                EventBus.RaisePlantGrown(new PlantEvent(this, plant));
+                if (plant.IsGrown())
+                {
+                    EventBus.RaisePlantGrown(new PlantEvent(this, plant));
+                }
             }
         }
 
@@ -98,6 +89,5 @@ namespace RoofGardenGame.Models
             // plant automatically removes nutrients
 
         }
-
     }
 }

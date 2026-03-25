@@ -61,10 +61,10 @@ public class TickSystem : MonoBehaviour
             {
                 elapsedTime += Time.deltaTime;
 
-                if (elapsedTime >= tickInterval)
+                while (elapsedTime >= tickInterval)
                 {
                     elapsedTime -= tickInterval;
-                    Tick();
+                    Tick(tickInterval);
                 }
             }
 
@@ -72,8 +72,10 @@ public class TickSystem : MonoBehaviour
         }
     }
 
-    private void Tick()
+    private void Tick(float deltaTime)
     {
-        EventBus.RaiseTick();
+        TickEvent tickEvent = new TickEvent(deltaTime);
+
+        EventBus.RaiseTick(tickEvent);
     }
 }
