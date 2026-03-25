@@ -11,6 +11,8 @@ namespace RoofGardenGame.Models
         Nutrients nutrients = new Nutrients();
         int waterAmount = 0;
 
+        FieldSpriteManager spriteManager;
+
         public float moisture;
         public float nitrogen;
         public float phosphor;
