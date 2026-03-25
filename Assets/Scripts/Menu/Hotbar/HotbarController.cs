@@ -57,6 +57,7 @@ public class HotbarController : MonoBehaviour
     public void UseTool(InputAction.CallbackContext ctx)
     {
         if (!ctx.performed) return;
+        if (!Hotbar.activeSelf) return;     // The Tool shall not trigger if the Hotbar is inactive
 
         ITool tool = tools[selectedIndex].GetComponent<ITool>();
 
@@ -66,7 +67,7 @@ public class HotbarController : MonoBehaviour
         }
         else
         {
-            Debug.Log("Cannot Use Tool");
+            Debug.LogError($"Tool {selectedIndex} is null");
         }
     }
 }

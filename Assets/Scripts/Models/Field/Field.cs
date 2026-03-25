@@ -3,6 +3,7 @@ using UnityEngine;
 using RoofGardenGame.Enums;
 using RoofGardenGame.Models.Events;
 using System.Collections.Generic;
+using System;
 
 namespace RoofGardenGame.Models
 {
@@ -12,24 +13,25 @@ namespace RoofGardenGame.Models
         Nutrients nutrients;
         int waterAmount;
 
-        public FieldSpriteManager fieldSpriteManager;
+        FieldSpriteManager spriteManager;
+
 
         void Awake()
         {
             plant = null;
             EventBus.OnDayProgressed += ProgressDay;
-
+            spriteManager = GetComponent<FieldSpriteManager>();
         }
 
         public void TillField()
         {
-            fieldSpriteManager.Tilled();
+            spriteManager.Tilled();
         }
 
         // Harvest Interaction
         public void Harvest()
         {
-            fieldSpriteManager.Untilled();
+            spriteManager.Untilled();
         }
 
         // Seeds Interaction
@@ -48,6 +50,7 @@ namespace RoofGardenGame.Models
             if (waterAmount < Water.MAX)
             {
                 waterAmount ++;
+                spriteManager.VisualMoisture(waterAmount);
             }
         }
 

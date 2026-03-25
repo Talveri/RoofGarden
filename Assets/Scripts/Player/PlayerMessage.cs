@@ -22,7 +22,7 @@ public class PlayerMessage : MonoBehaviour
         Instance = this;
     }
 
-    public void MessageTooltip(string message, float time)
+    public void MessageTooltip(string message, float time = 1.5f)
     {
         if(tooltipRoutine != null)
             StopCoroutine(tooltipRoutine);

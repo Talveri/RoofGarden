@@ -4,12 +4,16 @@ using UnityEngine;
 public class FieldSpriteManager : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    
+
     SpriteRenderer sr;
 
-    public float moistLevel;
     public Sprite untilledField;
     public Sprite tilledField;
+
+    [Header("Alpha Impact")]
+    [Tooltip("Higher value -> lesser impact")]
+    [SerializeField]
+    public float alphaImpactOnIrregation = 10;
     void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
@@ -26,16 +30,20 @@ public class FieldSpriteManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void AddMoistvalue(float watering)
+    public void VisualMoisture(float moisture)
     {
-        moistLevel += watering;
-        ChangeAlpha(moistLevel);
+        float darkness = Mathf.Clamp01(moisture / alphaImpactOnIrregation);
+        DarkenSprite(darkness);
     }
 
-    private void ChangeAlpha(float alpha)
+    private void DarkenSprite(float amount)
     {
-        Color c = sr.color;
-        c.a = alpha;
-        sr.color = c;
+        // 0 -> no darkening
+        // 1 -> fully darkened
+        Debug.Log($"Darken by {amount}");
+        Color baseColor = Color.white;
+        Color darkColor = Color.Lerp(baseColor, Color.black, amount);
+
+        sr.color = darkColor;
     }
 }
