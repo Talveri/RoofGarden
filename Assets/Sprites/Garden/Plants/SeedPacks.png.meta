@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: bad823b638b9771cf961ef936d90ef3e
+guid: 0870267fa07275e34b8a34910bbf1d39
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8417420941954122440
-    second: Slot_0
+      213: 1746796855162290980
+    second: SeedPacks_0
+  - first:
+      213: -7980360718432459316
+    second: SeedPacks_1
+  - first:
+      213: -1970628947216815406
+    second: SeedPacks_2
+  - first:
+      213: -8591594354654960726
+    second: SeedPacks_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +122,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Slot_0
+      name: SeedPacks_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +137,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8c20c12dfbfa0d470800000000000000
-      internalID: 8417420941954122440
+      spriteID: 423c7be1c7edd3810800000000000000
+      internalID: 1746796855162290980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeedPacks_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc52a565530104190800000000000000
+      internalID: -7980360718432459316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeedPacks_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2da2a01d96be6a4e0800000000000000
+      internalID: -1970628947216815406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeedPacks_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa32a84647684c880800000000000000
+      internalID: -8591594354654960726
       vertices: []
       indices: 
       edges: []
@@ -148,7 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Slot_0: 8417420941954122440
+      SeedPacks_0: 1746796855162290980
+      SeedPacks_1: -7980360718432459316
+      SeedPacks_2: -1970628947216815406
+      SeedPacks_3: -8591594354654960726
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

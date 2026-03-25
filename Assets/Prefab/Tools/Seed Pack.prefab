@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5166472825074761812}
   - component: {fileID: 3592222489898762736}
   - component: {fileID: -4215602003591175844}
+  - component: {fileID: -6850418535289318539}
   m_Layer: 5
   m_Name: Seed Pack
   m_TagString: Untagged
@@ -66,7 +67,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2013925468, guid: 86ca4ef67a72cbf7d962087a5b2c6e6f, type: 3}
+  m_Sprite: {fileID: 2904254134799249188, guid: 5c53dad9d74e88d34b99c1fb35e57fee, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -88,3 +89,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8c785d00e609b5f4a1ee7d3c6a7654a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SeedPack
+  plant: {fileID: 0}
+--- !u!114 &-6850418535289318539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9110554863996045531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc15b2385f1724f4c8d4349bdba56114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Slot
+  currentItem: {fileID: 0}

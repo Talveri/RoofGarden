@@ -2,13 +2,14 @@
 using UnityEngine;
 using RoofGardenGame.Enums;
 using RoofGardenGame.Models.Events;
-using System.Collections.Generic;
-using System;
+using Unity.VisualScripting;
+
 
 namespace RoofGardenGame.Models
 {
     public class Field : MonoBehaviour, IInteractable
     {
+        public FieldState FieldState;
         Plant plant;
         Nutrients nutrients;
         int waterAmount;
@@ -26,6 +27,8 @@ namespace RoofGardenGame.Models
         public void TillField()
         {
             spriteManager.Tilled();
+
+            FieldState = FieldState.Tilled;
         }
 
         // Harvest Interaction
@@ -37,6 +40,7 @@ namespace RoofGardenGame.Models
         // Seeds Interaction
         public void ReceivePlant(Plant _plant)
         {
+            FieldState = FieldState.Planted;
             if (plant == null)
             {
                 plant = _plant;
