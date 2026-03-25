@@ -1,6 +1,6 @@
 using UnityEngine;
 
-class NeighbourDialogue : MonoBehaviour
+public class NeighbourDialogue : MonoBehaviour
 {
     public string[] script;
 
