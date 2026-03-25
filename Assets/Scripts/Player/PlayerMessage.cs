@@ -8,7 +8,7 @@ using UnityEngine;
 
 public class PlayerMessage : MonoBehaviour
 {
-    public static PlayerMessage Instance {get; private set; }
+    public static PlayerMessage Instance {get; private set; } // The singleton instance allows different scripts to access the tooltip function, without defining a gameobject
     public Tooltip tooltip;
     private Coroutine tooltipRoutine;
 

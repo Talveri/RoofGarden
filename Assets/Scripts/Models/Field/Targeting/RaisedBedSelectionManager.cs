@@ -11,7 +11,8 @@ class RaisedBedSelectionManager : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            fieldSelector.Hide();
+            fieldSelector.Active(false);
+            FieldSelector.Instance.SetField(null);
         }
     }
 }

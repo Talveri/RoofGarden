@@ -9,7 +9,6 @@ namespace RoofGardenGame.Models
     public class Field : MonoBehaviour, IInteractable
     {
         Plant plant;
-
         Nutrients nutrients;
         int waterAmount;
 
@@ -21,7 +20,7 @@ namespace RoofGardenGame.Models
             EventBus.OnDayProgressed += ProgressDay;
 
         }
-        
+
         public void TillField()
         {
             fieldSpriteManager.Tilled();

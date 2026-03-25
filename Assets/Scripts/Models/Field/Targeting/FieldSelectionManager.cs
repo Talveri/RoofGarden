@@ -1,3 +1,4 @@
+using RoofGardenGame.Models;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -14,8 +15,12 @@ class FieldSeletionManager : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            fieldSelector.Show();
-            fieldSelector.MoveToField(GetComponent<Transform>());
+            fieldSelector.Active(true);
+            
+            if(GetComponent<Field>() != null)
+                fieldSelector.MoveToField(GetComponent<Field>()); // The Field tells the Selector where they need to go and what they are targeting
+            else
+                Debug.LogError("Missing Field Script");
         }
     }
 
