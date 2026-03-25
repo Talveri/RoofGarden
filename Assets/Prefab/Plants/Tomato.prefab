@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8901879269737643852}
   m_Layer: 0
   m_Name: Tomato
-  m_TagString: Untagged
+  m_TagString: Plant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46,11 +46,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoofGardenGame.Models.Plant
   type: 2
+  optimalWaterLevel: 0
   consumption:
     potassium: 0
     nitrogen: 0
     phosphor: 0
-    water: 0
   maxHealth: 3
   growthDurationInDays: 2
   spriteCount: 6
