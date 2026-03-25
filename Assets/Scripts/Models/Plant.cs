@@ -29,7 +29,7 @@ namespace RoofGardenGame.Models
         [SerializeField]
         int maxHealth;
 
-        [Tooltip("How many days does it take for the next sprite to appear?")]
+        [Tooltip("Amount of ticks the plant needs to grow")]
         [SerializeField]
         int growthDurationInTicks;
 
@@ -45,23 +45,36 @@ namespace RoofGardenGame.Models
 
         int spriteCount;
 
-        int dayPlanted;
-
         int health;
+
+        int age = 0; // age in ticks
+
+        int ticksPerStage = 0;
 
         void Awake()
         {
             // runs the moment the plant is instantiated during the game
-            dayPlanted = dayCycleManager.GetCurrentDay();
             spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
             spriteRenderer.sprite = growthStageSprites[0];
             spriteCount = growthStageSprites.Length;
+
+            ticksPerStage = growthDurationInTicks / spriteCount;
+
+            health = maxHealth;
+        }
+
+        /**
+         * <summary>Gets the plant's growth stage (sprite index)</summary>
+         * <returns>An <see cref="int"/> between 0 and <see cref="spriteCount"/></returns>
+         */
+        private int GetGrowthStage()
+        {
+            return Math.Min((int)(age / ticksPerStage), spriteCount - 1);
         }
 
         public bool IsGrown()
         {
-            int currentDay = dayCycleManager.GetCurrentDay();
-            return currentDay / growthDurationInTicks <= spriteCount;
+            return age >= growthDurationInTicks;
         }
 
         public Nutrients GetConsumption()
@@ -71,16 +84,15 @@ namespace RoofGardenGame.Models
 
         public void Progress()
         {
-            int index = Math.Min(GetAge() / growthDurationInTicks, spriteCount);
-            spriteRenderer.sprite = growthStageSprites[index];
-        }
-
-        /// <summary>
-        /// age in days
-        /// </summary>
-        public int GetAge()
-        {
-            return dayCycleManager.GetCurrentDay() - dayPlanted;
+            if (!IsGrown() && health > 0)
+            {
+                age++;
+                spriteRenderer.sprite = growthStageSprites[GetGrowthStage()];
+            }
+            else if (health == 0)
+            {
+                spriteRenderer.sprite = deathSprite;
+            }
         }
 
         public void ReceiveNutrientsAndWater(ref Nutrients nutrients, int waterAmount)
@@ -96,16 +108,7 @@ namespace RoofGardenGame.Models
                 }
                 nutrients -= consumption;
             }
-            else
-            {
-                int dayWhenGrowthEnds = dayPlanted + spriteCount * growthDurationInTicks;
-                int daysSpentInGrownState = dayCycleManager.GetCurrentDay() - dayWhenGrowthEnds;
-                if (daysSpentInGrownState > 0)
-                {
-                    // Placeholder for post-growth logic, such as fruit production or decay
-                }
-                health += 1;
-            }
+            else { }
             health = Math.Clamp(health, 0, maxHealth);
         }
 
