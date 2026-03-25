@@ -7,18 +7,29 @@ using UnityEngine;
 
 public class WateringCan : MonoBehaviour, ITool
 {
-    public void UseTool()
+    private bool watering;
+
+    public void UseToolStart()
     {
-        Debug.Log("Using Watering Can");
+        watering = true;
+        // start watering
+    }
+    public void UseToolHold()
+    {
+        if(!watering) return;
 
         Field field = FieldSelector.Instance.currentField;
-
-        if(field == null)
+        if(field != null)
         {
-            PlayerMessage.Instance.MessageTooltip("No field selected");
-            return;
+            field.Irrigate();
         }
-
-        field.Irrigate();
     }
+
+    public void UseToolRelease()
+    {
+        watering = false;
+        // stop watering
+    }
+
+
 }

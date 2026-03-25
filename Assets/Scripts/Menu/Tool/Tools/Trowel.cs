@@ -6,13 +6,13 @@ using UnityEngine;
 /// </summary>
 public class Trowel : MonoBehaviour, ITool
 {
-    public void UseTool()
+    public void UseToolStart()
     {
         Debug.Log("Using Trowel");
 
         Field field = FieldSelector.Instance.currentField;
 
-        if(field == null)
+        if (field == null)
         {
             PlayerMessage.Instance.MessageTooltip("No field selected");
             return;
@@ -20,4 +20,8 @@ public class Trowel : MonoBehaviour, ITool
 
         field.TillField();
     }
+    public void UseToolHold(){}
+    public void UseToolRelease(){}
+
+
 }

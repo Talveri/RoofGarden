@@ -1,5 +1,7 @@
 
 public interface ITool 
 {
-    public void UseTool();
+    public void UseToolStart();
+    public void UseToolHold();
+    public void UseToolRelease();
 }

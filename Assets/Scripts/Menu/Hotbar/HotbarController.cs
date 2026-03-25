@@ -48,7 +48,7 @@ public class HotbarController : MonoBehaviour
         float x = ctx.ReadValue<float>();
         selectedIndex += Mathf.RoundToInt(x);
         if (selectedIndex < 0) selectedIndex = toolCount - 1;
-        else{selectedIndex %= toolCount;}
+        else { selectedIndex %= toolCount; }
         Debug.Log($"Current Tool: {tools[selectedIndex].name}");
         selector.transform.SetParent(tools[selectedIndex].transform);
         selector.GetComponent<RectTransform>().anchoredPosition = Vector2.zero; //Center
@@ -56,18 +56,27 @@ public class HotbarController : MonoBehaviour
     }
     public void UseTool(InputAction.CallbackContext ctx)
     {
-        if (!ctx.performed) return;
         if (!Hotbar.activeSelf) return;     // The Tool shall not trigger if the Hotbar is inactive
 
         ITool tool = tools[selectedIndex].GetComponent<ITool>();
 
-        if (tool != null)
+        if (tool == null)
         {
-            tool.UseTool();
+            Debug.LogError($"Tool {selectedIndex} is null!");
+            return;
         }
-        else
+
+        if (ctx.started)
         {
-            Debug.LogError($"Tool {selectedIndex} is null");
+            tool.UseToolStart();
+        }
+        if (ctx.performed)
+        {
+            tool.UseToolHold();
+        }
+        if (ctx.canceled)
+        {
+            tool.UseToolRelease();
         }
     }
 }
