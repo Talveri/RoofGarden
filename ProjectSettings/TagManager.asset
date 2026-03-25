@@ -47,5 +47,8 @@ TagManager:
   - name: Plant
     uniqueID: 1419138641
     locked: 0
+  - name: GridOverlay
+    uniqueID: 820031121
+    locked: 0
   m_RenderingLayers:
   - Default

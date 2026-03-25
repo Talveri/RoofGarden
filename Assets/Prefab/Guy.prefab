@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6104109043514655352}
   - component: {fileID: 6254696348117541834}
   - component: {fileID: 2847843995796473701}
+  - component: {fileID: 792568204063236392}
   m_Layer: 0
   m_Name: UseCollider
   m_TagString: Untagged
@@ -67,7 +68,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.31, y: 0}
+  m_Offset: {x: 0.4, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -77,7 +78,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 0.5}
+  m_Size: {x: 1.2, y: 0.1}
   m_EdgeRadius: 0
 --- !u!114 &2847843995796473701
 MonoBehaviour:
@@ -91,6 +92,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc3d327754d5f4543bb06f742d1bf541, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractionManager
+--- !u!114 &792568204063236392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1956946117831332051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abfad188f98aedd0fbde5a9d82b203b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerInteractionController
 --- !u!1 &6289156705555395790
 GameObject:
   m_ObjectHideFlags: 0
@@ -122,7 +135,7 @@ Transform:
   m_GameObject: {fileID: 6289156705555395790}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5786495, y: -16.0677, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -342,21 +355,13 @@ MonoBehaviour:
     m_ActionId: 1f2f6c01-f3d1-4025-b9e9-8e8ba7d8235e
     m_ActionName: 'Player/Use[/Keyboard/e]'
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1726129968335809491}
-        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
-        m_MethodName: Open_Inventory
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 18925dbc-84d7-450e-8d31-1ed15213b0a6
-    m_ActionName: 'Player/Open Inventory[/Keyboard/tab]'
+      m_Calls: []
+    m_ActionId: 519e1dd4-fcde-4fe9-9c09-f5b7475b5712
+    m_ActionName: 'Player/SwitchTool[/Keyboard/leftArrow,/Keyboard/rightArrow,/Mouse/scroll/down,/Mouse/scroll/up]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 24691b94-2733-48ed-9bfb-b2d02c3cd581
+    m_ActionName: 'Global/Open Inventory[/Keyboard/tab]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard&Mouse
   m_DefaultActionMap: Player

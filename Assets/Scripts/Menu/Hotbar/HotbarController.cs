@@ -12,7 +12,6 @@ public class HotbarController : MonoBehaviour
     public List<Image> ToolPrefabs;
     private int toolCount;
     //private ItemDictionary itemDictionary;
-    private Key[] hotbarKeys;
     public GameObject selectorPrefab;
     private GameObject selector;
     private List<GameObject> tools = new List<GameObject>();
@@ -23,8 +22,7 @@ public class HotbarController : MonoBehaviour
     {
         Hotbar = hotbarPanel;
         toolCount = ToolPrefabs.Count;
-        //itemDictionary = FindAnyObjectByType<ItemDictionary>();
-        hotbarKeys = new Key[toolCount];
+
 
         for (int i = 0; i < toolCount; i++)
         {
@@ -33,7 +31,6 @@ public class HotbarController : MonoBehaviour
 
             tools[i].GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
             //Keys form 0 to i;
-            hotbarKeys[i] = i < 9 ? (Key)((int)Key.Digit1 + i) : Key.Digit0;
         }
         selector = Instantiate(selectorPrefab, tools[selectedIndex].transform);
     }
