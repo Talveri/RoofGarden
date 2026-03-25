@@ -9,15 +9,10 @@ public class Trowel : MonoBehaviour, ITool
 {
     public void UseToolStart()
     {
-        Debug.Log("Using Trowel");
-
         Field field = FieldSelector.Instance.currentField;
 
-        if (field == null)
-        {
-            PlayerMessage.Instance.MessageTooltip("No field selected");
-            return;
-        }
+        if (field == null) return;
+        
 /// The Player gets informed why this tool can't be used
         if (field.FieldState == FieldState.Tilled)
         {

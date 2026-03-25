@@ -10,7 +10,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1577112752999971567, guid: 8e90748b8835ef733a411066aab0cf4b, type: 3}
       propertyPath: m_Name
-      value: Onion Variant
+      value: Onion
+      objectReference: {fileID: 0}
+    - target: {fileID: 2298357342486832477, guid: 8e90748b8835ef733a411066aab0cf4b, type: 3}
+      propertyPath: ID
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4249094980584704943, guid: 8e90748b8835ef733a411066aab0cf4b, type: 3}
       propertyPath: m_Sprite

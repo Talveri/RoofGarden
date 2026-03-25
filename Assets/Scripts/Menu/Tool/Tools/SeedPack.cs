@@ -7,16 +7,31 @@ using UnityEngine;
 
 public class SeedPack : MonoBehaviour, ITool
 {
-    public Plant plant;             // Plants shall be dynamically allocated from the inventory
+    public Plant plant;             // Plants shall be taken from the hotbar
+    private Slot slot;
+
+    /// <summary>
+    /// Only PlantSeed items can be used
+    /// </summary>
+
+    void Awake()
+    {
+        slot = GetComponent<Slot>();
+    }
     public void UseToolStart()
     {
         Field field = FieldSelector.Instance.currentField;
-        if(field != null)
-            field.ReceivePlant(plant);
+        if (field != null)
+            if (slot.currentItem.CompareTag("PlantSeed"))
+                field.ReceivePlant(plant);
+            else
+            {
+                PlayerMessage.Instance.MessageTooltip("I need plant seeds.");
+            }
     }
- 
-    public void UseToolHold(){}
-    public void UseToolRelease(){}
+
+    public void UseToolHold() { }
+    public void UseToolRelease() { }
 
 
 }

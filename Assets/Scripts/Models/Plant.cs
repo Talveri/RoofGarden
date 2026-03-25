@@ -37,10 +37,6 @@ namespace RoofGardenGame.Models
         [SerializeField]
         int spriteCount;
 
-        [Tooltip("What is this plant type's first sprite in the sprite array?")]
-        [SerializeField]
-        int spriteStartIndex;
-
         [Tooltip("All plant sprites")]
         [SerializeField]
         Sprite[] sprites;
@@ -56,7 +52,7 @@ namespace RoofGardenGame.Models
             // runs the moment the plant is instantiated during the game
             dayPlanted = dayCycleManager.GetCurrentDay();
             spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
-            spriteRenderer.sprite = sprites[spriteStartIndex];
+            spriteRenderer.sprite = sprites[0];
         }
 
         public bool IsGrown()
@@ -73,8 +69,8 @@ namespace RoofGardenGame.Models
         public void Progress()
         {
             int index = Math.Min(
-                spriteStartIndex + GetAge() / growthDurationInDays,
-                spriteStartIndex + spriteCount
+                GetAge() / growthDurationInDays,
+                spriteCount
             );
             spriteRenderer.sprite = sprites[index];
         }

@@ -56,24 +56,6 @@ MonoBehaviour:
   spriteCount: 6
   spriteStartIndex: 18
   sprites:
-  - {fileID: -8113185096396602001, guid: d6e6903934f9e4969805a894f623a7af, type: 3}
-  - {fileID: -1257518098505440576, guid: d6e6903934f9e4969805a894f623a7af, type: 3}
-  - {fileID: 3336444044123149764, guid: d6e6903934f9e4969805a894f623a7af, type: 3}
-  - {fileID: -6966369517673316951, guid: d6e6903934f9e4969805a894f623a7af, type: 3}
-  - {fileID: -4667150655987312241, guid: d6e6903934f9e4969805a894f623a7af, type: 3}
-  - {fileID: -6770858775108089496, guid: d6e6903934f9e4969805a894f623a7af, type: 3}
-  - {fileID: 5465580561085644368, guid: a536282e7ffc0bb5183eed4e4e56c9d9, type: 3}
-  - {fileID: -3477578526051336873, guid: a536282e7ffc0bb5183eed4e4e56c9d9, type: 3}
-  - {fileID: -2332356855530425355, guid: a536282e7ffc0bb5183eed4e4e56c9d9, type: 3}
-  - {fileID: 3899546548142004079, guid: a536282e7ffc0bb5183eed4e4e56c9d9, type: 3}
-  - {fileID: -3390221917031993903, guid: a536282e7ffc0bb5183eed4e4e56c9d9, type: 3}
-  - {fileID: -9063029999227916591, guid: a536282e7ffc0bb5183eed4e4e56c9d9, type: 3}
-  - {fileID: -5859083586626064994, guid: d9e8235a6cb05d116b642edafd955f3d, type: 3}
-  - {fileID: -2094157912208876536, guid: d9e8235a6cb05d116b642edafd955f3d, type: 3}
-  - {fileID: -830467699528618894, guid: d9e8235a6cb05d116b642edafd955f3d, type: 3}
-  - {fileID: 3721053832486967156, guid: d9e8235a6cb05d116b642edafd955f3d, type: 3}
-  - {fileID: -3855089239954288668, guid: d9e8235a6cb05d116b642edafd955f3d, type: 3}
-  - {fileID: 1746509244472477445, guid: d9e8235a6cb05d116b642edafd955f3d, type: 3}
   - {fileID: -6047047222667411204, guid: ebd55fc60a8e7e1b6b3d232a1913ffcd, type: 3}
   - {fileID: 574887418754436268, guid: ebd55fc60a8e7e1b6b3d232a1913ffcd, type: 3}
   - {fileID: -7856354762995769397, guid: ebd55fc60a8e7e1b6b3d232a1913ffcd, type: 3}

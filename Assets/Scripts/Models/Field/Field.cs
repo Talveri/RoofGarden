@@ -31,10 +31,12 @@ namespace RoofGardenGame.Models
             FieldState = FieldState.Tilled;
         }
 
-        // Harvest Interaction
+        // Harvest Interaction resets FieldState
         public void Harvest()
         {
             spriteManager.Untilled();
+
+            FieldState = FieldState.Raw;
         }
 
         // Seeds Interaction

@@ -1,10 +1,19 @@
+using RoofGardenGame.Models;
 using UnityEngine;
 
 public class Harvest : MonoBehaviour, ITool
 {
+    /// <summary>
+    /// Uses the Harvest Function of the Field Script
+    /// </summary>
     public void UseToolStart()
     {
-        Debug.Log("Uses Harvest");
+        Field field = FieldSelector.Instance.currentField;
+
+        if (field != null)
+        {
+            field.Harvest();
+        }
     }
     public void UseToolHold(){}
 

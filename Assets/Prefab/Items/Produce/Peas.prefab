@@ -92,9 +92,13 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 478288733005568584, guid: b55cb652bad7c860ba2e251f782dbdb3, type: 3}
+    - target: {fileID: 8312671593153770992, guid: 3371497eb6bc4da399e1e870bd568020, type: 3}
+      propertyPath: ID
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8744559631704173122, guid: 3371497eb6bc4da399e1e870bd568020, type: 3}
       propertyPath: m_Name
-      value: Peas Variant
+      value: Peas
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
