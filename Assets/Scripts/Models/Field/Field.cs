@@ -56,7 +56,7 @@ namespace RoofGardenGame.Models
             if (waterAmount < Water.MAX)
             {
                 waterAmount ++;
-                moisture = waterAmount/Water.MAX;
+                moisture = (float)waterAmount/Water.MAX;
                 spriteManager.VisualMoisture(waterAmount);
             }
         }

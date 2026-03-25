@@ -6,16 +6,29 @@ public class TestingKit : MonoBehaviour, ITool
 {
     private bool active;
 
+    [SerializeField] private UTKPanelController panel;
+
+    void Awake()
+    {
+        panel = StatusBarManager.Instance.panelController;
+    }
     public void UseToolStart()
     {
         active = true;
-        Debug.Log("Using Testing Kit");
-
+        panel.Show();
         ShowStatus();
     }
 
-    public void UseToolHold() { }
-    public void UseToolRelease() { }
+    public void UseToolHold()
+    {
+        if(!active) return;
+        ShowStatus();
+    }
+    public void UseToolRelease()
+    {
+        active = false;
+        panel.Hide();
+    }
 
     private void ShowStatus()
     {
@@ -23,7 +36,7 @@ public class TestingKit : MonoBehaviour, ITool
 
         if (field == null)
             return;
-
+        
         StatusBarManager.Instance.UpdateBars(field);
     }
 

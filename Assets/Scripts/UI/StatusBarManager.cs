@@ -7,6 +7,7 @@ using UnityEngine;
 public class StatusBarManager : MonoBehaviour
 {
     public static StatusBarManager Instance {get; private set;}
+    public UTKPanelController panelController;
 
     [SerializeField] private StatusBar waterBar;
     [SerializeField] private StatusBar nBar;
