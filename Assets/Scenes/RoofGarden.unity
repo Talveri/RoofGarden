@@ -204,7 +204,7 @@ TilemapRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -3202,123 +3202,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 733059176}
   m_CullTransparentMesh: 1
---- !u!1001 &733465355
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1247580490}
-    m_Modifications:
-    - target: {fileID: 4004326654003984395, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: m_Name
-      value: JoeyDoor
-      objectReference: {fileID: 0}
-    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: dialogue
-      value: 
-      objectReference: {fileID: 280873892}
-    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: script.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: 'script.Array.data[0]'
-      value: Hello, Mr. Player!
-      objectReference: {fileID: 0}
-    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: 'script.Array.data[1]'
-      value: My name is John!
-      objectReference: {fileID: 0}
-    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: 'script.Array.data[2]'
-      value: John Roofgarden!
-      objectReference: {fileID: 0}
-    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: 'script.Array.data[3]'
-      value: I invented the rake, the roof and the garden!
-      objectReference: {fileID: 0}
-    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: dialogue
-      value: 
-      objectReference: {fileID: 280873892}
-    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: script.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: 'script.Array.data[0]'
-      value: Hello...
-      objectReference: {fileID: 0}
-    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: 'script.Array.data[1]'
-      value: ...
-      objectReference: {fileID: 0}
-    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: 'script.Array.data[2]'
-      value: ...
-      objectReference: {fileID: 0}
-    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: 'script.Array.data[3]'
-      value: ...
-      objectReference: {fileID: 0}
-    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: 'script.Array.data[4]'
-      value: Goodbye!
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4799094165245811471, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-  m_SourcePrefab: {fileID: 100100000, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
---- !u!4 &733465356 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-  m_PrefabInstance: {fileID: 733465355}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &758485683
 GameObject:
   m_ObjectHideFlags: 0
@@ -3399,7 +3282,7 @@ TilemapRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1819752187
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: -3
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -10466,34 +10349,6 @@ PrefabInstance:
       propertyPath: 'script.Array.data[4]'
       value: That would be very nice!
       objectReference: {fileID: 0}
-    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: dialogue
-      value: 
-      objectReference: {fileID: 280873892}
-    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: script.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: 'script.Array.data[0]'
-      value: Hey, Mr. Player!
-      objectReference: {fileID: 0}
-    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: 'script.Array.data[1]'
-      value: I'm Jenny!
-      objectReference: {fileID: 0}
-    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: 'script.Array.data[2]'
-      value: I heard you are working on the garden on the rooftop!
-      objectReference: {fileID: 0}
-    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: 'script.Array.data[3]'
-      value: Could you lend me some of the vegetables you grow?
-      objectReference: {fileID: 0}
-    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: 'script.Array.data[4]'
-      value: That would be very nice!
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10590,7 +10445,7 @@ TilemapRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -13216,12 +13071,110 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2288852435617784238}
-  - {fileID: 733465356}
+  - {fileID: 1256856661}
   - {fileID: 776382148}
   - {fileID: 2141137963}
   - {fileID: 1381906435}
   m_Father: {fileID: 251049183}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1256856660
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1247580490}
+    m_Modifications:
+    - target: {fileID: 4004326654003984395, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_Name
+      value: JoeyDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 280873892}
+    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: script.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[0]'
+      value: Hello...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[1]'
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[2]'
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[3]'
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[4]'
+      value: Goodbye!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 280873892}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 2699984049042299669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4799094165245811471, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+  m_SourcePrefab: {fileID: 100100000, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+--- !u!4 &1256856661 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+  m_PrefabInstance: {fileID: 1256856660}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1268442896
 GameObject:
   m_ObjectHideFlags: 0
@@ -13267,6 +13220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab8208ae51b151dd4b4bb1655dd51f56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  currentField: {fileID: 0}
 --- !u!212 &1268442899
 SpriteRenderer:
   serializedVersion: 2
@@ -13528,34 +13482,6 @@ PrefabInstance:
       value: I can hardly afford anything!
       objectReference: {fileID: 0}
     - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: 'script.Array.data[4]'
-      value: If only a cheaper option exists for us...
-      objectReference: {fileID: 0}
-    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: dialogue
-      value: 
-      objectReference: {fileID: 280873892}
-    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: script.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: 'script.Array.data[0]'
-      value: Yo, Mr. Player!
-      objectReference: {fileID: 0}
-    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: 'script.Array.data[1]'
-      value: Time's been really tough these days...
-      objectReference: {fileID: 0}
-    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: 'script.Array.data[2]'
-      value: Everything has been so expensive!
-      objectReference: {fileID: 0}
-    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: 'script.Array.data[3]'
-      value: I can hardly afford anything!
-      objectReference: {fileID: 0}
-    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
       propertyPath: 'script.Array.data[4]'
       value: If only a cheaper option exists for us...
       objectReference: {fileID: 0}
@@ -14231,6 +14157,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3205105266898121627, guid: f59a21116e5afac7480ae1f555095a4a, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8743825310388936083, guid: f59a21116e5afac7480ae1f555095a4a, type: 3}
       propertyPath: m_Name
       value: Field
@@ -14678,6 +14608,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1125822984}
     m_Modifications:
+    - target: {fileID: 51164902257876088, guid: e40eff5429ac68600ad793530ea67d25, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 51164902257876088, guid: e40eff5429ac68600ad793530ea67d25, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 51164902257876088, guid: e40eff5429ac68600ad793530ea67d25, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 64563887354311006, guid: e40eff5429ac68600ad793530ea67d25, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -14698,6 +14640,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1552327137820646964, guid: e40eff5429ac68600ad793530ea67d25, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1726129968335809491, guid: e40eff5429ac68600ad793530ea67d25, type: 3}
       propertyPath: particles
       value: 
@@ -14709,6 +14655,30 @@ PrefabInstance:
     - target: {fileID: 1956946117831332051, guid: e40eff5429ac68600ad793530ea67d25, type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2286191372475498282, guid: e40eff5429ac68600ad793530ea67d25, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2286191372475498282, guid: e40eff5429ac68600ad793530ea67d25, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2286191372475498282, guid: e40eff5429ac68600ad793530ea67d25, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2286191372475498282, guid: e40eff5429ac68600ad793530ea67d25, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5127012939130703728, guid: e40eff5429ac68600ad793530ea67d25, type: 3}
+      propertyPath: m_VerticalFit
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5127012939130703728, guid: e40eff5429ac68600ad793530ea67d25, type: 3}
+      propertyPath: m_HorizontalFit
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6289156705555395790, guid: e40eff5429ac68600ad793530ea67d25, type: 3}
       propertyPath: m_Name
@@ -14890,6 +14860,10 @@ PrefabInstance:
       propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 7075161731706563026, guid: e40eff5429ac68600ad793530ea67d25, type: 3}
+      propertyPath: m_PivotReferenceSize
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14986,31 +14960,6 @@ PrefabInstance:
     - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
       propertyPath: 'script.Array.data[4]'
       value: Cheers!
-      objectReference: {fileID: 0}
-    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: dialogue
-      value: 
-      objectReference: {fileID: 280873892}
-    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: script.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: 'script.Array.data[0]'
-      value: What's up? Some Ketchup!
-      objectReference: {fileID: 0}
-    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: 'script.Array.data[1]'
-      value: I'm Jasper!
-      objectReference: {fileID: 0}
-    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: 'script.Array.data[2]'
-      value: I see you working hard up there, Mr. Player!
-      objectReference: {fileID: 0}
-    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: 'script.Array.data[3]'
-      value: If you catch a break, do show me some of the stuff you're growing up
-        there!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

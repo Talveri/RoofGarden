@@ -121,7 +121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   untilledField: {fileID: 1851951766, guid: b22d4052b1feb5775a12aa39571ff1b7, type: 3}
   tilledField: {fileID: -872454612, guid: b22d4052b1feb5775a12aa39571ff1b7, type: 3}
-  alphaImpactOnIrregation: 1000000
+  alphaImpactOnIrregation: 100
 --- !u!114 &814160778599839510
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -11,13 +11,16 @@ public class WateringCan : MonoBehaviour, ITool
 
     public void UseToolStart()
     {
+        Debug.Log("Water start");
         watering = true;
         // start watering
     }
     public void UseToolHold()
     {
+        
         if(!watering) return;
 
+        Debug.Log("Water...");
         Field field = FieldSelector.Instance.currentField;
         if(field != null)
         {
@@ -27,6 +30,7 @@ public class WateringCan : MonoBehaviour, ITool
 
     public void UseToolRelease()
     {
+        Debug.Log("Water stop");
         watering = false;
         // stop watering
     }
