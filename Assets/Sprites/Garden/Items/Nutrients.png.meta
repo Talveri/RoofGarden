@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 77494e35300eae77a9dd1f7a206d1ac7
+guid: a82b99a41a4314eaaabeb34ea970a65f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 826458045675144917
-    second: UTKWindow_0
+      213: -8978504349016304593
+    second: Nutrients_0
+  - first:
+      213: 1528988137529418732
+    second: Nutrients_1
+  - first:
+      213: 19744506283232817
+    second: Nutrients_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UTKWindow_0
+      name: Nutrients_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 48
-        height: 128
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +134,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5d60b3ab63b287b00800000000000000
-      internalID: 826458045675144917
+      spriteID: f24559e5dd1f56380800000000000000
+      internalID: -8978504349016304593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nutrients_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce32a333c9e083510800000000000000
+      internalID: 1528988137529418732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nutrients_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13e074b1685264000800000000000000
+      internalID: 19744506283232817
       vertices: []
       indices: 
       edges: []
@@ -138,7 +188,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 3270204dd8684c8beadef5e8a734ba2f
+    spriteID: 0b3f5feb05a7530cb84c305e253be86f
     internalID: 0
     vertices: []
     indices: 
@@ -148,9 +198,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":48.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      UTKWindow_0: 826458045675144917
+      Nutrients_0: -8978504349016304593
+      Nutrients_1: 1528988137529418732
+      Nutrients_2: 19744506283232817
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

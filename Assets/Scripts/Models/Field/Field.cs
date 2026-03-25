@@ -13,9 +13,12 @@ namespace RoofGardenGame.Models
         Plant plant;
         Nutrients nutrients;
         int waterAmount;
-
         FieldSpriteManager spriteManager;
 
+        public float moisture;
+        public float nitrogen;
+        public float phosphor;
+        public float potassium;
 
         void Awake()
         {
@@ -56,6 +59,7 @@ namespace RoofGardenGame.Models
             if (waterAmount < Water.MAX)
             {
                 waterAmount ++;
+                moisture = waterAmount/Water.MAX;
                 spriteManager.VisualMoisture(waterAmount);
             }
         }
@@ -92,6 +96,7 @@ namespace RoofGardenGame.Models
         {
             plant.ReceiveNutrientsAndWater(ref nutrients, waterAmount);
             // plant automatically removes nutrients
+
         }
 
     }
