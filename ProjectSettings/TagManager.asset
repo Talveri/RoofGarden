@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Plant
   - PlantSeed
+  - Fertilizer
   layers:
   - Default
   - TransparentFX
