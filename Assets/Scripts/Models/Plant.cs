@@ -16,7 +16,7 @@ namespace RoofGardenGame.Models
         [Tooltip("Which plant is it?")]
         [SerializeField]
         PlantType type;
-        
+
         [Tooltip("How wet does the plant want the soil to be?")]
         [SerializeField]
         WaterLevel optimalWaterLevel;
@@ -31,17 +31,19 @@ namespace RoofGardenGame.Models
 
         [Tooltip("How many days does it take for the next sprite to appear?")]
         [SerializeField]
-        int growthDurationInDays;
+        int growthDurationInTicks;
 
-        [Tooltip("How many sprites belong to this plant type?")]
+        [Tooltip("All plant sprites of a growth stage")]
         [SerializeField]
-        int spriteCount;
+        Sprite[] growthStageSprites;
 
-        [Tooltip("All plant sprites")]
+        [Tooltip("Death sprite")]
         [SerializeField]
-        Sprite[] sprites;
+        Sprite deathSprite;
 
         SpriteRenderer spriteRenderer;
+
+        int spriteCount;
 
         int dayPlanted;
 
@@ -52,13 +54,14 @@ namespace RoofGardenGame.Models
             // runs the moment the plant is instantiated during the game
             dayPlanted = dayCycleManager.GetCurrentDay();
             spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
-            spriteRenderer.sprite = sprites[0];
+            spriteRenderer.sprite = growthStageSprites[0];
+            spriteCount = growthStageSprites.Length;
         }
 
         public bool IsGrown()
         {
             int currentDay = dayCycleManager.GetCurrentDay();
-            return currentDay / growthDurationInDays <= spriteCount;
+            return currentDay / growthDurationInTicks <= spriteCount;
         }
 
         public Nutrients GetConsumption()
@@ -68,11 +71,8 @@ namespace RoofGardenGame.Models
 
         public void Progress()
         {
-            int index = Math.Min(
-                GetAge() / growthDurationInDays,
-                spriteCount
-            );
-            spriteRenderer.sprite = sprites[index];
+            int index = Math.Min(GetAge() / growthDurationInTicks, spriteCount);
+            spriteRenderer.sprite = growthStageSprites[index];
         }
 
         /// <summary>
@@ -87,7 +87,10 @@ namespace RoofGardenGame.Models
         {
             if (!IsGrown())
             {
-                if(!nutrients.Contains(consumption) || (Water.Level(waterAmount) != optimalWaterLevel)) // insufficient nutrients
+                if (
+                    !nutrients.Contains(consumption)
+                    || (Water.Level(waterAmount) != optimalWaterLevel)
+                ) // insufficient nutrients
                 {
                     health -= 1;
                 }
@@ -95,7 +98,7 @@ namespace RoofGardenGame.Models
             }
             else
             {
-                int dayWhenGrowthEnds = dayPlanted + spriteCount * growthDurationInDays;
+                int dayWhenGrowthEnds = dayPlanted + spriteCount * growthDurationInTicks;
                 int daysSpentInGrownState = dayCycleManager.GetCurrentDay() - dayWhenGrowthEnds;
                 if (daysSpentInGrownState > 0)
                 {

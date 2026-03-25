@@ -52,16 +52,14 @@ MonoBehaviour:
     nitrogen: 0
     phosphor: 0
   maxHealth: 2
-  growthDurationInDays: 2
-  spriteCount: 10
-  spriteStartIndex: 6
-  sprites:
+  growthDurationInTicks: 20
+  growthStageSprites:
   - {fileID: -5859083586626064994, guid: d9e8235a6cb05d116b642edafd955f3d, type: 3}
   - {fileID: -2094157912208876536, guid: d9e8235a6cb05d116b642edafd955f3d, type: 3}
   - {fileID: -830467699528618894, guid: d9e8235a6cb05d116b642edafd955f3d, type: 3}
   - {fileID: 3721053832486967156, guid: d9e8235a6cb05d116b642edafd955f3d, type: 3}
   - {fileID: -3855089239954288668, guid: d9e8235a6cb05d116b642edafd955f3d, type: 3}
-  - {fileID: 1746509244472477445, guid: d9e8235a6cb05d116b642edafd955f3d, type: 3}
+  deathSprite: {fileID: 1746509244472477445, guid: d9e8235a6cb05d116b642edafd955f3d, type: 3}
 --- !u!212 &8901879269737643852
 SpriteRenderer:
   serializedVersion: 2
