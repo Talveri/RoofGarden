@@ -8,11 +8,11 @@ namespace RoofGardenGame
         #region Time Events
 
         #region Tick Events
-        public static event Action OnTick;
+        public static event Action<TickEvent> OnTick;
 
-        public static void RaiseTick()
+        public static void RaiseTick(TickEvent tickEvent)
         {
-            OnTick?.Invoke();
+            OnTick?.Invoke(tickEvent);
         }
         #endregion
 
