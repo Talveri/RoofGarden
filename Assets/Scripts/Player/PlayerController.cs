@@ -1,6 +1,10 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+/// <summary>
+/// The Player Controller Handles Player Movement and Interaction and is attached to the Player gameObject
+/// </summary>
+
 public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rb;
@@ -28,28 +32,15 @@ public class PlayerController : MonoBehaviour
         dustParticles = GetComponentInChildren<ParticleSystem>();
         dustParticles.gameObject.SetActive(false);
         anim.SetBool("isRunning", false);
-
-
     }
-
     public void Move(InputAction.CallbackContext context)
     {
-        xy_direction = context.ReadValue<Vector2>();
-
-        xy_direction.Normalize();
-        rb.linearVelocity = xy_direction * speed;
+        xy_direction = context.ReadValue<Vector2>().normalized;
 
         // Animation
-        anim.SetBool("isRunning", rb.linearVelocity.magnitude != 0);
+        anim.SetBool("isRunning", xy_direction != Vector2.zero);
 
-        if(rb.linearVelocity.magnitude != 0)
-        {
-            dustParticles.gameObject.SetActive(true);
-        }
-        else
-        {
-             dustParticles.gameObject.SetActive(false);
-        }
+        dustParticles.gameObject.SetActive(xy_direction != Vector2.zero); //Stop the particle system if the player does not move
 
         if (xy_direction.x < 0){
             sr.flipX = true;
@@ -59,6 +50,10 @@ public class PlayerController : MonoBehaviour
             sr.flipX = false;
             dustParticles.transform.localScale = new Vector3(-1,1,1);
         }
+    }
+    private void FixedUpdate()
+    {
+        rb.MovePosition(rb.position + xy_direction * speed * Time.fixedDeltaTime);
     }
 
     public void Use(InputAction.CallbackContext context)
