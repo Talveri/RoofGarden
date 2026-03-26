@@ -3,12 +3,17 @@ using UnityEngine;
 
 public class RedDoorTrigger : MonoBehaviour, IInteractable
 {
-    Transform MenuCameraPosition;
-    ScreenFader fader;
+    public Transform MenuCameraPosition;
+    public ScreenFader fader;
+    public MenuController RedDoorMenu;
+    public Camera mainCamera;
+    public Tooltip tooltip;
+    public string tooltipText;
 
-    MenuController RedDoorMenu;
-
-    Camera mainCamera;
+    public void Start()
+    {
+        tooltip.UpdateText(tooltipText);
+    }
     public IEnumerator LeaveMenu()
     {
         yield return StartCoroutine(fader.FadeOut());
@@ -29,6 +34,15 @@ public class RedDoorTrigger : MonoBehaviour, IInteractable
         moveCamera();
         //Open RedDoorMenu 
         RedDoorMenu.ToggleMenu();
+    }
+
+    void OnTriggerEnter2D()
+    {
+        tooltip.showTooltip();
+    }
+    void OnTriggerExit2D()
+    {
+        tooltip.hideTooltip();
     }
 
 }

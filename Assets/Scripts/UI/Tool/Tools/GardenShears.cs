@@ -1,10 +1,11 @@
+using RoofGardenGame.Models;
 using UnityEngine;
 
 public class GardenShears : MonoBehaviour, ITool
 {
-    public void UseToolStart(){}
+    public void UseToolStart(Field field){}
 
-    public void UseToolHold(){}
+    public void UseToolHold(Field field){}
 
-    public void UseToolRelease(){}
+    public void UseToolRelease(Field field){}
 }

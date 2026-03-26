@@ -19,6 +19,15 @@ public class Tooltip : MonoBehaviour
         tooltip.text = tooltipText;
     }
 
+    void OnTriggerEnter2D()
+    {
+        showTooltip();
+    }
+    void OnTriggerExit2D()
+    {
+        hideTooltip();
+    }
+
     public void showTooltip()
     {
         tooltip.style.display = DisplayStyle.Flex;
