@@ -31,6 +31,40 @@ public class InteractionManager : MonoBehaviour
         return null;
     }
 
+    private void SortInteractables()
+    {
+        interactables.Sort(
+            (a, b) =>
+            {
+                float distanceA = Vector2.Distance(
+                    transform.position,
+                    ((MonoBehaviour)a).transform.position
+                );
+                float distanceB = Vector2.Distance(
+                    transform.position,
+                    ((MonoBehaviour)b).transform.position
+                );
+                return distanceA.CompareTo(distanceB);
+            }
+        );
+    }
+
+    private void AddInteractable(IInteractable interactable)
+    {
+        interactables.Add(interactable);
+        Debug.Log("Added interactable: " + interactable);
+
+        SortInteractables();
+    }
+
+    private void RemoveInteractable(IInteractable interactable)
+    {
+        interactables.Remove(interactable);
+        Debug.Log("Removed interactable: " + interactable);
+
+        SortInteractables();
+    }
+
     private void Start()
     {
         interactables = new List<IInteractable>();
@@ -41,8 +75,7 @@ public class InteractionManager : MonoBehaviour
         IInteractable interactable = collision.GetComponent<IInteractable>();
         if (interactable != null)
         {
-            interactables.Add(interactable);
-            Debug.Log("Added interactable: " + interactable);
+            AddInteractable(interactable);
         }
     }
 
@@ -51,8 +84,7 @@ public class InteractionManager : MonoBehaviour
         IInteractable interactable = collision.GetComponent<IInteractable>();
         if (interactable != null)
         {
-            interactables.Remove(interactable);
-            Debug.Log("Removed interactable: " + interactable);
+            RemoveInteractable(interactable);
         }
     }
 }
