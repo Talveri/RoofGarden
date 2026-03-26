@@ -20,7 +20,7 @@ public class NeighbourDoor : MonoBehaviour, IInteractable
         if (!dialogue.inDialogue)
         {
             tooltip.hideTooltip();
-            dialogue.UpdateText(script);
+            dialogue.UpdateText(scriptLines);
             dialogue.StartDialogue();
             neighbourData.ShowStats();
         }
@@ -29,7 +29,7 @@ public class NeighbourDoor : MonoBehaviour, IInteractable
     // TEST CODE DELETE LATER
     //bool playerInside;
     public Dialogue dialogue;
-    private string[] script;
+    private string[] scriptLines;
 
     //
     Tooltip tooltip;
@@ -44,7 +44,7 @@ public class NeighbourDoor : MonoBehaviour, IInteractable
     void Start()
     {
         tooltip.UpdateText(tooltipText);
-        script = neighbourDialogue.script;
+        scriptLines = neighbourDialogue.script[neighbourData.mood].lines;
     }
 
     private void OnTriggerEnter2D(Collider2D other)

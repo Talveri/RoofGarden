@@ -1629,7 +1629,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   menuCanvas: {fileID: 1188787147}
-  inventoryOpen: 0
+  menuOpen: 0
 --- !u!1001 &126905693
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3604,6 +3604,225 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 273439537}
   m_CullTransparentMesh: 1
+--- !u!1001 &275507526
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1247580490}
+    m_Modifications:
+    - target: {fileID: 4004326654003984395, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_Name
+      value: JoeyDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7498722815002269134, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: mood
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 280873892}
+    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: script.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[0]'
+      value: Hello, Mr. Player!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[1]'
+      value: My name is John!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[2]'
+      value: John Roofgarden!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[3]'
+      value: I invented the rake, the roof and the garden!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 280873892}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: script.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[0]'
+      value: Hello, Mr. Player!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[1]'
+      value: My name is John!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[2]'
+      value: John Roofgarden!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[3]'
+      value: I invented the rake, the roof and the garden!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[4]'
+      value: I invented the rake, the roof and the garden!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: script.Array.data[0].lines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: script.Array.data[1].lines.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: script.Array.data[2].lines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: script.Array.data[3].lines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: script.Array.data[4].lines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: script.Array.data[5].lines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[0].lines.Array.data[0]'
+      value: Hey, Mr. Player!!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[0].lines.Array.data[1]'
+      value: Your garden is amazing!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[0].lines.Array.data[2]'
+      value: You've totally inspired me to get into this kind of stuff too!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[1].lines.Array.data[0]'
+      value: Hey, Mr. Player!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[1].lines.Array.data[1]'
+      value: I've been watching your garden.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[1].lines.Array.data[2]'
+      value: It's seriously impressive!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[1].lines.Array.data[3]'
+      value: Makes me want to try something like that myself.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[2].lines.Array.data[0]'
+      value: Hey, Mr. Player!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[2].lines.Array.data[1]'
+      value: That rooftop garden is really cool.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[2].lines.Array.data[2]'
+      value: I've never seen anything like it before.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[3].lines.Array.data[0]'
+      value: Yo, Mr. Player!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[3].lines.Array.data[1]'
+      value: Your garden looks awesome, but it feels like a mystery.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[3].lines.Array.data[2]'
+      value: I wish I understood it better.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[4].lines.Array.data[0]'
+      value: Hey, Mr. Player!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[4].lines.Array.data[1]'
+      value: You've got this whole cool setup up there and nobody really knows what's
+        going on!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[4].lines.Array.data[2]'
+      value: That's kinda frustrating!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[5].lines.Array.data[0]'
+      value: Hey, Mr. Player!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[5].lines.Array.data[1]'
+      value: You've got this whole cool setup up there and nobody really knows what's
+        going on!
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4799094165245811471, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+  m_SourcePrefab: {fileID: 100100000, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+--- !u!4 &275507527 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+  m_PrefabInstance: {fileID: 275507526}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &280873891 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1802391050325263962, guid: 43a47b971739a030b99c6855faf1a50d, type: 3}
@@ -13606,6 +13825,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7498722815002269134, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: mood
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
       propertyPath: dialogue
       value: 
@@ -13633,6 +13856,118 @@ PrefabInstance:
     - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
       propertyPath: 'script.Array.data[4]'
       value: That would be very nice!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 280873892}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: script.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: script.Array.data[0].lines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: script.Array.data[1].lines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: script.Array.data[2].lines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: script.Array.data[3].lines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: script.Array.data[4].lines.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: script.Array.data[5].lines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[0].lines.Array.data[0]'
+      value: Mr. Player, hi!!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[0].lines.Array.data[1]'
+      value: Your garden makes this building feel alive.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[0].lines.Array.data[2]'
+      value: It's such a wonderful thing you've created for everyone to enjoy!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[1].lines.Array.data[0]'
+      value: Hey, Mr. Player!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[1].lines.Array.data[1]'
+      value: Your garden brings such a warm feeling to this place.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[1].lines.Array.data[2]'
+      value: It really brightens my day.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[1].lines.Array.data[3]'
+      value: Your garden brings such a warm feeling to this place.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[1].lines.Array.data[4]'
+      value: Your garden brings such a warm feeling to this place.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[2].lines.Array.data[0]'
+      value: Hi, Mr. Player!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[2].lines.Array.data[1]'
+      value: Your rooftop garden is really lovely.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[2].lines.Array.data[2]'
+      value: It's nice knowing something like that exists here.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[3].lines.Array.data[0]'
+      value: Hey, Mr. Player.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[3].lines.Array.data[1]'
+      value: Your garden looks really beautiful.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[3].lines.Array.data[2]'
+      value: I can't help but feel a little left out sometimes.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[4].lines.Array.data[0]'
+      value: Hi, Mr. Player...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[4].lines.Array.data[1]'
+      value: I see your garden up there every day.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[4].lines.Array.data[2]'
+      value: I just wish it felt a bit more...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[4].lines.Array.data[3]'
+      value: ...welcoming to the rest of us.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[5].lines.Array.data[0]'
+      value: Hi, Mr. Player...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[5].lines.Array.data[1]'
+      value: I see your garden up there every day.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16123,7 +16458,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 959518501}
   m_HandleRect: {fileID: 959518500}
   m_Direction: 2
-  m_Value: 0.9999998
+  m_Value: 1
   m_Size: 0.5555555
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -17567,7 +17902,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MenuController
   menuCanvas: {fileID: 1188787147}
-  inventoryOpen: 0
+  menuOpen: 0
 --- !u!1 &1189560883
 GameObject:
   m_ObjectHideFlags: 0
@@ -18058,7 +18393,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2288852435617784238}
-  - {fileID: 1256856661}
+  - {fileID: 275507527}
   - {fileID: 776382148}
   - {fileID: 2141137963}
   - {fileID: 1381906435}
@@ -18161,104 +18496,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5cf350478646a36e90431060362a67b, type: 3}
---- !u!1001 &1256856660
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1247580490}
-    m_Modifications:
-    - target: {fileID: 4004326654003984395, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: m_Name
-      value: JoeyDoor
-      objectReference: {fileID: 0}
-    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: dialogue
-      value: 
-      objectReference: {fileID: 280873892}
-    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: script.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: 'script.Array.data[0]'
-      value: Hello...
-      objectReference: {fileID: 0}
-    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: 'script.Array.data[1]'
-      value: ...
-      objectReference: {fileID: 0}
-    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: 'script.Array.data[2]'
-      value: ...
-      objectReference: {fileID: 0}
-    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: 'script.Array.data[3]'
-      value: ...
-      objectReference: {fileID: 0}
-    - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: 'script.Array.data[4]'
-      value: Goodbye!
-      objectReference: {fileID: 0}
-    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      propertyPath: dialogue
-      value: 
-      objectReference: {fileID: 280873892}
-    m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 2699984049042299669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4799094165245811471, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-  m_SourcePrefab: {fileID: 100100000, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
---- !u!4 &1256856661 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4977392114016649669, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
-  m_PrefabInstance: {fileID: 1256856660}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1260407935 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2564904253444487085, guid: d5cf350478646a36e90431060362a67b, type: 3}
@@ -18913,6 +19150,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -1.35
       objectReference: {fileID: 0}
+    - target: {fileID: 7498722815002269134, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: mood
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
       propertyPath: dialogue
       value: 
@@ -18940,6 +19181,106 @@ PrefabInstance:
     - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
       propertyPath: 'script.Array.data[4]'
       value: If only a cheaper option exists for us...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 280873892}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: script.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: script.Array.data[0].lines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: script.Array.data[1].lines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: script.Array.data[2].lines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: script.Array.data[3].lines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: script.Array.data[4].lines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: script.Array.data[5].lines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[0].lines.Array.data[0]'
+      value: Hey, Mr. Player...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[0].lines.Array.data[1]'
+      value: I respect what you've built up there.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[0].lines.Array.data[2]'
+      value: It shows that things can get better with effort.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[1].lines.Array.data[0]'
+      value: Hey, Mr. Player.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[1].lines.Array.data[1]'
+      value: That garden of yours is a good thing.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[1].lines.Array.data[2]'
+      value: It gives this place a bit of hope, in a way.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[2].lines.Array.data[0]'
+      value: Hey, Mr. Player.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[2].lines.Array.data[1]'
+      value: What you're doing up there makes sense.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[2].lines.Array.data[2]'
+      value: Growing your own food... that's a smart move these days.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[3].lines.Array.data[0]'
+      value: Hi, Mr. Player.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[3].lines.Array.data[1]'
+      value: Your garden's doing well, from what I can tell.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[3].lines.Array.data[2]'
+      value: I just wish things felt a bit more balanced around here.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[4].lines.Array.data[0]'
+      value: Hey, Mr. Player...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[4].lines.Array.data[1]'
+      value: Seeing that garden every day...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[4].lines.Array.data[2]'
+      value: It's hard not to think about what some of us are missing.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[5].lines.Array.data[0]'
+      value: Hey, Mr. Player...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[5].lines.Array.data[1]'
+      value: Seeing that garden every day...
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20179,7 +20520,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1621776483}
   m_HandleRect: {fileID: 1621776482}
   m_Direction: 2
-  m_Value: 0.9999998
+  m_Value: 1
   m_Size: 0.5555555
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -22284,7 +22625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MenuController
   menuCanvas: {fileID: 1949100110}
-  inventoryOpen: 0
+  menuOpen: 0
 --- !u!114 &1949100113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23671,6 +24012,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -1.35
       objectReference: {fileID: 0}
+    - target: {fileID: 7498722815002269134, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: mood
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
       propertyPath: dialogue
       value: 
@@ -23699,6 +24044,102 @@ PrefabInstance:
     - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
       propertyPath: 'script.Array.data[4]'
       value: Cheers!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 280873892}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: script.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: script.Array.data[0].lines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: script.Array.data[1].lines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: script.Array.data[2].lines.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: script.Array.data[3].lines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: script.Array.data[4].lines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[0].lines.Array.data[0]'
+      value: Yo, Mr. Player!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[0].lines.Array.data[1]'
+      value: 'Alright, I''m convinced: that rooftop garden is awesome.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[0].lines.Array.data[2]'
+      value: You've definitely made this place more interesting.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[1].lines.Array.data[0]'
+      value: Hey, Mr. Player!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[1].lines.Array.data[1]'
+      value: That garden of yours is actually pretty impressive.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[1].lines.Array.data[2]'
+      value: Didn't think it'd turn out this well.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[1].lines.Array.data[3]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[2].lines.Array.data[0]'
+      value: Hey, Mr. Player.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[2].lines.Array.data[1]'
+      value: I've been watching your progress!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[2].lines.Array.data[2]'
+      value: It looks like some real work!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[2].lines.Array.data[3]'
+      value: Can't say I'd have the patience for it.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[3].lines.Array.data[0]'
+      value: Yo, Mr. Player.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[3].lines.Array.data[1]'
+      value: You've got something interesting going up there, I'll admit.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[3].lines.Array.data[2]'
+      value: Just wish it didn't feel so... out of reach.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[4].lines.Array.data[0]'
+      value: Hey, Mr. Player.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[4].lines.Array.data[1]'
+      value: So that rooftop setup is just for show, huh?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[4].lines.Array.data[2]'
+      value: Hard to tell what the point of it is.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23975,6 +24416,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7498722815002269134, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: mood
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7836690308615333156, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
       propertyPath: dialogue
       value: 
@@ -24005,7 +24450,7 @@ PrefabInstance:
       objectReference: {fileID: 280873892}
     - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
       propertyPath: script.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
       propertyPath: 'script.Array.data[0]'
@@ -24026,6 +24471,102 @@ PrefabInstance:
     - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
       propertyPath: 'script.Array.data[4]'
       value: I invented the rake, the roof and the garden!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: script.Array.data[0].lines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: script.Array.data[1].lines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: script.Array.data[2].lines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: script.Array.data[3].lines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: script.Array.data[4].lines.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: script.Array.data[5].lines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[0].lines.Array.data[0]'
+      value: Good day, Mr. Player.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[0].lines.Array.data[1]'
+      value: What you've created is genuinely meaningful.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[0].lines.Array.data[2]'
+      value: It improves not just the space, but the atmosphere for everyone here.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[1].lines.Array.data[0]'
+      value: Hello, Mr. Player.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[1].lines.Array.data[1]'
+      value: Your garden adds clear value to this building.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[1].lines.Array.data[2]'
+      value: It's a thoughtful and constructive endeavour.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[2].lines.Array.data[0]'
+      value: Good day, Mr. Player.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[2].lines.Array.data[1]'
+      value: Your initiative is practical and well considered.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[2].lines.Array.data[2]'
+      value: A sensible use of available space.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[3].lines.Array.data[0]'
+      value: Hello, Mr. Player.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[3].lines.Array.data[1]'
+      value: Your rooftop garden is well executed.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[3].lines.Array.data[2]'
+      value: Though I can't help but think it could have a broader impact.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[4].lines.Array.data[0]'
+      value: Good day, Mr. Player.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[4].lines.Array.data[1]'
+      value: Your project has potential, but it feels somewhat...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[4].lines.Array.data[2]'
+      value: ...isolated.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[4].lines.Array.data[3]'
+      value: It could serve a greater purpose.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[5].lines.Array.data[0]'
+      value: Good day, Mr. Player.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094144441260522448, guid: 96ce7abe85f62e1a096183a034d5e930, type: 3}
+      propertyPath: 'script.Array.data[5].lines.Array.data[1]'
+      value: Your project has potential, but it feels somewhat...
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
