@@ -13,11 +13,15 @@ public class PlayerStockController : MonoBehaviour
 
     public void RefreshPlayerInventoryDisplay()
     {
-        Debug.Log("Refreshing Player Inventory");
-        if (InventoryController.Instance == null) return;
+
+        if (InventoryController.Instance == null)
+        {
+            Debug.LogError("No Instance of InventoryController found!");
+            return;
+        }
         foreach (Transform child in playerInventoryGrid) Destroy(child.gameObject);
 
-        Debug.Log(InventoryController.Instance.inventoryPanel.transform.childCount);
+        Debug.Log(InventoryController.Instance.inventoryPanel.transform);
 
         foreach (Transform slotTransform in InventoryController.Instance.inventoryPanel.transform)
         {

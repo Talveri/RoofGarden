@@ -21,8 +21,10 @@ public class SeedPack : MonoBehaviour, ITool
     public void UseToolStart(Field field)
     {
         if (field != null)
-            if (slot.currentItem.CompareTag("PlantSeed") || slot.currentItem == null)
+            if (slot.currentItem != null && slot.currentItem.CompareTag("PlantSeed")){
                 field.ReceivePlant(plant);
+                slot.removeCurrentItem();
+            }
             else
             {
                 PlayerMessage.Instance.MessageTooltip("I need plant seeds.");
