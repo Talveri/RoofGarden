@@ -10,7 +10,7 @@ public class ShopController : MonoBehaviour
     public GameObject shopPanel;
     public Transform shopInventory, playerInventoryGrid;
     public GameObject shopSlotPrefab;
-    public TMP_Text playerMoneyText, shopTitleText;
+    public TMP_Text playerMoneyText;
 
     private ItemDictionary itemDictionary;
 
