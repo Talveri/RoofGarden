@@ -18,8 +18,8 @@ MonoBehaviour:
   - Did you know that we have a raised bed on top of our roof?
   - It hasn't been used for a long time.
   - I wonder if it still works?
+  autoProgressLines: 0100
   typingSpeed: 0.05
-  voiceSound: {fileID: 0}
+  voiceSound: {fileID: 8300000, guid: 8ac2a42e1cfc01c7193fc9356321254e, type: 3}
   voicePitch: 1
-  autoProgressLines: 
   autoProgressDelay: 1.5
