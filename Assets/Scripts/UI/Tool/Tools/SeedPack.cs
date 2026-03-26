@@ -18,9 +18,8 @@ public class SeedPack : MonoBehaviour, ITool
     {
         slot = GetComponent<Slot>();
     }
-    public void UseToolStart()
+    public void UseToolStart(Field field)
     {
-        Field field = FieldSelector.Instance.currentField;
         if (field != null)
             if (slot.currentItem.CompareTag("PlantSeed"))
                 field.ReceivePlant(plant);
@@ -30,8 +29,8 @@ public class SeedPack : MonoBehaviour, ITool
             }
     }
 
-    public void UseToolHold() { }
-    public void UseToolRelease() { }
+    public void UseToolHold(Field field) { }
+    public void UseToolRelease(Field field) { }
 
 
 }

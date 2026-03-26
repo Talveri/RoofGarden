@@ -6,18 +6,17 @@ public class Harvest : MonoBehaviour, ITool
     /// <summary>
     /// Uses the Harvest Function of the Field Script
     /// </summary>
-    public void UseToolStart()
+    public void UseToolStart(Field field)
     {
-        Field field = FieldSelector.Instance.currentField;
 
         if (field != null)
         {
             field.Harvest();
         }
     }
-    public void UseToolHold(){}
+    public void UseToolHold(Field field){}
 
-    public void UseToolRelease(){}
+    public void UseToolRelease(Field field){}
 
 }
 

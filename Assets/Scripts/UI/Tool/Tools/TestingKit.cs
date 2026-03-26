@@ -12,19 +12,19 @@ public class TestingKit : MonoBehaviour, ITool
     {
         panel = StatusBarManager.Instance.panelController;
     }
-    public void UseToolStart()
+    public void UseToolStart(Field field)
     {
         active = true;
         panel.Show();
         ShowStatus();
     }
 
-    public void UseToolHold()
+    public void UseToolHold(Field field)
     {
         if(!active) return;
         ShowStatus();
     }
-    public void UseToolRelease()
+    public void UseToolRelease(Field field)
     {
         active = false;
         panel.Hide();

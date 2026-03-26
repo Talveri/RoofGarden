@@ -1,16 +1,17 @@
+using RoofGardenGame.Models;
 using UnityEngine;
 
 public class Fertilizer : MonoBehaviour, ITool
 {
     public PlayerMessage playerMessage;
 
-    public void UseToolStart()
+    public void UseToolStart(Field field)
     {
         Debug.Log("Uses Fertilizer");
     }
-    public void UseToolHold(){}
+    public void UseToolHold(Field field){}
 
-    public void UseToolRelease(){}
+    public void UseToolRelease(Field field){}
 
 
 }

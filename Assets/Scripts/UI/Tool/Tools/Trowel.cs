@@ -7,13 +7,9 @@ using UnityEngine;
 /// </summary>
 public class Trowel : MonoBehaviour, ITool
 {
-    public void UseToolStart()
+    public void UseToolStart(Field field)
     {
-        Field field = FieldSelector.Instance.currentField;
-
-        if (field == null) return;
-        
-/// The Player gets informed why this tool can't be used
+       /// The Player gets informed why this tool can't be used
         if (field.FieldState == FieldState.Tilled)
         {
             PlayerMessage.Instance.MessageTooltip("Ready to Plant");
@@ -28,8 +24,8 @@ public class Trowel : MonoBehaviour, ITool
         field.TillField();
     }
     /// To keep ITool Modular these Functions are implemented, but not used
-    public void UseToolHold() { }
-    public void UseToolRelease() { }
+    public void UseToolHold(Field field) { }
+    public void UseToolRelease(Field field) { }
 
 
 }

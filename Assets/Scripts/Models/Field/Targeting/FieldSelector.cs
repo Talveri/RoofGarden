@@ -11,12 +11,14 @@ using UnityEngine;
 
 public class FieldSelector : MonoBehaviour
 {
-    public Field currentField;
-    public static FieldSelector Instance {get; private set;}
+    public Field currentField = null;
+    public static FieldSelector Instance { get; private set; }
+    public SpriteRenderer selectorVisual;
 
     private void Awake()
     {
         Instance = this;
+        selectorVisual.enabled = false;
     }
 
     public void SetField(Field field)
@@ -31,10 +33,12 @@ public class FieldSelector : MonoBehaviour
     public void MoveToField(Field field)
     {
         transform.position = field.transform.position;
-        Instance.SetField(field);      
+        Instance.SetField(field);
     }
     public void Active(bool active)
     {
-        gameObject.SetActive(active);
+        selectorVisual.enabled = active;
+        if(!active)
+            currentField = null;
     }
 }
