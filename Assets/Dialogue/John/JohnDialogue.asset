@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4779527021574ed4b92953a60d53c24e, type: 3}
+  m_Name: JohnDialogue
+  m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
+  npcName: John
+  dialogueLines:
+  - Hello there!
+  - Did you know that we have a raised bed on top of our roof?
+  - It hasn't been used for a long time.
+  - I wonder if it still works?
+  typingSpeed: 0.05
+  voiceSound: {fileID: 0}
+  voicePitch: 1
+  autoProgressLines: 
+  autoProgressDelay: 1.5
