@@ -6,7 +6,7 @@ using UnityEngine;
 public class TickSystem : MonoBehaviour
 {
     [SerializeField]
-    [Min(0.1f)]
+    [Min(0.01f)]
     private float tickInterval = 1f; // tick interval in seconds
 
     private Coroutine tickCoroutine;
