@@ -9,24 +9,23 @@ public class WateringCan : MonoBehaviour, ITool
 {
     private bool watering;
 
-    public void UseToolStart()
+    public void UseToolStart(Field field)
     {
         watering = true;
         // start watering
     }
-    public void UseToolHold()
+    public void UseToolHold(Field field)
     {
         
         if(!watering) return;
 
-        Field field = FieldSelector.Instance.currentField;
         if(field != null)
         {
             field.Irrigate();
         }
     }
 
-    public void UseToolRelease()
+    public void UseToolRelease(Field field)
     {
         watering = false;
         // stop watering
