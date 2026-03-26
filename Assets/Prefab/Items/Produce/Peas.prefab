@@ -96,6 +96,10 @@ PrefabInstance:
       propertyPath: ID
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8312671593153770992, guid: 3371497eb6bc4da399e1e870bd568020, type: 3}
+      propertyPath: buyPrice
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 8744559631704173122, guid: 3371497eb6bc4da399e1e870bd568020, type: 3}
       propertyPath: m_Name
       value: Peas

@@ -92,6 +92,10 @@ PrefabInstance:
       propertyPath: ID
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 6199116629280572813, guid: 5d9d52afb6d5523ee962730102a55992, type: 3}
+      propertyPath: buyPrice
+      value: 80
+      objectReference: {fileID: 0}
     - target: {fileID: 6629808656876034623, guid: 5d9d52afb6d5523ee962730102a55992, type: 3}
       propertyPath: m_Name
       value: Potassium

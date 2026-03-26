@@ -16,6 +16,10 @@ PrefabInstance:
       propertyPath: ID
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4008556834750795082, guid: ba63947f1d8eb5fab8d520decf87f45a, type: 3}
+      propertyPath: buyPrice
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 4442556193324569336, guid: ba63947f1d8eb5fab8d520decf87f45a, type: 3}
       propertyPath: m_Name
       value: Phosphor
