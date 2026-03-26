@@ -5,7 +5,7 @@ public class MenuController : MonoBehaviour
 {
 
     public GameObject menuCanvas;
-    public bool inventoryOpen;
+    public bool menuOpen;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -13,19 +13,18 @@ public class MenuController : MonoBehaviour
         menuCanvas.gameObject.SetActive(false);
     }
 
-    public void openInventory(InputAction.CallbackContext context)
+    public void openMenu(InputAction.CallbackContext context)
     {
-        Debug.Log("Open Inventory");
         if(!context.performed) return;
-        ToggleInventory();
+        ToggleMenu();
     }
 
-    public void ToggleInventory()
+    public void ToggleMenu()
     {
         menuCanvas.gameObject.SetActive(!menuCanvas.activeSelf);
-        inventoryOpen = menuCanvas.activeSelf;
+        menuOpen = menuCanvas.activeSelf;
 
-        if(inventoryOpen == true)
+        if(menuOpen == true)
             InputMapManager.setToUI();
         else
             InputMapManager.setToPlayer();
