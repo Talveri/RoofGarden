@@ -18,6 +18,9 @@ namespace RoofGardenGame.Models
         public float phosphor;
         public float potassium;
 
+        // Tracker bool so that OnPlantGrown event is only raised once per plant
+        private bool isPlantGrown;
+
         void Awake()
         {
             plant = null;
@@ -38,6 +41,9 @@ namespace RoofGardenGame.Models
             spriteManager.Untilled();
 
             FieldState = FieldState.Raw;
+
+            plant = null;
+            isPlantGrown = false;
         }
 
         // Seeds Interaction
@@ -74,19 +80,20 @@ namespace RoofGardenGame.Models
         {
             if (plant)
             {
-                FeedPlant();
+                FeedPlant(tickEvent.DeltaTime);
                 plant.Progress();
 
-                if (plant.IsGrown())
+                if (plant.IsGrown() && !isPlantGrown)
                 {
+                    isPlantGrown = true;
                     EventBus.RaisePlantGrown(new PlantEvent(this, plant));
                 }
             }
         }
 
-        private void FeedPlant()
+        private void FeedPlant(float deltaTime)
         {
-            plant.ReceiveNutrientsAndWater(ref nutrients, waterAmount);
+            plant.ReceiveNutrientsAndWater(ref nutrients, waterAmount, deltaTime);
             // plant automatically removes nutrients
         }
     }

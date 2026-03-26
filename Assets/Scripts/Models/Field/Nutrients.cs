@@ -1,8 +1,4 @@
 using System;
-using System.Net.NetworkInformation;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Unity.VisualScripting;
-using UnityEngine;
 
 [System.Serializable]
 public class Nutrients
@@ -60,6 +56,24 @@ public class Nutrients
             fields[i] = Math.Clamp(fields[i], 0, MAX[i]);
         }
 
+        return new()
+        {
+            potassium = fields[0],
+            nitrogen = fields[1],
+            phosphor = fields[2],
+        };
+    }
+
+    public static Nutrients operator*(Nutrients left, float scalar)
+    {
+        int[] left_fields = {left.potassium, left.nitrogen, left.phosphor};
+        int[] fields = new int[3];
+        int[] MAX = {MAX_POTASSIUM, MAX_NITROGEN, MAX_PHOSPHOR};
+        for(int i = 0; i < 3 ;i++)
+        {
+            fields[i] = (int)(left_fields[i] * scalar);
+            fields[i] = Math.Clamp(fields[i], 0, MAX[i]);
+        }
         return new()
         {
             potassium = fields[0],
