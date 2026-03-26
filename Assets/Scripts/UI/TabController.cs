@@ -20,6 +20,7 @@ public class TabController : MonoBehaviour
             tabImages[i].color = Color.gray;
         }
         pages[tabIndex].SetActive(true);
+        Debug.Log($"Set Tab {pages[tabIndex].name} active");
         tabImages[tabIndex].color = Color.white;
     }
 }

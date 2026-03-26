@@ -1,11 +1,6 @@
 using System.Collections;
-using Microsoft.VisualBasic;
-using Unity.Mathematics;
-using Unity.VisualScripting;
-using UnityEditor;
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.UIElements;
+
 
 public class DoorTrigger : MonoBehaviour, IInteractable
 {
