@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class InventoryController : MonoBehaviour
 {
+    public static InventoryController Instance;
     public GameObject inventoryPanel;
     public GameObject slotPrefab;
     public int slotCount;

@@ -5,6 +5,7 @@ public class ShopStockController : MonoBehaviour
 {
     public GameObject[] stockItems;
     public GameObject ShopSlotPrefab;
+    public GameObject shopDisplayItemPrefab;
     public GameObject shopPanel;
 
 
@@ -15,7 +16,9 @@ public class ShopStockController : MonoBehaviour
             if (item.GetComponent<Item>()==null) continue;
             ShopSlot slot = Instantiate(ShopSlotPrefab, shopPanel.transform).GetComponent<ShopSlot>();
 
-            GameObject shopItem = Instantiate(item, slot.transform);
+            GameObject shopItem = Instantiate(shopDisplayItemPrefab, slot.transform);
+
+            shopItem.GetComponent<ReferenceItem>().SetReference(item);
 
             shopItem.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
             slot.currentItem = shopItem;
