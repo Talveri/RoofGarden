@@ -10,9 +10,9 @@ public class StatusBarManager : MonoBehaviour
     public UTKPanelController panelController;
 
     [SerializeField] private StatusBar waterBar;
-    [SerializeField] private StatusBar nBar;
-    [SerializeField] private StatusBar pBar;
-    [SerializeField] private StatusBar kBar;
+    [SerializeField] private StatusBar NBar;
+    [SerializeField] private StatusBar PBar;
+    [SerializeField] private StatusBar KBar;
 
     private void Awake()
     {
@@ -21,9 +21,10 @@ public class StatusBarManager : MonoBehaviour
 
     public void UpdateBars(Field field)
     {
+        if(field == null) return;
         waterBar.UpdateStatusBar(field.moisture);
-        nBar.UpdateStatusBar(field.nitrogen);
-        pBar.UpdateStatusBar(field.phosphor);
-        kBar.UpdateStatusBar(field.potassium);
+        NBar.UpdateStatusBar(field.nitrogen);
+        PBar.UpdateStatusBar(field.phosphor);
+        KBar.UpdateStatusBar(field.potassium);
     }
 }
