@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace RoofGardenGame.Models
 {
+    [RequireComponent(typeof(FieldSpriteManager))]
     public class Field : MonoBehaviour, IInteractable
     {
         public FieldState FieldState;
