@@ -50,10 +50,11 @@ namespace RoofGardenGame.Models
         // Seeds Interaction
         public void ReceivePlant(Plant _plant)
         {
-            FieldState = FieldState.Planted;
             if (plant == null)
             {
                 plant = _plant;
+                FieldState = FieldState.Planted;
+                //plant.transform.SetParent(transform);
                 EventBus.RaisePlantPlanted(new PlantEvent(this, plant));
             }
         }
@@ -63,8 +64,8 @@ namespace RoofGardenGame.Models
         {
             if (waterAmount < Water.MAX)
             {
-                waterAmount ++;
-                moisture = (float)waterAmount/Water.MAX;
+                waterAmount++;
+                moisture = (float)waterAmount / Water.MAX;
                 spriteManager.VisualMoisture(waterAmount);
             }
         }

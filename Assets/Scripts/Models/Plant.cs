@@ -45,9 +45,18 @@ namespace RoofGardenGame.Models
 
         int health;
 
-        int age = 0; // age in ticks
+        private int age = 0; // age in ticks
 
-        int ticksPerStage = 0;
+        private int ticksPerStage;
+
+        /**
+         * <summary>
+         * Adjusted ticks per stage for calculating the current stage/sprite
+         * by only returning the last index (<see cref="spriteCount"/> - 1) after <see cref="growthDurationInTicks"/>
+         * and not in between <see cref="growthDurationInTicks"/> - <see cref="ticksPerStage"/> and <see cref="growthDurationInTicks"/>.
+         * </summary>
+         */
+        private int ticksPerStage_adjusted;
 
         void Awake()
         {
@@ -57,6 +66,7 @@ namespace RoofGardenGame.Models
             spriteCount = growthStageSprites.Length;
 
             ticksPerStage = growthDurationInTicks / spriteCount;
+            ticksPerStage_adjusted = growthDurationInTicks / (spriteCount - 1);
 
             health = maxHealth;
         }
@@ -67,7 +77,7 @@ namespace RoofGardenGame.Models
          */
         private int GetGrowthStage()
         {
-            return Math.Min((int)(age / ticksPerStage), spriteCount - 1);
+            return Math.Min((int)(age / ticksPerStage_adjusted), spriteCount - 1);
         }
 
         public bool IsGrown()
@@ -93,7 +103,11 @@ namespace RoofGardenGame.Models
             }
         }
 
-        public void ReceiveNutrientsAndWater(ref Nutrients nutrients, int waterAmount, float deltaTime)
+        public void ReceiveNutrientsAndWater(
+            ref Nutrients nutrients,
+            int waterAmount,
+            float deltaTime
+        )
         {
             if (!IsGrown())
             {
