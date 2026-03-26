@@ -17,13 +17,15 @@ public class HotbarController : MonoBehaviour
     private GameObject selector;
     private List<GameObject> tools = new List<GameObject>();
 
+    AudioSource switchToolSound;
+
     [SerializeField] private int selectedIndex;
 
     void Awake()
     {
         Hotbar = hotbarPanel;
         toolCount = ToolPrefabs.Count;
-
+        switchToolSound = GetComponent<AudioSource>();
 
         for (int i = 0; i < toolCount; i++)
         {
@@ -51,6 +53,7 @@ public class HotbarController : MonoBehaviour
         if (selectedIndex < 0) selectedIndex = toolCount - 1;
         else { selectedIndex %= toolCount; }
 
+        switchToolSound.Play();
         Debug.Log($"Current Tool: {tools[selectedIndex].name}");
         selector.transform.SetParent(tools[selectedIndex].transform);
         selector.GetComponent<RectTransform>().anchoredPosition = Vector2.zero; //Center
