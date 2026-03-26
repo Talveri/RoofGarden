@@ -31,9 +31,19 @@ public class RedDoorTrigger : MonoBehaviour, IInteractable
 
     public void Interact<T>(T data)
     {
+        StartCoroutine(Interaction());
+    }
+
+    public IEnumerator Interaction()
+    {
+        yield return StartCoroutine(fader.FadeOut());
+
         moveCamera();
         //Open RedDoorMenu 
         RedDoorMenu.ToggleMenu();
+        InputMapManager.SetGlobalActionMap(false);
+
+        yield return StartCoroutine(fader.FadeIn());
     }
 
     void OnTriggerEnter2D()
