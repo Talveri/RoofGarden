@@ -1,7 +1,5 @@
 using System;
 using RoofGardenGame.Enums;
-using RoofGardenGame.Models.Events;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace RoofGardenGame.Models
@@ -95,18 +93,18 @@ namespace RoofGardenGame.Models
             }
         }
 
-        public void ReceiveNutrientsAndWater(ref Nutrients nutrients, int waterAmount)
+        public void ReceiveNutrientsAndWater(ref Nutrients nutrients, int waterAmount, float deltaTime)
         {
             if (!IsGrown())
             {
                 if (
-                    !nutrients.Contains(consumption)
+                    !nutrients.Contains(consumption * deltaTime)
                     || (Water.Level(waterAmount) != optimalWaterLevel)
                 ) // insufficient nutrients
                 {
                     health -= 1;
                 }
-                nutrients -= consumption;
+                nutrients -= consumption * deltaTime;
             }
             else { }
             health = Math.Clamp(health, 0, maxHealth);
