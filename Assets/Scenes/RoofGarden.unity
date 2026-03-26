@@ -15651,7 +15651,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b729d081ee593c14c9271d398f1c780b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TickSystem
-  tickInterval: 0.1
+  tickInterval: 0.2
 --- !u!1001 &1137816685
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19211,6 +19211,14 @@ PrefabInstance:
     - target: {fileID: 5127012939130703728, guid: e40eff5429ac68600ad793530ea67d25, type: 3}
       propertyPath: m_HorizontalFit
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6104109043514655352, guid: e40eff5429ac68600ad793530ea67d25, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6104109043514655352, guid: e40eff5429ac68600ad793530ea67d25, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6289156705555395790, guid: e40eff5429ac68600ad793530ea67d25, type: 3}
       propertyPath: m_Name
