@@ -1,5 +1,6 @@
 
 using System.Collections.Generic;
+using RoofGardenGame.Models;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -49,6 +50,7 @@ public class HotbarController : MonoBehaviour
         selectedIndex += Mathf.RoundToInt(x);
         if (selectedIndex < 0) selectedIndex = toolCount - 1;
         else { selectedIndex %= toolCount; }
+
         Debug.Log($"Current Tool: {tools[selectedIndex].name}");
         selector.transform.SetParent(tools[selectedIndex].transform);
         selector.GetComponent<RectTransform>().anchoredPosition = Vector2.zero; //Center
@@ -66,17 +68,19 @@ public class HotbarController : MonoBehaviour
             return;
         }
 
+        if (FieldSelector.Instance.currentField == null) return;
+        Field field = FieldSelector.Instance.currentField;
         if (ctx.started)
         {
-            tool.UseToolStart();
+            tool.UseToolStart(field);
         }
         if (ctx.performed)
         {
-            tool.UseToolHold();
+            tool.UseToolHold(field);
         }
         if (ctx.canceled)
         {
-            tool.UseToolRelease();
+            tool.UseToolRelease(field);
         }
     }
 }
