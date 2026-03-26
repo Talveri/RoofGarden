@@ -1,0 +1,139 @@
+{
+    "JohnDoor": {
+        "0": [
+            "Good day, Mr. Player.",
+            "What you’ve created up there is genuinely meaningful.",
+            "It improves not just the space, but the atmosphere for everyone here."
+        ],
+        "1": [
+            "Hello, Mr. Player.",
+            "Your garden adds clear value to this building.",
+            "It’s a thoughtful and constructive endeavor."
+        ],
+        "2": [
+            "Good day, Mr. Player.",
+            "Your rooftop initiative is practical and well considered.",
+            "A sensible use of available space."
+        ],
+        "3": [
+            "Hello, Mr. Player.",
+            "Your garden is well executed.",
+            "Though I can’t help but think it could have a broader impact."
+        ],
+        "4": [
+            "Good day, Mr. Player.",
+            "Your project has potential, but feels somewhat isolated.",
+            "It could serve a greater purpose."
+        ]
+    },
+    "JoeyDoor": {
+        "0": [
+            "Hey, Mr. Player!!",
+            "Your garden is amazing!",
+            "You’ve totally inspired me to try something like that myself!"
+        ],
+        "1": [
+            "Hey, Mr. Player!",
+            "I’ve been watching your garden!",
+            "It's seriously impressive!",
+            "Makes me want to get into this kind of stuff too."
+        ],
+        "2": [
+            "Hey, Mr. Player!",
+            "That rooftop garden is really cool.",
+            "I’ve never seen anything like it before."
+        ],
+        "3": [
+            "Yo, Mr. Player!",
+            "Your garden looks awesome, but it’s kind of a mystery to me.",
+            "I wish I understood it better."
+        ],
+        "4": [
+            "Hey, Mr. Player!",
+            "You’ve got this whole setup up there and nobody knows what’s going on.",
+            "That’s kinda frustrating!"
+        ]
+    },
+    "JennyDoor": {
+        "0": [
+            "Mr. Player, hi!!",
+            "Your garden makes this building feel so alive.",
+            "It’s such a wonderful thing you’ve created for everyone."
+        ],
+        "1": [
+            "Hey, Mr. Player!",
+            "Your garden brings such a warm feeling to this place.",
+            "It really brightens my day."
+        ],
+        "2": [
+            "Hi, Mr. Player!",
+            "Your rooftop garden is really lovely.",
+            "It’s nice knowing something like that exists here."
+        ],
+        "3": [
+            "Hey, Mr. Player.",
+            "Your garden looks really beautiful.",
+            "I can’t help but feel a little left out sometimes."
+        ],
+        "4": [
+            "Hi, Mr. Player…",
+            "I see your garden up there every day.",
+            "I just wish it felt more welcoming to everyone."
+        ]
+    },
+    "JasperDoor": {
+        "0": [
+            "Yo, Mr. Player!",
+            "Alright, I’m convinced! That rooftop garden is awesome.",
+            "You’ve definitely made this place more interesting."
+        ],
+        "1": [
+            "Hey, Mr. Player!",
+            "That garden of yours is actually pretty impressive.",
+            "Didn’t think it’d turn out this well."
+        ],
+        "2": [
+            "Hey, Mr. Player.",
+            "I’ve been watching your progress.",
+            "It looks like real work.",
+            "Can’t say I’d have the patience for it."
+        ],
+        "3": [
+            "Yo, Mr. Player.",
+            "You’ve got something interesting going on up there.",
+            "Just wish it didn’t feel so out of reach."
+        ],
+        "4": [
+            "Hey, Mr. Player.",
+            "So that rooftop setup is just for show, huh?",
+            "Hard to tell what the point of it is."
+        ]
+    },
+    "JimmyDoor": {
+        "0": [
+            "Hey, Mr. Player…",
+            "I respect what you’ve built up there.",
+            "It shows that things can get better with effort."
+        ],
+        "1": [
+            "Hey, Mr. Player.",
+            "That garden of yours is a good thing.",
+            "It gives this place a bit of hope."
+        ],
+        "2": [
+            "Hey, Mr. Player.",
+            "What you’re doing up there makes sense.",
+            "Growing your own food is a smart move these days."
+        ],
+        "3": [
+            "Hi, Mr. Player.",
+            "Your garden’s doing well, from what I can tell.",
+            "I just wish things felt a bit more balanced around here."
+        ],
+        "4": [
+            "Hey, Mr. Player…",
+            "Seeing that garden every day…",
+            "It’s hard not to think about what some of us are missing."
+        ]
+    }
+}
