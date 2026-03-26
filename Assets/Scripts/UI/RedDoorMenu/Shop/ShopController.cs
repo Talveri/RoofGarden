@@ -16,7 +16,7 @@ public class ShopController : MonoBehaviour
 
     void Awake()
     {
-        if(Instance == null) Instance = this;
+        if (Instance == null) Instance = this;
         else Destroy(gameObject);
     }
 
@@ -25,7 +25,7 @@ public class ShopController : MonoBehaviour
     {
         itemDictionary = FindAnyObjectByType<ItemDictionary>();
         shopPanel.SetActive(false);
-        if(CurrencyController.Instance != null)
+        if (CurrencyController.Instance != null)
         {
             CurrencyController.Instance.onMoneyChanged += UpdateMoneyDisplay;
             UpdateMoneyDisplay(CurrencyController.Instance.getMoney());
@@ -34,10 +34,28 @@ public class ShopController : MonoBehaviour
 
     private void UpdateMoneyDisplay(int amount)
     {
-        if(playerMoneyText != null)
+        if (playerMoneyText != null)
         {
             playerMoneyText.text = amount.ToString();
         }
     }
+
+    public void RefreshPlayerInventoryDisplay()
+    {
+        if (InventoryController.Instance == null) return;
+        foreach (Transform child in playerInventoryGrid) Destroy(child.gameObject);
+
+        Debug.Log(InventoryController.Instance.inventoryPanel.transform.childCount);
+
+        foreach (Transform slotTransform in InventoryController.Instance.inventoryPanel.transform)
+        {
+            Slot inventorySlot = slotTransform.GetComponent<Slot>();
+            if (inventorySlot?.currentItem == null)
+            {
+                GameObject slotObj = Instantiate(shopSlotPrefab, playerInventoryGrid);
+            }
+        }
+    }
+
 
 }

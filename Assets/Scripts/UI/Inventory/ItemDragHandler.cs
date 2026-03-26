@@ -6,6 +6,8 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 
     Transform originalParent;   // previous Slot
     CanvasGroup canvasGroup;
+
+    
     void Start()
     {
         canvasGroup = GetComponent<CanvasGroup>();
