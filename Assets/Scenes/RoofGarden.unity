@@ -369,7 +369,7 @@ GameObject:
   - component: {fileID: 71976577}
   - component: {fileID: 71976581}
   - component: {fileID: 71976579}
-  - component: {fileID: 71976580}
+  - component: {fileID: 71976582}
   m_Layer: 0
   m_Name: RaisedBed
   m_TagString: Untagged
@@ -844,21 +844,8 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 4.3, y: 2.5}
+  m_Size: {x: 4.4, y: 2.6}
   m_EdgeRadius: 0
---- !u!114 &71976580
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 71976575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a8232b254156e82cb8226d414b27a44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RaisedBedSelectionManager
-  fieldSelector: {fileID: 1268442898}
 --- !u!19719996 &71976581
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -897,6 +884,19 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!114 &71976582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71976575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cfb1708c8b7ca43b8f5474c7ac5c24f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FieldSeletionManager
+  fieldSelector: {fileID: 1268442898}
 --- !u!1001 &82778322
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12298,7 +12298,7 @@ Transform:
   m_GameObject: {fileID: 862421042}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.30275, y: 1.0278702, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14688,7 +14688,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 959518500}
   m_Direction: 2
   m_Value: 0.9999998
-  m_Size: 0.5555555
+  m_Size: 0.5555556
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -15633,7 +15633,7 @@ Transform:
   m_GameObject: {fileID: 1131148394}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.30275, y: 1.0278702, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
