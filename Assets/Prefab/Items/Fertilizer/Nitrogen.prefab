@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8812657851691185749, guid: cd672a4663d9913848b92af93322abcf, type: 3}
       propertyPath: ID
-      value: 9
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -8812657851691185749, guid: cd672a4663d9913848b92af93322abcf, type: 3}
       propertyPath: buyPrice
@@ -115,5 +115,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1131887856134411801, guid: cd672a4663d9913848b92af93322abcf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -5761364297767347102}
   m_SourcePrefab: {fileID: 100100000, guid: cd672a4663d9913848b92af93322abcf, type: 3}
+--- !u!1 &4442556193324569336 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1131887856134411801, guid: cd672a4663d9913848b92af93322abcf, type: 3}
+  m_PrefabInstance: {fileID: 3608059861476754657}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-5761364297767347102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4442556193324569336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0261620ac4910d11819031b67b740e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FertilizerBag
+  N: 1
+  P: 0
+  K: 0

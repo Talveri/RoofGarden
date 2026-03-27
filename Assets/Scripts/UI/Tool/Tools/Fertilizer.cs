@@ -5,6 +5,7 @@ using UnityEngine;
 public class Fertilizer : MonoBehaviour, ITool
 {
     private Slot slot;
+    private Nutrients nutrients;
 
     void Awake()
     {
@@ -12,10 +13,12 @@ public class Fertilizer : MonoBehaviour, ITool
     }
     public void UseToolStart(Field field)
     {
-        if (field != null)
+        if (slot.currentItem != null && slot.currentItem.gameObject.CompareTag("Fertilizer"))
         {
             // Use Tool
-            
+            nutrients = slot.currentItem.gameObject.GetComponent<FertilizerBag>().getNutrientAmount();
+            field.AddNutrients(nutrients);
+            slot.removeCurrentItem();
             return;
         }
         else

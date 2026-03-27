@@ -40,11 +40,18 @@ public class SeedPack : MonoBehaviour, ITool
         if (field != null)
         {
             //if ())
-            if(slot.currentItem != null && slot.currentItem.CompareTag("PlantSeed"))
+            if (slot.currentItem != null && slot.currentItem.CompareTag("PlantSeed"))
             {
-                type = slot.currentItem.GetComponent<SeedBag>().type;
-                field.ReceivePlant(Instantiate(plants[(int)type], field.transform));
-                slot.removeCurrentItem();
+                if (field.fieldState == FieldState.Tilled)
+                {
+                    type = slot.currentItem.GetComponent<SeedBag>().type;
+                    field.ReceivePlant(Instantiate(plants[(int)type], field.transform));
+                    slot.removeCurrentItem();
+                }
+                else
+                {
+                    PlayerMessage.Instance.MessageTooltip("I need an empty, tilled space.");
+                }
             }
             else
             {

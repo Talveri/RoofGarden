@@ -22,9 +22,9 @@ public class StatusBarManager : MonoBehaviour
     public void UpdateBars(Field field)
     {
         if(field == null) return;
-        waterBar.UpdateStatusBar(field.moisture);
-        NBar.UpdateStatusBar(field.nitrogen);
-        PBar.UpdateStatusBar(field.phosphor);
-        KBar.UpdateStatusBar(field.potassium);
+        waterBar.UpdateStatusBar(field.moisturePercent);
+        NBar.UpdateStatusBar(field.nitrogenPercent);
+        PBar.UpdateStatusBar(field.phosphorPercent);
+        KBar.UpdateStatusBar(field.potassiumPercent);
     }
 }

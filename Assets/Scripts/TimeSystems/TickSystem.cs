@@ -72,6 +72,7 @@ public class TickSystem : MonoBehaviour
         }
     }
 
+
     private void Tick(float deltaTime)
     {
         TickEvent tickEvent = new TickEvent(deltaTime);

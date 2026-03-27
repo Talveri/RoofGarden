@@ -14,10 +14,10 @@ namespace RoofGardenGame.Models
 
         FieldSpriteManager spriteManager;
 
-        public float moisture;
-        public float nitrogen;
-        public float phosphor;
-        public float potassium;
+        public float moisturePercent;
+        public float nitrogenPercent;
+        public float phosphorPercent;
+        public float potassiumPercent;
 
         // Tracker bool so that OnPlantGrown event is only raised once per plant
         private bool isPlantGrown;
@@ -75,9 +75,20 @@ namespace RoofGardenGame.Models
             if (waterAmount < Water.MAX)
             {
                 waterAmount++;
-                moisture = (float)waterAmount / Water.MAX;
+                moisturePercent = (float)waterAmount / Water.MAX;
                 spriteManager.VisualMoisture(waterAmount);
             }
+        }
+
+        public void AddNutrients(Nutrients nutrientsAmount)
+        {
+            nutrients.nitrogen = nutrientsAmount.nitrogen;
+            nutrients.phosphor = nutrientsAmount.phosphor;
+            nutrients.potassium = nutrientsAmount.potassium;
+
+            nitrogenPercent = (float)nutrients.nitrogen / Nutrients.MAX_NITROGEN;
+            phosphorPercent = (float)nutrients.phosphor / Nutrients.MAX_PHOSPHOR;
+            potassiumPercent = (float)nutrients.potassium / Nutrients.MAX_POTASSIUM;
         }
 
         public void Interact<T>(T data)

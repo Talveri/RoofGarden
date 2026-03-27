@@ -3695,7 +3695,9 @@ MonoBehaviour:
   inventoryPanel: {fileID: 197857819}
   slotPrefab: {fileID: 2773190064263929213, guid: bfab9d60f5240452c99f0fecdb4467d9, type: 3}
   slotCount: 24
-  itemPrefabs: []
+  itemPrefabs:
+  - {fileID: 4218852982135719159, guid: f3d3fcb431f85acb48a20f7837ce7815, type: 3}
+  - {fileID: 746850712321073013, guid: 2779b6ce950bce88f8d7e11d015cff5d, type: 3}
 --- !u!1 &475687631
 GameObject:
   m_ObjectHideFlags: 0
@@ -14761,6 +14763,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 862421044}
+        m_TargetAssemblyTypeName: RoofGardenGame.DayCycleManager, Assembly-CSharp
+        m_MethodName: skipTicks
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 20
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
