@@ -39,9 +39,10 @@ public class SeedPack : MonoBehaviour, ITool
 
         if (field != null)
         {
-            //if (slot.currentItem != null && slot.currentItem.CompareTag("PlantSeed"))
-            if(true)
+            //if ())
+            if(slot.currentItem != null && slot.currentItem.CompareTag("PlantSeed"))
             {
+                type = slot.currentItem.GetComponent<SeedBag>().type;
                 field.ReceivePlant(Instantiate(plants[(int)type], field.transform));
                 slot.removeCurrentItem();
             }

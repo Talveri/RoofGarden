@@ -1,3 +1,4 @@
+using RoofGardenGame.Enums;
 using RoofGardenGame.Models;
 using UnityEngine;
 
@@ -5,10 +6,10 @@ public class GardenShears : MonoBehaviour, ITool
 {
     public void UseToolStart(Field field)
     {
-        if (field != null)
+        if (field != null && field.fieldState == FieldState.Planted)
         {
             // Use Tool
-
+            field.RemovePlant();
         }
         else
         {

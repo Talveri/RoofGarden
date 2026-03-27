@@ -1,4 +1,5 @@
 using RoofGardenGame.Models;
+using RoofGardenGame.Enums;
 using UnityEngine;
 
 public class Harvest : MonoBehaviour, ITool
@@ -9,9 +10,10 @@ public class Harvest : MonoBehaviour, ITool
     public void UseToolStart(Field field)
     {
 
-        if (field != null)
+        if (field != null && field.fieldState == FieldState.Harvestable)
         {
-            field.Harvest();
+            GameObject Vegetable = field.Harvest();
+            InventoryController.Instance.AddItem(Vegetable);
         }
         else
         {

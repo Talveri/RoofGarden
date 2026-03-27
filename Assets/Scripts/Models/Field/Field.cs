@@ -7,7 +7,7 @@ namespace RoofGardenGame.Models
     [RequireComponent(typeof(FieldSpriteManager))]
     public class Field : MonoBehaviour, IInteractable
     {
-        public FieldState FieldState;
+        public FieldState fieldState;
         Plant plant;
         Nutrients nutrients = new Nutrients();
         int waterAmount = 0;
@@ -33,16 +33,26 @@ namespace RoofGardenGame.Models
         {
             spriteManager.Tilled();
 
-            FieldState = FieldState.Tilled;
+            fieldState = FieldState.Tilled;
         }
 
         // Harvest Interaction resets FieldState
-        public void Harvest()
+        public GameObject Harvest()
         {
+            Debug.Log("Harvest Plant");
+            GameObject vegetable = plant.VegetablePrefab;
+            RemovePlant();
+            return vegetable;
+        }
+
+        public void RemovePlant()
+        {
+            Debug.Log("Remove Plant");
+
+            Destroy(plant.gameObject);
+
             spriteManager.Untilled();
-
-            FieldState = FieldState.Raw;
-
+            fieldState = FieldState.Raw;
             plant = null;
             isPlantGrown = false;
         }
@@ -53,7 +63,7 @@ namespace RoofGardenGame.Models
             if (plant == null)
             {
                 plant = _plant;
-                FieldState = FieldState.Planted;
+                fieldState = FieldState.Planted;
                 //plant.transform.SetParent(transform);
                 EventBus.RaisePlantPlanted(new PlantEvent(this, plant));
             }
@@ -88,6 +98,7 @@ namespace RoofGardenGame.Models
                 if (plant.IsGrown() && !isPlantGrown)
                 {
                     isPlantGrown = true;
+                    fieldState = FieldState.Harvestable;
                     EventBus.RaisePlantGrown(new PlantEvent(this, plant));
                 }
             }

@@ -1,3 +1,4 @@
+using RoofGardenGame;
 using UnityEditor;
 using UnityEngine;
 
@@ -29,6 +30,8 @@ public class InventoryController : MonoBehaviour
                 slot.currentItem = item;
             }
         }
+
+       
     }
 
     public bool AddItem(GameObject itemPrefab)

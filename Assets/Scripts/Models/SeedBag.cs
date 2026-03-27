@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class SeedBag : MonoBehaviour, IInteractable
 {
-    [SerializeField]
-    PlantType type = PlantType.Onion;
+    public PlantType type = PlantType.Onion;
 
     public void Interact<T>(T h)
     {

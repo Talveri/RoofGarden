@@ -13,6 +13,10 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -8812657851691185749, guid: cd672a4663d9913848b92af93322abcf, type: 3}
+      propertyPath: Name
+      value: Tomato
+      objectReference: {fileID: 0}
+    - target: {fileID: -8812657851691185749, guid: cd672a4663d9913848b92af93322abcf, type: 3}
       propertyPath: buyPrice
       value: 40
       objectReference: {fileID: 0}

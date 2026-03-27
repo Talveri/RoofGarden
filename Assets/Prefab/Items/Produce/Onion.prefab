@@ -16,6 +16,10 @@ PrefabInstance:
       propertyPath: ID
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2298357342486832477, guid: 8e90748b8835ef733a411066aab0cf4b, type: 3}
+      propertyPath: Name
+      value: Onion
+      objectReference: {fileID: 0}
     - target: {fileID: 4249094980584704943, guid: 8e90748b8835ef733a411066aab0cf4b, type: 3}
       propertyPath: m_Sprite
       value: 

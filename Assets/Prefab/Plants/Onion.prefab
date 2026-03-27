@@ -60,6 +60,7 @@ MonoBehaviour:
   - {fileID: 3899546548142004079, guid: a536282e7ffc0bb5183eed4e4e56c9d9, type: 3}
   - {fileID: -3390221917031993903, guid: a536282e7ffc0bb5183eed4e4e56c9d9, type: 3}
   deathSprite: {fileID: -9063029999227916591, guid: a536282e7ffc0bb5183eed4e4e56c9d9, type: 3}
+  VegetablePrefab: {fileID: 1400083522737619631, guid: e41e5c9d123d3c60b9701a8f0b145c1f, type: 3}
 --- !u!212 &8901879269737643852
 SpriteRenderer:
   serializedVersion: 2

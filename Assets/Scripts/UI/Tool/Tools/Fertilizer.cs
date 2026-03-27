@@ -12,7 +12,7 @@ public class Fertilizer : MonoBehaviour, ITool
     }
     public void UseToolStart(Field field)
     {
-        if (field.FieldState == FieldState.Planted)
+        if (field != null)
         {
             // Use Tool
             
@@ -20,7 +20,7 @@ public class Fertilizer : MonoBehaviour, ITool
         }
         else
         {
-            PlayerMessage.Instance.MessageTooltip("There is no plant to remove.");
+            PlayerMessage.Instance.MessageTooltip("I need Fertilizer.");
             return;
         }
     }

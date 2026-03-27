@@ -16,12 +16,12 @@ public class Trowel : MonoBehaviour, ITool
     public void UseToolStart(Field field)
     {
        /// The Player gets informed why this tool can't be used
-        if (field.FieldState == FieldState.Tilled)
+        if (field.fieldState == FieldState.Tilled)
         {
             PlayerMessage.Instance.MessageTooltip("Ready to Plant");
             return;
         }
-        if (field.FieldState != FieldState.Raw)
+        if (field.fieldState != FieldState.Raw)
         {
             PlayerMessage.Instance.MessageTooltip("I need to remove the plant first.");
             return;

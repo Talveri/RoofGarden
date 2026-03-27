@@ -39,6 +39,9 @@ namespace RoofGardenGame.Models
         [SerializeField]
         Sprite deathSprite;
 
+        [Tooltip("Vegetable on Harvest")]
+        public GameObject VegetablePrefab;
+
         SpriteRenderer spriteRenderer;
 
         int spriteCount;

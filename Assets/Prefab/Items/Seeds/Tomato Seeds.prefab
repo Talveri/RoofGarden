@@ -88,9 +88,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4026854077415886293, guid: d283d9edd72c6d728a33598a54acc1a6, type: 3}
+      propertyPath: type
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6082586287491508147, guid: d283d9edd72c6d728a33598a54acc1a6, type: 3}
       propertyPath: ID
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6082586287491508147, guid: d283d9edd72c6d728a33598a54acc1a6, type: 3}
+      propertyPath: buyPrice
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6804886683000797185, guid: d283d9edd72c6d728a33598a54acc1a6, type: 3}
       propertyPath: m_Name
@@ -103,36 +111,5 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6804886683000797185, guid: d283d9edd72c6d728a33598a54acc1a6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8056849699932322496}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d283d9edd72c6d728a33598a54acc1a6, type: 3}
---- !u!1 &5055169736433845182 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6804886683000797185, guid: d283d9edd72c6d728a33598a54acc1a6, type: 3}
-  m_PrefabInstance: {fileID: 1749721529379044287}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &8056849699932322496
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5055169736433845182}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 141d66eb298f1754aa947b912c51f05d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RoofGardenGame.Models.Plant
-  type: 2
-  optimalWaterLevel: 0
-  consumption:
-    potassium: 0
-    nitrogen: 0
-    phosphor: 0
-  maxHealth: 0
-  growthDurationInDays: 0
-  spriteCount: 0
-  spriteStartIndex: 0
-  sprites: []
