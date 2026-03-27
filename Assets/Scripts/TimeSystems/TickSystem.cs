@@ -72,6 +72,11 @@ public class TickSystem : MonoBehaviour
         }
     }
 
+    public void skipTicks(int Amount = 20)
+    {
+        Tick(Amount);
+    }
+
 
     private void Tick(float deltaTime)
     {

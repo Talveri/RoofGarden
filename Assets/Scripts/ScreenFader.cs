@@ -7,6 +7,7 @@ public class ScreenFader : MonoBehaviour
 
     public Image fadeImage;
     public float fadeDuration = 0.5f;
+    public float fadeOutTime = 0.01f;
 
     public IEnumerator FadeOut()
     {
@@ -23,6 +24,13 @@ public class ScreenFader : MonoBehaviour
     public IEnumerator FadeIn()
     {
         float t = 0f;
+
+        while (t < fadeOutTime)
+        {
+            t += Time.deltaTime;
+            yield return null;
+        }
+        t = 0f;
         while (t < fadeDuration)
         {
             t += Time.deltaTime;
