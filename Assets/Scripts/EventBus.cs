@@ -1,5 +1,7 @@
 using System;
 using RoofGardenGame.Models.Events;
+using RoofGardenGame.Enums;
+using UnityEngine;
 
 namespace RoofGardenGame
 {
@@ -20,6 +22,7 @@ namespace RoofGardenGame
         public static event Action<DayEvent> OnDayEnd;
         public static event Action<DayEvent> OnDayProgressed;
         public static event Action<DayEvent> OnDayStart;
+
 
         public static void RaiseDayEnd(DayEvent dayEvent)
         {
@@ -80,5 +83,15 @@ namespace RoofGardenGame
             OnWateringEnd?.Invoke(wateringEvent);
         }
         #endregion
+
+
+
+        public static event Action<PlantType> OnInteractWithSeedBag;
+
+        public static void PickupSeed(PlantType type)
+        {
+            Debug.Log(type);
+            OnInteractWithSeedBag.Invoke(type);
+        }
     }
 }
