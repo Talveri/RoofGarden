@@ -227,8 +227,52 @@
         {
             "name": "UI",
             "id": "080b8fa0-ba93-4977-8f04-29970375a784",
-            "actions": [],
-            "bindings": []
+            "actions": [
+                {
+                    "name": "Confirm",
+                    "type": "Button",
+                    "id": "6f28e647-362b-4f5d-be13-3e8766a599dc",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "b67c2f01-f827-4ec1-973e-3066be70e63b",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Confirm",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7f65bf45-0dbb-4873-a815-9a1ba46f597a",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Confirm",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c32cfa4c-16fe-4848-abb9-2d6c4b9adecb",
+                    "path": "<VirtualMouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Confirm",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         },
         {
             "name": "Global",

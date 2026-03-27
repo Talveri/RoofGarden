@@ -17,21 +17,21 @@ public class Dialogue : MonoBehaviour
         textComponent.text = string.Empty;
     }
     // Update is called once per frame
-    void Update()
+    public void LoadLine(InputAction.CallbackContext ctx)
     {
-        if (Keyboard.current.eKey.wasPressedThisFrame)
+        if(!ctx.performed) return;
+        if(!inDialogue) return;
+        // if the text still loads than it appears instantly
+        if (textComponent.text == lines[index])
         {
-            // if the text still loads than it appears instantly
-            if (textComponent.text == lines[index])
-            {
-                NextLine();
-            }
-            else
-            {
-                StopAllCoroutines();
-                textComponent.text = lines[index];
-            }
+            NextLine();
         }
+        else
+        {
+            StopAllCoroutines();
+            textComponent.text = lines[index];
+        }
+
     }
 
     void NextLine()
@@ -45,7 +45,7 @@ public class Dialogue : MonoBehaviour
         else
         {
             // End Dialogue
-            
+
             inDialogue = false;
             textComponent.text = string.Empty;
             InputMapManager.setToPlayer();
@@ -55,7 +55,7 @@ public class Dialogue : MonoBehaviour
     public void StartDialogue()
     {
         inDialogue = true;
-        
+
         InputMapManager.setToUI();
         gameObject.SetActive(true);
         index = 0;
@@ -65,7 +65,7 @@ public class Dialogue : MonoBehaviour
     {
         yield return null;
         textComponent.text = string.Empty;
-        
+
         foreach (char c in lines[index].ToCharArray())
         {
             textComponent.text += c;

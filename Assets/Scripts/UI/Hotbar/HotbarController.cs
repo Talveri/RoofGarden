@@ -36,6 +36,7 @@ public class HotbarController : MonoBehaviour
             //Keys form 0 to i;
         }
         selector = Instantiate(selectorPrefab, tools[selectedIndex].transform);
+        Hotbar.SetActive(false);
     }
 
     public static void activeHotbar(bool active)
