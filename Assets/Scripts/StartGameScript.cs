@@ -16,15 +16,18 @@ public class StartGameScript : MonoBehaviour
     {
         fader.fadeOutTime = fadeOutTime;
         StartCoroutine(StartGame());
-        
+
     }
     public IEnumerator StartGame()
     {
         yield return StartCoroutine(fader.FadeOut());
         mainCamera.transform.position = cameraPosition.position;
         StartPage.SetActive(false);
+        HotbarController.activeHotbar(true);
         yield return StartCoroutine(fader.FadeIn());
         fader.fadeOutTime = 0.01f;
 
     }
+
+
 }
