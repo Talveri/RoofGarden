@@ -18,7 +18,7 @@ public class InventoryController : MonoBehaviour
 
     void Start()
     {
-        for(int i = 0; i < slotCount; i++)
+        for (int i = 0; i < slotCount; i++)
         {
             Slot slot = Instantiate(slotPrefab, inventoryPanel.transform).GetComponent<Slot>();
             if (i < itemPrefabs.Length && itemPrefabs[i] != null)
@@ -31,13 +31,23 @@ public class InventoryController : MonoBehaviour
         }
     }
 
-    public bool AddItem(int index)
+    public bool AddItem(GameObject itemPrefab)
     {
-        if(index < slotCount)
+        //look for empty slot
+        foreach (Transform slotTransform in inventoryPanel.transform)
         {
+            Slot slot = slotTransform.GetComponent<Slot>();
+            Debug.Log($"{slot} : {slot.currentItem}");
+            if (slot != null && slot.currentItem == null)
+            {
+                GameObject newItem = Instantiate(itemPrefab, slot.transform);
+                newItem.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+                slot.currentItem = newItem;
+                return true;
+            }
 
-            return true;
         }
+        Debug.Log("Inventory Full");
         return false;
     }
 }

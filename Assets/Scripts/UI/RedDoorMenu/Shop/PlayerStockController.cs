@@ -1,13 +1,22 @@
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerStockController : MonoBehaviour
 {
+    public static PlayerStockController Instance { get; private set; }
     public Transform playerInventoryGrid;
-    public GameObject shopSlotPrefab;
+    public GameObject slotPrefab;
+    public GameObject displayItemPrefab;
+    public GameObject itemDictionaryGameObject;
+    private ItemDictionary itemDictionary;
 
+    void Awake()
+    {
+        if (Instance == null) Instance = this;
+        else Destroy(gameObject);
+    }
     void Start()
     {
+        itemDictionary = itemDictionaryGameObject.GetComponent<ItemDictionary>();
         RefreshPlayerInventoryDisplay();
     }
 
@@ -26,9 +35,24 @@ public class PlayerStockController : MonoBehaviour
         foreach (Transform slotTransform in InventoryController.Instance.inventoryPanel.transform)
         {
             Slot inventorySlot = slotTransform.GetComponent<Slot>();
-            if (inventorySlot?.currentItem == null)
+            GameObject slotObj = Instantiate(slotPrefab, playerInventoryGrid);
+
+            // Create Replica Display when item is on that position
+            if (inventorySlot?.currentItem != null)
             {
-                GameObject slotObj = Instantiate(shopSlotPrefab, playerInventoryGrid);
+                // Set slot item-property to item in inventory
+                Item item = inventorySlot.currentItem.GetComponent<Item>();
+                slotObj.GetComponent<Slot>().currentItem = inventorySlot.currentItem;
+
+
+                GameObject itemPrefab = itemDictionary.GetItemPrefab(item.ID);
+                if (itemPrefab == null) return;
+
+
+                GameObject itemInstance = Instantiate(displayItemPrefab, slotObj.transform);
+                itemInstance.GetComponent<ReferenceItem>().SetReference(itemPrefab);
+                itemInstance.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+
             }
         }
     }

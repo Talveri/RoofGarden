@@ -1,6 +1,8 @@
 
+using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ShopController : MonoBehaviour
 {
@@ -42,19 +44,17 @@ public class ShopController : MonoBehaviour
 
     public void RefreshPlayerInventoryDisplay()
     {
-        if (InventoryController.Instance == null) return;
-        foreach (Transform child in playerInventoryGrid) Destroy(child.gameObject);
+        PlayerStockController.Instance.RefreshPlayerInventoryDisplay();
+    }
 
-        Debug.Log(InventoryController.Instance.inventoryPanel.transform.childCount);
+    // Makes money flash red
+    public IEnumerator FlashText(float flashDuration = 0.2f)
+    {
+        Color originalColor = playerMoneyText.color;
 
-        foreach (Transform slotTransform in InventoryController.Instance.inventoryPanel.transform)
-        {
-            Slot inventorySlot = slotTransform.GetComponent<Slot>();
-            if (inventorySlot?.currentItem == null)
-            {
-                GameObject slotObj = Instantiate(shopSlotPrefab, playerInventoryGrid);
-            }
-        }
+        playerMoneyText.color = Color.red;
+        yield return new WaitForSeconds(flashDuration);
+        playerMoneyText.color = originalColor;
     }
 
 

@@ -18,12 +18,17 @@ public class ShopStockController : MonoBehaviour
 
             GameObject shopItem = Instantiate(shopDisplayItemPrefab, slot.transform);
 
+            
             shopItem.GetComponent<ReferenceItem>().SetReference(item);
 
             shopItem.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
             slot.currentItem = shopItem;
             slot.itemPrice = item.GetComponent<Item>().buyPrice;
             slot.UpdatePriceDisplay();
+
+            // ItemHandler
+            ShopItemHandler handler = shopItem.AddComponent<ShopItemHandler>();
+            
         }
     }
 
