@@ -6,26 +6,61 @@ public class InteractionManager : MonoBehaviour
 {
     private List<IInteractable> interactables;
 
+    /**
+     * <summary>
+     * Gets the first valid <see cref="IInteractable"/> in the list, which is sorted by distance (closest first).
+     * </summary>
+     * <returns>The closest <see cref="IInteractable"/></returns>
+     */
     public IInteractable GetInteractable()
     {
-        // later implement distance (and direction?) checking
-
         if (interactables.Count > 0)
         {
-            IInteractable interactable = interactables[0];
-
-            // check if interactable is still valid (e.g. not destroyed)
-            if (interactable != null)
+            for (int i = 0; i < interactables.Count; i++)
             {
-                return interactables[0];
+                IInteractable interactable = interactables[i];
+                // check if interactable is still valid (e.g. not destroyed)
+                if (interactable != null)
+                {
+                    return interactable;
+                }
+                else
+                {
+                    interactables.RemoveAt(i);
+                    i--;
+                }
             }
-            else
+        }
+        return null;
+    }
+
+    /**
+     * <summary>
+     * Just like <see cref="GetInteractable()"/>, but with a type filter."/>
+     * </summary>
+     * <returns>The closest <see cref="IInteractable"/> of type T</returns>
+     */
+    public IInteractable GetInteractable<T>()
+    {
+        if (interactables.Count > 0)
+        {
+            for (int i = 0; i < interactables.Count; i++)
             {
-                interactables.RemoveAt(0);
-                // loop recursively
-                // until valid interactable is found
-                // or list is empty and null is returned
-                return GetInteractable();
+                IInteractable interactable = interactables[i];
+                // check if interactable is still valid (e.g. not destroyed)
+                if (interactable != null)
+                {
+                    // check if interactable is of the correct type
+                    if (interactable is T)
+                    {
+                        return interactable;
+                    }
+                }
+                else
+                {
+                    interactables.RemoveAt(i);
+                    i--;
+                }
             }
         }
         return null;

@@ -7,6 +7,12 @@ using UnityEngine;
 /// </summary>
 public class Trowel : MonoBehaviour, ITool
 {
+    AudioSource tillSound;
+
+    void Awake()
+    {
+        tillSound = GetComponent<AudioSource>();
+    }
     public void UseToolStart(Field field)
     {
        /// The Player gets informed why this tool can't be used
@@ -21,6 +27,7 @@ public class Trowel : MonoBehaviour, ITool
             return;
         }
 
+        tillSound.Play();
         field.TillField();
     }
     /// To keep ITool Modular these Functions are implemented, but not used

@@ -9,9 +9,16 @@ public class WateringCan : MonoBehaviour, ITool
 {
     private bool watering;
 
+    private AudioSource wateringSound;
+
+    void Awake()
+    {
+        wateringSound = GetComponent<AudioSource>();
+    }
     public void UseToolStart(Field field)
     {
         watering = true;
+        wateringSound.Play();
         // start watering
     }
     public void UseToolHold(Field field)

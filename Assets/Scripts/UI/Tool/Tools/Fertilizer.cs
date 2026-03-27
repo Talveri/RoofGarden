@@ -1,3 +1,4 @@
+using RoofGardenGame.Enums;
 using RoofGardenGame.Models;
 using UnityEngine;
 
@@ -11,16 +12,17 @@ public class Fertilizer : MonoBehaviour, ITool
     }
     public void UseToolStart(Field field)
     {
-        if (field != null)
-            if (slot.currentItem != null && slot.currentItem.CompareTag("Fertilizer"))
-            {
-                // Do nutrients
-                slot.removeCurrentItem();    
-            }
-            else
-            {
-                PlayerMessage.Instance.MessageTooltip("I need fertilizer.");
-            }
+        if (field.FieldState == FieldState.Planted)
+        {
+            // Use Tool
+            
+            return;
+        }
+        else
+        {
+            PlayerMessage.Instance.MessageTooltip("There is no plant to remove.");
+            return;
+        }
     }
 
     public void UseToolHold(Field field) { }

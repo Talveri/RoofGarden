@@ -13,6 +13,10 @@ public class Harvest : MonoBehaviour, ITool
         {
             field.Harvest();
         }
+        else
+        {
+            PlayerMessage.Instance.MessageTooltip("I can't harvest that.");
+        }
     }
     public void UseToolHold(Field field){}
 
