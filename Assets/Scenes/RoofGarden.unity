@@ -24772,6 +24772,7 @@ GameObject:
   - component: {fileID: 1949100114}
   - component: {fileID: 1949100113}
   - component: {fileID: 1949100112}
+  - component: {fileID: 1949100115}
   m_Layer: 5
   m_Name: RedDoorMenu
   m_TagString: Untagged
@@ -24852,6 +24853,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1949100110}
   m_CullTransparentMesh: 1
+--- !u!114 &1949100115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1949100110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c9c888acf0c2c33fa64a570a541fdee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShopPageManager
 --- !u!224 &1958104888 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2421717458509196532, guid: 366fc8b330330ffd49bb0cd25bde8230, type: 3}
