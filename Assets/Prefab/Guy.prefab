@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 792568204063236392}
   m_Layer: 0
   m_Name: UseCollider
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -264,7 +264,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: -234876627
+  m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
   m_MaskInteraction: 0
@@ -339,6 +339,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 792568204063236392}
+        m_TargetAssemblyTypeName: PlayerInteractionController, Assembly-CSharp
+        m_MethodName: PointingDirection
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: a54e196c-fcfb-45d2-9410-021ef69c48a5
     m_ActionName: 'Player/Move[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
   - m_PersistentCalls:
@@ -355,16 +367,84 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: HotbarController, Assembly-CSharp
+        m_MethodName: UseTool
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 1f2f6c01-f3d1-4025-b9e9-8e8ba7d8235e
     m_ActionName: 'Player/Use[/Keyboard/e]'
   - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 519e1dd4-fcde-4fe9-9c09-f5b7475b5712
-    m_ActionName: 'Player/SwitchTool[/Keyboard/leftArrow,/Keyboard/rightArrow,/Mouse/scroll/down,/Mouse/scroll/up]'
-  - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+        m_MethodName: openMenu
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 24691b94-2733-48ed-9bfb-b2d02c3cd581
     m_ActionName: 'Global/Open Inventory[/Keyboard/tab]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: HotbarController, Assembly-CSharp
+        m_MethodName: MoveSelector
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 519e1dd4-fcde-4fe9-9c09-f5b7475b5712
+    m_ActionName: 'Player/SwitchTool[/Keyboard/leftArrow,/Keyboard/rightArrow]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Dialogue, Assembly-CSharp
+        m_MethodName: LoadLine
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 6f28e647-362b-4f5d-be13-3e8766a599dc
+    m_ActionName: 'UI/Confirm[/Keyboard/e,/Mouse/leftButton]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 99b156c2-9ef9-46f1-84b9-03c4e3241f60
+    m_ActionName: 'Global/DebugButton[/Keyboard/period]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard&Mouse
   m_DefaultActionMap: Player
@@ -5337,6 +5417,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6439523572649280344}
     m_Modifications:
+    - target: {fileID: 2073452130224005792, guid: a26ae8be845dda203ba54c62ac520baa, type: 3}
+      propertyPath: m_VerticalFit
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4925390225574073082, guid: a26ae8be845dda203ba54c62ac520baa, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -5367,7 +5451,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4925390225574073082, guid: a26ae8be845dda203ba54c62ac520baa, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4925390225574073082, guid: a26ae8be845dda203ba54c62ac520baa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5420,6 +5504,10 @@ PrefabInstance:
     - target: {fileID: 5650425362665927652, guid: a26ae8be845dda203ba54c62ac520baa, type: 3}
       propertyPath: m_Name
       value: TooltipUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650425362665927652, guid: a26ae8be845dda203ba54c62ac520baa, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

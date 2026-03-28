@@ -19,7 +19,11 @@ public class ShopController : MonoBehaviour
     void Awake()
     {
         if (Instance == null) Instance = this;
-        else Destroy(gameObject);
+        else
+        {
+            Debug.LogError($"An Instance of this GameObject already exist. \nDeleting GameObject {gameObject.name}");
+            Destroy(gameObject);
+        }
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

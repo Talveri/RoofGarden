@@ -14,42 +14,29 @@ public class InventoryController : MonoBehaviour
     void Awake()
     {
         if (Instance == null) Instance = this;
-        else Destroy(gameObject);
+        else
+        {
+            Debug.LogError($"An Instance of this GameObject already exist. \nDeleting GameObject {gameObject.name}");
+            Destroy(gameObject);
+        } 
     }
 
+    // Generates Slots in the player inventory
     void Start()
     {
-        for (int i = 0; i < slotCount; i++)
-        {
-            Slot slot = Instantiate(slotPrefab, inventoryPanel.transform).GetComponent<Slot>();
-            if (i < itemPrefabs.Length && itemPrefabs[i] != null)
-            {
-                GameObject item = Instantiate(itemPrefabs[i], slot.transform);
+        InventoryHandler.Instance.GenerateInventory(inventoryPanel, slotPrefab, slotCount);
 
-                item.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
-                slot.currentItem = item;
-            }
+        for(int i = 0; i < itemPrefabs.Length; i++)
+        {
+            InventoryHandler.Instance.AddItem(inventoryPanel,itemPrefabs[i]);
         }
 
-       
     }
 
     public bool AddItem(GameObject itemPrefab)
     {
-        //look for empty slot
-        foreach (Transform slotTransform in inventoryPanel.transform)
-        {
-            Slot slot = slotTransform.GetComponent<Slot>();
-            Debug.Log($"{slot} : {slot.currentItem}");
-            if (slot != null && slot.currentItem == null)
-            {
-                GameObject newItem = Instantiate(itemPrefab, slot.transform);
-                newItem.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
-                slot.currentItem = newItem;
-                return true;
-            }
-
-        }
+        if (InventoryHandler.Instance.AddItem(inventoryPanel, itemPrefab))
+            return true;
         Debug.Log("Inventory Full");
         return false;
     }

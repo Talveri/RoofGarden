@@ -1,3 +1,5 @@
+using NUnit.Framework;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerStockController : MonoBehaviour
@@ -11,14 +13,19 @@ public class PlayerStockController : MonoBehaviour
     void Awake()
     {
         if (Instance == null) Instance = this;
-        else Destroy(gameObject);
-    }
-    void Start()
-    {
-        
+        else
+        {
+            Debug.LogError($"An Instance of this GameObject already exist. \nDeleting GameObject {gameObject.name}");
+            Destroy(gameObject);
+        }
+
+        Assert.That(!itemDictionaryGameObject.IsUnityNull());
+        Assert.That(!slotPrefab.IsUnityNull());
+        Assert.That(!playerInventoryGrid.IsUnityNull());
+
         itemDictionary = itemDictionaryGameObject.GetComponent<ItemDictionary>();
-        RefreshPlayerInventoryDisplay();
     }
+
 
     public void RefreshPlayerInventoryDisplay()
     {
@@ -27,6 +34,8 @@ public class PlayerStockController : MonoBehaviour
             Debug.LogError("No Instance of InventoryController found!");
             return;
         }
+
+        // Object specific
         foreach (Transform child in playerInventoryGrid) Destroy(child.gameObject);
 
         Debug.Log(InventoryController.Instance.inventoryPanel.transform);
@@ -41,9 +50,11 @@ public class PlayerStockController : MonoBehaviour
             {
                 // Set slot item-property to item in inventory
                 Item item = inventorySlot.currentItem.GetComponent<Item>();
+                Assert.That(!item.IsUnityNull(), "Current Item has no Item component!");
+
                 slotObj.GetComponent<Slot>().currentItem = inventorySlot.currentItem;
 
-
+                Debug.Log(item.ID);
                 GameObject itemPrefab = itemDictionary.GetItemPrefab(item.ID);
                 if (itemPrefab == null) return;
 
