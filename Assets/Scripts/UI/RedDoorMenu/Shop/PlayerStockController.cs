@@ -15,6 +15,7 @@ public class PlayerStockController : MonoBehaviour
     }
     void Start()
     {
+        
         itemDictionary = itemDictionaryGameObject.GetComponent<ItemDictionary>();
         RefreshPlayerInventoryDisplay();
     }
