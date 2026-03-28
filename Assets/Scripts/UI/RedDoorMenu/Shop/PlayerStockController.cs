@@ -5,7 +5,6 @@ public class PlayerStockController : MonoBehaviour
     public static PlayerStockController Instance { get; private set; }
     public Transform playerInventoryGrid;
     public GameObject slotPrefab;
-    public GameObject displayItemPrefab;
     public GameObject itemDictionaryGameObject;
     private ItemDictionary itemDictionary;
 
@@ -22,7 +21,6 @@ public class PlayerStockController : MonoBehaviour
 
     public void RefreshPlayerInventoryDisplay()
     {
-
         if (InventoryController.Instance == null)
         {
             Debug.LogError("No Instance of InventoryController found!");
@@ -48,9 +46,8 @@ public class PlayerStockController : MonoBehaviour
                 GameObject itemPrefab = itemDictionary.GetItemPrefab(item.ID);
                 if (itemPrefab == null) return;
 
-
-                GameObject itemInstance = Instantiate(displayItemPrefab, slotObj.transform);
-                itemInstance.GetComponent<ReferenceItem>().SetReference(itemPrefab);
+                GameObject itemInstance = Instantiate(itemPrefab, slotObj.transform);
+                itemInstance.GetComponent<ItemDragHandler>().enabled = false;
                 itemInstance.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
 
             }

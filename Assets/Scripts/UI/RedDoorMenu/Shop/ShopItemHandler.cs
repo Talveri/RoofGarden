@@ -31,6 +31,7 @@ public class ShopItemHandler : MonoBehaviour, IPointerClickHandler
             return;
         }
 
+        //Debug.Log(item.ID);
         GameObject itemPrefab = FindAnyObjectByType<ItemDictionary>().GetItemPrefab(item.ID);
         if (InventoryController.Instance.AddItem(itemPrefab))
         {
