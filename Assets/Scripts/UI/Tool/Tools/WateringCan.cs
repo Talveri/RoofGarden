@@ -7,6 +7,7 @@ using UnityEngine;
 
 public class WateringCan : MonoBehaviour, ITool
 {
+    public int WaterAmountPerInteraction = 5;
     private bool watering;
 
     private AudioSource wateringSound;
@@ -28,7 +29,7 @@ public class WateringCan : MonoBehaviour, ITool
 
         if(field != null)
         {
-            field.Irrigate();
+            field.Irrigate(WaterAmountPerInteraction);
         }
     }
 

@@ -39,7 +39,7 @@ class FieldSeletionManager : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Activated FieldSelector");
+            // Debug.Log("Activated FieldSelector");
 
             // Get the player's InteractionManager
             interactionManager = collision.gameObject.GetComponentInChildren<InteractionManager>();
@@ -52,12 +52,12 @@ class FieldSeletionManager : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D collision)
     {
-        Debug.Log("Deactivated FieldSelector");
+        // Debug.Log("Deactivated FieldSelector");
 
         if (collision.gameObject.CompareTag("Player"))
         {
             playerInside = false;
-
+            
             fieldSelector.Active(false);
             FieldSelector.Instance.ClearField();
         }

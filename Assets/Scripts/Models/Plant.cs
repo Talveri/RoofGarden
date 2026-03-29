@@ -17,7 +17,7 @@ namespace RoofGardenGame.Models
 
         [Tooltip("How wet does the plant want the soil to be?")]
         [SerializeField]
-        WaterLevel optimalWaterLevel;
+        public WaterLevel optimalWaterLevel;
 
         [Tooltip("What nutrients does the plant consume daily?")]
         [SerializeField]
@@ -45,6 +45,8 @@ namespace RoofGardenGame.Models
         SpriteRenderer spriteRenderer;
 
         int spriteCount;
+
+        public bool critical = false;
 
         int health;
 
@@ -103,6 +105,7 @@ namespace RoofGardenGame.Models
             else if (health == 0)
             {
                 spriteRenderer.sprite = deathSprite;
+                critical = false;
             }
         }
 
@@ -116,15 +119,18 @@ namespace RoofGardenGame.Models
             {
                 if (
                     !nutrients.Contains(consumption * deltaTime)
-                    || (Water.Level(waterAmount) != optimalWaterLevel)
+                    || (waterAmount < Water.Interval(optimalWaterLevel).min)
                 ) // insufficient nutrients
                 {
-                    health -= 1;
+                    critical = true;
+                }
+                else
+                {
+                    critical = false;
                 }
                 nutrients -= consumption * deltaTime;
             }
-            else { }
-            health = Math.Clamp(health, 0, maxHealth);
+
         }
 
         public static Relationship operator +(Plant left, Plant right)
@@ -137,6 +143,12 @@ namespace RoofGardenGame.Models
             }
             return Relationship.Neutral;
             throw new NotImplementedException();
+        }
+
+        public void TakeDamage()
+        {
+            health -= 1;
+            health = Math.Clamp(health, 0, maxHealth);
         }
     }
 }

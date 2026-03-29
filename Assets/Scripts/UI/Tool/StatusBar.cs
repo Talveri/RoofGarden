@@ -15,7 +15,7 @@ public struct StatusSprite
 }
 public class StatusBar : MonoBehaviour
 {
-    
+    public StatusBar demand = null;
     [SerializeField] private List<StatusSprite> status;
     public void UpdateStatusBar(float value)
     {
@@ -33,7 +33,11 @@ public class StatusBar : MonoBehaviour
                 closest = s;
             }
         }
-        GetComponent<Image>().sprite = closest.sprite;
-        
+        GetComponent<Image>().sprite = closest.sprite;   
+    }
+
+    public void SetDemand(float value)
+    {
+        demand.UpdateStatusBar(value);
     }
 }

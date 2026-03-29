@@ -9,6 +9,7 @@ namespace RoofGardenGame.Models
     {
         public FieldState fieldState;
         public Plant plant;
+        public SpriteRenderer Warning;
         Nutrients nutrients = new Nutrients();
         int waterAmount = 0;
 
@@ -27,6 +28,7 @@ namespace RoofGardenGame.Models
             plant = null;
             EventBus.OnTick += ProgressTick;
             spriteManager = GetComponent<FieldSpriteManager>();
+            Warning.gameObject.SetActive(false);
         }
 
         public void TillField()
@@ -39,7 +41,6 @@ namespace RoofGardenGame.Models
         // Harvest Interaction resets FieldState
         public GameObject Harvest()
         {
-            Debug.Log("Harvest Plant");
             GameObject vegetable = plant.VegetablePrefab;
             RemovePlant();
             return vegetable;
@@ -47,7 +48,6 @@ namespace RoofGardenGame.Models
 
         public void RemovePlant()
         {
-            Debug.Log("Remove Plant");
 
             Destroy(plant.gameObject);
 
@@ -55,6 +55,7 @@ namespace RoofGardenGame.Models
             fieldState = FieldState.Raw;
             plant = null;
             isPlantGrown = false;
+            Warning.gameObject.SetActive(false);
         }
 
         // Seeds Interaction
@@ -70,11 +71,11 @@ namespace RoofGardenGame.Models
         }
 
         // Watering Can Interaction
-        public void Irrigate()
+        public void Irrigate(int amount = 5)
         {
             if (waterAmount < Water.MAX)
             {
-                waterAmount++;
+                waterAmount += amount;
                 moisturePercent = (float)waterAmount / Water.MAX;
                 spriteManager.VisualMoisture(waterAmount);
             }
@@ -105,6 +106,7 @@ namespace RoofGardenGame.Models
             {
                 FeedPlant(tickEvent.DeltaTime);
                 plant.Progress();
+                Warning.gameObject.SetActive(plant.critical);
 
                 if (plant.IsGrown() && !isPlantGrown)
                 {

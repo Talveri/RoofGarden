@@ -28,8 +28,11 @@ public class UTKPlantTypeManager : MonoBehaviour
         {
             image.sprite = NoPlantImage;
             typeName.text = "empty";
+            return;
         }
         image.sprite = plant.VegetablePrefab.GetComponent<Image>().sprite;
         typeName.text = plant.VegetablePrefab.name;
+
+        
     }
 }

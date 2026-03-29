@@ -26,5 +26,19 @@ public class StatusBarManager : MonoBehaviour
         NBar.UpdateStatusBar(field.nitrogenPercent);
         PBar.UpdateStatusBar(field.phosphorPercent);
         KBar.UpdateStatusBar(field.potassiumPercent);
+
+        if(field.plant != null)
+        {
+            Plant plant = field.plant;
+
+            waterBar.SetDemand((float)Water.Interval(plant.optimalWaterLevel).min / Water.MAX);
+        }
+        else
+        {
+            waterBar.SetDemand(0);
+            NBar.SetDemand(0);
+            PBar.SetDemand(0);
+            KBar.SetDemand(0);
+        }
     }
 }

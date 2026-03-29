@@ -37,7 +37,7 @@ namespace RoofGardenGame.Enums
         {
             return level switch
             {
-                WaterLevel.Dry => new Interval(0, 10),
+                WaterLevel.Dry => new Interval(3, 10),
                 WaterLevel.Moist => new Enums.Interval(11, 20),
                 WaterLevel.Wet => new Enums.Interval(21, 100),
                 _ => throw new ArgumentOutOfRangeException(),
