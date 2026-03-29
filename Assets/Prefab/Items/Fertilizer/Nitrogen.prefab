@@ -137,6 +137,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0261620ac4910d11819031b67b740e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FertilizerBag
-  N: 1
+  N: 5
   P: 0
   K: 0

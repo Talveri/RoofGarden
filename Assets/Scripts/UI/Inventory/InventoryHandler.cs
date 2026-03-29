@@ -7,18 +7,7 @@ using Unity.VisualScripting;
 /// </summary>
 public class InventoryHandler : MonoBehaviour
 {
-    public static InventoryHandler Instance { get; private set; }
-
-    void Awake()
-    {
-        if (Instance == null) Instance = this;
-        else
-        {
-            Debug.LogWarning($"An instance of InventoryGenerator already exists. Deleting {gameObject}");
-            Destroy(gameObject);
-        }
-    }
-    public void GenerateInventory(GameObject inventoryPanel, GameObject slotPrefab, int slotCount = 0)
+    public GameObject[] GenerateInventory(Transform inventoryPanel, GameObject slotPrefab, int slotCount = 0)
     {
         // Error Handling
         Assert.That(!inventoryPanel.IsUnityNull());
@@ -30,20 +19,22 @@ public class InventoryHandler : MonoBehaviour
             slotCount = 0;
             Debug.LogWarning($"slotCount is {slotCount}");
         }
+        GameObject[] slots = new GameObject[slotCount];
 
         for (int i = 0; i < slotCount; i++)
         {
-            Slot slot = Instantiate(slotPrefab, inventoryPanel.transform).GetComponent<Slot>();
+            slots[i] = Instantiate(slotPrefab, inventoryPanel);
         }
+        return slots;
     }
 
-    public bool AddItem(GameObject inventoryPanel, GameObject itemPrefab)
+    public bool AddItem(Transform inventoryPanel, GameObject itemPrefab)
     {
         Assert.That(!inventoryPanel.IsUnityNull());
         Assert.That(!itemPrefab.IsUnityNull());
 
         //look for empty slot
-        foreach (Transform slotTransform in inventoryPanel.transform)
+        foreach (Transform slotTransform in inventoryPanel)
         {
             Assert.That(!slotTransform.GetComponent<Slot>().IsUnityNull());
 
@@ -59,6 +50,16 @@ public class InventoryHandler : MonoBehaviour
                 return true;
             }
         }
+        return false;
+    }
+
+    public bool RemItem(Transform inventoryPanel, GameObject targetSlot)
+    {
+        Assert.That(!inventoryPanel.IsUnityNull());
+        Assert.That(!targetSlot.IsUnityNull());
+
+        
+
         return false;
     }
 }

@@ -49,8 +49,8 @@ MonoBehaviour:
   optimalWaterLevel: 0
   consumption:
     potassium: 0
-    nitrogen: 0
-    phosphor: 0
+    nitrogen: 1
+    phosphor: 1
   maxHealth: 3
   growthDurationInTicks: 200
   growthStageSprites:

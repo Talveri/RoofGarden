@@ -90,7 +90,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5885478189957960869, guid: 5d9d52afb6d5523ee962730102a55992, type: 3}
       propertyPath: K
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5885478189957960869, guid: 5d9d52afb6d5523ee962730102a55992, type: 3}
       propertyPath: P
@@ -98,7 +98,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6199116629280572813, guid: 5d9d52afb6d5523ee962730102a55992, type: 3}
       propertyPath: ID
-      value: 11
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6199116629280572813, guid: 5d9d52afb6d5523ee962730102a55992, type: 3}
       propertyPath: buyPrice

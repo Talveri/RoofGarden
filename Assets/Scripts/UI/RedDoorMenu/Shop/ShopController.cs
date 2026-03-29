@@ -9,6 +9,7 @@ public class ShopController : MonoBehaviour
     public static ShopController Instance;
 
     [Header("UI")]
+    public PlayerStockController playerStockController;
     public GameObject shopPanel;
     public Transform shopInventory, playerInventoryGrid;
     public GameObject shopSlotPrefab;
@@ -48,7 +49,7 @@ public class ShopController : MonoBehaviour
 
     public void RefreshPlayerInventoryDisplay()
     {
-        PlayerStockController.Instance.RefreshPlayerInventoryDisplay();
+        playerStockController.RefreshPlayerInventoryDisplay();
     }
 
     // Makes money flash red
