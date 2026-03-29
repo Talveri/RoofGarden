@@ -8,7 +8,7 @@ namespace RoofGardenGame.Models
     public class Field : MonoBehaviour, IInteractable
     {
         public FieldState fieldState;
-        Plant plant;
+        public Plant plant;
         Nutrients nutrients = new Nutrients();
         int waterAmount = 0;
 

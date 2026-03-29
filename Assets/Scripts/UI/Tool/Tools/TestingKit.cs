@@ -1,3 +1,4 @@
+using System;
 using RoofGardenGame.Models;
 using UnityEngine;
 
@@ -38,6 +39,7 @@ public class TestingKit : MonoBehaviour, ITool
             return;
         
         StatusBarManager.Instance.UpdateBars(field);
+        UTKPlantTypeManager.Instance.UpdatePlantInfo(field.plant);
     }
 
 
