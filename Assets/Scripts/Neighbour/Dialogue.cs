@@ -12,6 +12,12 @@ public class Dialogue : MonoBehaviour
     private int index = 0;
     public bool inDialogue;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public int visualOffset = 0;
+
+    void Awake()
+    {
+        gameObject.SetActive(false);
+    }
     void Start()
     {
         textComponent.text = string.Empty;
@@ -19,8 +25,8 @@ public class Dialogue : MonoBehaviour
     // Update is called once per frame
     public void LoadLine(InputAction.CallbackContext ctx)
     {
-        if(!ctx.performed) return;
-        if(!inDialogue) return;
+        if (!ctx.performed) return;
+        if (!inDialogue) return;
         // if the text still loads than it appears instantly
         if (textComponent.text == lines[index])
         {
@@ -54,6 +60,13 @@ public class Dialogue : MonoBehaviour
     }
     public void StartDialogue()
     {
+        if (PlayerPosition.Instance.PlayerPositionRelativeToCamera().y < 0)
+            gameObject.GetComponent<RectTransform>().anchoredPosition = PlayerPosition.Instance.PlayerScreenPosition(visualOffset);
+        else 
+            gameObject.GetComponent<RectTransform>().anchoredPosition  = PlayerPosition.Instance.PlayerScreenPosition(-visualOffset);
+
+
+
         inDialogue = true;
 
         InputMapManager.setToUI();

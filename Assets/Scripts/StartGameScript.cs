@@ -11,12 +11,23 @@ public class StartGameScript : MonoBehaviour
     public float fadeOutTime = 0.5f;
     public GameObject StartPage;
 
+    public GameObject[] setActive;
+
+    void Awake()
+    {
+        foreach (GameObject gameObject in setActive)
+        {
+            gameObject.SetActive(true);
+        }
+    }
+
     // Update is called once per frame
     public void Start()
     {
         mainCamera.transform.position = cameraInitialPosition.position;
-        StartPage.SetActive(true);
         InputMapManager.setToUI();
+
+
     }
 
     public void ButtonStartGame()

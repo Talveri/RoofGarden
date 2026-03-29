@@ -1,32 +1,34 @@
+using System;
 using System.Collections.Generic;
-using Unity.VisualScripting;
+using RoofGardenGame.Enums;
+using Unity.Collections.LowLevel.Unsafe;
 using UnityEngine;
+
+[System.Serializable]
+public struct MoodState
+{
+    public Mood mood;
+    public Sprite MoodImage;
+}
 
 public class NeighbourData : MonoBehaviour
 {
-    public int mood = 0;
-    public List<Sprite> MoodImage;
-    private SpriteRenderer spriteRenderer;
-
-    private void EnsureRenderer()
-{
-    if (spriteRenderer == null)
-        spriteRenderer = GetComponent<SpriteRenderer>();
-}
-    public void ShowStats()
-    {
-        EnsureRenderer();
-        // Clamp happiness
-        int index = Mathf.Clamp(mood, 0, MoodImage.Count - 1);
-
-        spriteRenderer.sprite = MoodImage[index];
-        gameObject.SetActive(true);
-    }
-
-    public void HideStats()
-    {
-        gameObject.SetActive(false);
-    }
+    public Mood mood = Mood.VeryUnhappy;
 
     
+    public MoodState[] MoodImages;
+
+    public Sprite GetMoodImage()
+    {
+        foreach(MoodState state in MoodImages)
+        {
+            if(mood == state.mood)
+            {
+                return state.MoodImage;
+            }
+        }
+        Debug.LogWarning($"Mood {mood} could not be found!");
+        return null;
+    }   
+ 
 }

@@ -6,15 +6,15 @@ using UnityEngine.InputSystem;
 public class NeighbourDoor : MonoBehaviour, IInteractable
 {
     public NeighbourData neighbourData;
+    public SpriteRenderer MoodDisplay;
     public NeighbourDialogue neighbourDialogue;
     public static event Action<NeighbourData> onDoorInteracted;
     public string tooltipText = "Knock [E]";
-
     public void Interact<T>(T data)
     {
         onDoorInteracted?.Invoke(neighbourData);
-        neighbourData.ShowStats();
-
+        MoodDisplay.sprite = neighbourData.GetMoodImage();
+        MoodDisplay.gameObject.SetActive(true);
         // Code copied and modified from Update(), idk what you exactly planned for this implementation
         // You can remove it if you want to delegate the dialague stuff to the NeighbourUI script
         if (!dialogue.inDialogue)
@@ -22,8 +22,9 @@ public class NeighbourDoor : MonoBehaviour, IInteractable
             tooltip.hideTooltip();
             dialogue.UpdateText(scriptLines);
             dialogue.StartDialogue();
-            neighbourData.ShowStats();
+            MoodDisplay.sprite = neighbourData.GetMoodImage();
         }
+        
     }
 
     // TEST CODE DELETE LATER
@@ -44,7 +45,7 @@ public class NeighbourDoor : MonoBehaviour, IInteractable
     void Start()
     {
         tooltip.UpdateText(tooltipText);
-        scriptLines = neighbourDialogue.script[neighbourData.mood].lines;
+        scriptLines = neighbourDialogue.script[(int)neighbourData.mood].lines;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -59,7 +60,7 @@ public class NeighbourDoor : MonoBehaviour, IInteractable
         if (other.CompareTag("Player"))
         {
             //playerInside = false;
-            neighbourData.HideStats();
+            MoodDisplay.gameObject.SetActive(false);
         }
     }
 }
