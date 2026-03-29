@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoofGardenGame.Models.Plant
   type: 2
-  optimalWaterLevel: 0
+  optimalWaterLevel: 2
   consumption:
     potassium: 0
     nitrogen: 1
