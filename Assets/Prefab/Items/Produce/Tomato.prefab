@@ -20,6 +20,14 @@ PrefabInstance:
       propertyPath: buyPrice
       value: 40
       objectReference: {fileID: 0}
+    - target: {fileID: -8812657851691185749, guid: cd672a4663d9913848b92af93322abcf, type: 3}
+      propertyPath: moodValue
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -8812657851691185749, guid: cd672a4663d9913848b92af93322abcf, type: 3}
+      propertyPath: isShopItem
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1131887856134411801, guid: cd672a4663d9913848b92af93322abcf, type: 3}
       propertyPath: m_Name
       value: Tomato

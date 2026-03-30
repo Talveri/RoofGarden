@@ -2,10 +2,10 @@ namespace RoofGardenGame.Enums
 {
     public enum Mood
     {
-        VeryHappy,
-        Happy,
-        Okay,
+        VeryUnhappy,
         Unhappy,
-        VeryUnhappy
+        Okay,
+        Happy,
+        VeryHappy
     }
 }

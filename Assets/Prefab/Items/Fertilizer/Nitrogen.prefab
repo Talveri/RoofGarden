@@ -17,6 +17,10 @@ PrefabInstance:
       value: 120
       objectReference: {fileID: 0}
     - target: {fileID: -8812657851691185749, guid: cd672a4663d9913848b92af93322abcf, type: 3}
+      propertyPath: moodValue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8812657851691185749, guid: cd672a4663d9913848b92af93322abcf, type: 3}
       propertyPath: isShopItem
       value: 1
       objectReference: {fileID: 0}

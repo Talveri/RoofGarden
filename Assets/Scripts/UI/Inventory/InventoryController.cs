@@ -46,9 +46,12 @@ public class InventoryController : MonoBehaviour
         return false;
     }
 
-    public bool RemItem(GameObject targetSlot)
+    public bool RemItem(GameObject itemPrefab)
     {
-
+        if(inventoryHandler.RemItem(inventoryPanel,itemPrefab))
+            return true;
+        Debug.LogError($"Removing Item {itemPrefab.name} failed");
         return false;
+        
     }
 }

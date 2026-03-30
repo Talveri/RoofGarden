@@ -19,7 +19,6 @@ public class StatusBar : MonoBehaviour
     [SerializeField] private List<StatusSprite> status;
     public void UpdateStatusBar(float value)
     {
-        Debug.Log(value);
 
         StatusSprite closest = status[0];
         float smDiff = Mathf.Abs(value - closest.threshold);

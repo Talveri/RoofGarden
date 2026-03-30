@@ -45,14 +45,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NeighbourData
   mood: 0
+  MoodXP: 0
   MoodImages:
   - mood: 0
-    MoodImage: {fileID: 8147948647692968815, guid: c7c46fa3b1eca9e528b1308a42ee3549, type: 3}
+    MoodImage: {fileID: 809144395, guid: c7c46fa3b1eca9e528b1308a42ee3549, type: 3}
   - mood: 1
-    MoodImage: {fileID: -1443822561, guid: c7c46fa3b1eca9e528b1308a42ee3549, type: 3}
+    MoodImage: {fileID: 2095435552, guid: c7c46fa3b1eca9e528b1308a42ee3549, type: 3}
   - mood: 2
     MoodImage: {fileID: 1858107351, guid: c7c46fa3b1eca9e528b1308a42ee3549, type: 3}
   - mood: 3
-    MoodImage: {fileID: 2095435552, guid: c7c46fa3b1eca9e528b1308a42ee3549, type: 3}
+    MoodImage: {fileID: -1443822561, guid: c7c46fa3b1eca9e528b1308a42ee3549, type: 3}
   - mood: 4
-    MoodImage: {fileID: 809144395, guid: c7c46fa3b1eca9e528b1308a42ee3549, type: 3}
+    MoodImage: {fileID: 8147948647692968815, guid: c7c46fa3b1eca9e528b1308a42ee3549, type: 3}

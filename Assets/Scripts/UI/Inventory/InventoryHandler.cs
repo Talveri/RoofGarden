@@ -40,8 +40,6 @@ public class InventoryHandler : MonoBehaviour
 
             Slot slot = slotTransform.GetComponent<Slot>();
 
-            Debug.Log($"{slot} : {slot.currentItem}");
-
             if (slot != null && slot.currentItem == null)
             {
                 GameObject newItem = Instantiate(itemPrefab, slot.transform);
@@ -53,12 +51,22 @@ public class InventoryHandler : MonoBehaviour
         return false;
     }
 
-    public bool RemItem(Transform inventoryPanel, GameObject targetSlot)
+    public bool RemItem(Transform inventoryPanel, GameObject itemPrefab)
     {
         Assert.That(!inventoryPanel.IsUnityNull());
-        Assert.That(!targetSlot.IsUnityNull());
+        Assert.That(!itemPrefab.IsUnityNull());
+        int ItemID = itemPrefab.GetComponent<Item>().ID;
 
-        
+        foreach(Transform slotTransform in inventoryPanel)
+        {
+            Slot slot = slotTransform.GetComponent<Slot>();
+            if(slot == null) continue;
+            if(slot.currentItem != null && slot.currentItem.GetComponent<Item>().ID == ItemID)
+            {
+                slot.removeCurrentItem();
+                return true;
+            }
+        }
 
         return false;
     }

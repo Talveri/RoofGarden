@@ -15,6 +15,7 @@ public class NeighbourDoor : MonoBehaviour, IInteractable
         onDoorInteracted?.Invoke(neighbourData);
         MoodDisplay.sprite = neighbourData.GetMoodImage();
         MoodDisplay.gameObject.SetActive(true);
+        NeighbourMenuManager.Instance.SetNeighbourData(neighbourData);
         // Code copied and modified from Update(), idk what you exactly planned for this implementation
         // You can remove it if you want to delegate the dialague stuff to the NeighbourUI script
         if (!dialogue.inDialogue)
@@ -25,10 +26,8 @@ public class NeighbourDoor : MonoBehaviour, IInteractable
             MoodDisplay.sprite = neighbourData.GetMoodImage();
         }
         
+        
     }
-
-    // TEST CODE DELETE LATER
-    //bool playerInside;
     public Dialogue dialogue;
     private string[] scriptLines;
 

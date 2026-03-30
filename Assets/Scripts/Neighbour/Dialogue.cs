@@ -14,6 +14,8 @@ public class Dialogue : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public int visualOffset = 0;
 
+    public MenuController NeigbourMenu;
+
     void Awake()
     {
         gameObject.SetActive(false);
@@ -54,7 +56,8 @@ public class Dialogue : MonoBehaviour
 
             inDialogue = false;
             textComponent.text = string.Empty;
-            InputMapManager.setToPlayer();
+            // Switch to Neighbourmenu when dialogue is finished
+            NeigbourMenu.gameObject.SetActive(true);
             gameObject.SetActive(false);
         }
     }
