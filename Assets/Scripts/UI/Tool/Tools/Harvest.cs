@@ -14,6 +14,7 @@ public class Harvest : MonoBehaviour, ITool
         {
             GameObject Vegetable = field.Harvest();
             InventoryController.Instance.AddItem(Vegetable);
+            ParticleSystemManager.Instance.PlaySplash(field.gameObject.transform.position, Color.green);
         }
         else
         {

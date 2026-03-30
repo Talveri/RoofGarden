@@ -9,7 +9,9 @@ public class GardenShears : MonoBehaviour, ITool
         if (field != null && field.fieldState == FieldState.Planted)
         {
             // Use Tool
+            ParticleSystemManager.Instance.PlaySplash(field.gameObject.transform.position, Color.darkGreen);
             field.RemovePlant();
+
         }
         else
         {

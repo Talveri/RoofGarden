@@ -16,7 +16,10 @@ public class Fertilizer : MonoBehaviour, ITool
         if (slot.currentItem != null && slot.currentItem.gameObject.CompareTag("Fertilizer"))
         {
             // Use Tool
+            ParticleSystemManager.Instance.PlaySplash(field.gameObject.transform.position, Color.sandyBrown);
+
             nutrients = slot.currentItem.gameObject.GetComponent<FertilizerBag>().getNutrientAmount();
+            
             field.AddNutrients(nutrients);
             slot.removeCurrentItem();
             return;

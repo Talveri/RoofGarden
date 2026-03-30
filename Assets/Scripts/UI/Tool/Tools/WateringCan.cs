@@ -20,6 +20,7 @@ public class WateringCan : MonoBehaviour, ITool
     {
         watering = true;
         wateringSound.Play();
+        ParticleSystemManager.Instance.PlaySplash(field.gameObject.transform.position, Color.skyBlue);
         // start watering
     }
     public void UseToolHold(Field field)

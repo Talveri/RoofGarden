@@ -28,6 +28,7 @@ public class Trowel : MonoBehaviour, ITool
         }
 
         tillSound.Play();
+        ParticleSystemManager.Instance.PlaySplash(field.gameObject.transform.position, Color.brown);
         field.TillField();
     }
     /// To keep ITool Modular these Functions are implemented, but not used
