@@ -1,6 +1,8 @@
 
 using UnityEngine;
+#if UNITY_EDITOR
 using NUnit.Framework;
+#endif
 using Unity.VisualScripting;
 /// <summary>
 /// The InventoryHandler is a script for generating and filling Itemslots in certain panels.
@@ -57,11 +59,11 @@ public class InventoryHandler : MonoBehaviour
         Assert.That(!itemPrefab.IsUnityNull());
         int ItemID = itemPrefab.GetComponent<Item>().ID;
 
-        foreach(Transform slotTransform in inventoryPanel)
+        foreach (Transform slotTransform in inventoryPanel)
         {
             Slot slot = slotTransform.GetComponent<Slot>();
-            if(slot == null) continue;
-            if(slot.currentItem != null && slot.currentItem.GetComponent<Item>().ID == ItemID)
+            if (slot == null) continue;
+            if (slot.currentItem != null && slot.currentItem.GetComponent<Item>().ID == ItemID)
             {
                 slot.removeCurrentItem();
                 return true;

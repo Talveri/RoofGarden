@@ -1,4 +1,6 @@
+#if UNITY_EDITOR
 using NUnit.Framework;
+#endif
 using Unity.VisualScripting;
 using UnityEngine;
 
