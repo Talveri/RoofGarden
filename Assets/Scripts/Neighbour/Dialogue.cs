@@ -44,6 +44,7 @@ public class Dialogue : MonoBehaviour
 
     void NextLine()
     {
+
         if (index < lines.Length - 1)
         {
             index++;

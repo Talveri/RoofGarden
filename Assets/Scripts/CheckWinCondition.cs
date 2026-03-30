@@ -21,6 +21,12 @@ public class CheckWinCondition : MonoBehaviour
         titleGroup.alpha = 0;
     }
 
+    void Start()
+    {
+        foreach (NeighbourData data in neighbours)
+            data.mood = RoofGardenGame.Enums.Mood.VeryUnhappy;
+    }
+
     public bool Check()
     {
         foreach (NeighbourData data in neighbours)

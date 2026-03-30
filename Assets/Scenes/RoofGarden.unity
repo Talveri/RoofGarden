@@ -26922,11 +26922,6 @@ MonoBehaviour:
   itemPrefabs:
   - {fileID: 4218852982135719159, guid: f3d3fcb431f85acb48a20f7837ce7815, type: 3}
   - {fileID: 746850712321073013, guid: 2779b6ce950bce88f8d7e11d015cff5d, type: 3}
-  - {fileID: 1400083522737619631, guid: e41e5c9d123d3c60b9701a8f0b145c1f, type: 3}
-  - {fileID: 8744559631704173122, guid: 3371497eb6bc4da399e1e870bd568020, type: 3}
-  - {fileID: 8744559631704173122, guid: 3371497eb6bc4da399e1e870bd568020, type: 3}
-  - {fileID: 8744559631704173122, guid: 3371497eb6bc4da399e1e870bd568020, type: 3}
-  - {fileID: 8744559631704173122, guid: 3371497eb6bc4da399e1e870bd568020, type: 3}
 --- !u!114 &1838515416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29475,7 +29470,11 @@ PrefabInstance:
       objectReference: {fileID: 1451487308}
     - target: {fileID: 524928422556232759, guid: 43a47b971739a030b99c6855faf1a50d, type: 3}
       propertyPath: visualOffset
-      value: 80
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 524928422556232759, guid: 43a47b971739a030b99c6855faf1a50d, type: 3}
+      propertyPath: dialogueSound
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 524928422556232759, guid: 43a47b971739a030b99c6855faf1a50d, type: 3}
       propertyPath: lines.Array.size
