@@ -48,6 +48,7 @@ public class RedDoorTrigger : MonoBehaviour, IInteractable
 
     void OnTriggerEnter2D()
     {
+        Debug.Log("Showing Tooltip");
         tooltip.showTooltip();
     }
     void OnTriggerExit2D()
