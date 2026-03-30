@@ -1,7 +1,5 @@
 using System.Collections;
-using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
-using UnityEngine.Rendering.RenderGraphModule;
 
 public class CheckWinCondition : MonoBehaviour
 {

@@ -20,7 +20,7 @@ public class InventoryController : MonoBehaviour
             Debug.LogError($"An Instance of this GameObject already exist. \nDeleting GameObject {gameObject.name}");
             Destroy(gameObject);
         }
-
+        Assert.That(!Instance.IsUnityNull());
         Assert.That(!inventoryPanel.IsUnityNull());
         Assert.That(!slotPrefab.IsUnityNull());
         Assert.That(slotCount > 0);
