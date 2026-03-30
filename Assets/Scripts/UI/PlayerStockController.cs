@@ -23,7 +23,8 @@ public class PlayerStockController : MonoBehaviour
 
         // Remove every slot in the inventory grid
         foreach (Transform child in playerInventoryGrid) Destroy(child.gameObject);
-
+        
+        if(InventoryController.Instance == null) return;
         foreach (Transform slotTransform in InventoryController.Instance.inventoryPanel.transform)
         {
             Slot inventorySlot = slotTransform.GetComponent<Slot>();
