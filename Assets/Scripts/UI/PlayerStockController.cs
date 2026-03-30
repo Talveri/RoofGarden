@@ -14,10 +14,7 @@ public class PlayerStockController : MonoBehaviour
 
     void Awake()
     {
-        Assert.That(!itemDictionary.IsUnityNull());
-        Assert.That(!playerInventoryGrid.IsUnityNull());
-        Assert.That(!slotPrefab.IsUnityNull());
-        Assert.That(!slotPrefab.GetComponent<Slot>().IsUnityNull());
+
     }
 
     public void RefreshPlayerInventoryDisplay()

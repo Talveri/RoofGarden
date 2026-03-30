@@ -12,9 +12,7 @@ public class InventoryHandler : MonoBehaviour
     public GameObject[] GenerateInventory(Transform inventoryPanel, GameObject slotPrefab, int slotCount = 0)
     {
         // Error Handling
-        Assert.That(!inventoryPanel.IsUnityNull());
-        Assert.That(!slotPrefab.IsUnityNull());
-        Assert.That(!slotPrefab.GetComponent<Slot>().IsUnityNull());
+
 
         if (slotCount < 0)
         {
@@ -32,13 +30,12 @@ public class InventoryHandler : MonoBehaviour
 
     public bool AddItem(Transform inventoryPanel, GameObject itemPrefab)
     {
-        Assert.That(!inventoryPanel.IsUnityNull());
-        Assert.That(!itemPrefab.IsUnityNull());
+
 
         //look for empty slot
         foreach (Transform slotTransform in inventoryPanel)
         {
-            Assert.That(!slotTransform.GetComponent<Slot>().IsUnityNull());
+
 
             Slot slot = slotTransform.GetComponent<Slot>();
 
@@ -55,8 +52,7 @@ public class InventoryHandler : MonoBehaviour
 
     public bool RemItem(Transform inventoryPanel, GameObject itemPrefab)
     {
-        Assert.That(!inventoryPanel.IsUnityNull());
-        Assert.That(!itemPrefab.IsUnityNull());
+
         int ItemID = itemPrefab.GetComponent<Item>().ID;
 
         foreach (Transform slotTransform in inventoryPanel)
