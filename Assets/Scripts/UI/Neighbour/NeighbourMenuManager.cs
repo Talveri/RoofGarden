@@ -38,6 +38,7 @@ class NeighbourMenuManager : MonoBehaviour
         if(InventoryController.Instance.RemItem(item.gameObject)){
             ImproveMood(item);
             slot.removeCurrentItem();
+            CheckWinCondition.Instance.Check();
             return;
         }
         Debug.LogError("ReceiveItem failed");
