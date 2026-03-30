@@ -1,7 +1,5 @@
 using System;
-using System.Reflection.Emit;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class NeighbourDoor : MonoBehaviour, IInteractable
 {
@@ -21,12 +19,13 @@ public class NeighbourDoor : MonoBehaviour, IInteractable
         if (!dialogue.inDialogue)
         {
             tooltip.hideTooltip();
+            scriptLines = neighbourDialogue.script[(int)neighbourData.mood].lines;
             dialogue.UpdateText(scriptLines);
             dialogue.StartDialogue();
             MoodDisplay.sprite = neighbourData.GetMoodImage();
         }
-        
-        
+
+
     }
     public Dialogue dialogue;
     private string[] scriptLines;
@@ -43,6 +42,7 @@ public class NeighbourDoor : MonoBehaviour, IInteractable
 
     void Start()
     {
+
         tooltip.UpdateText(tooltipText);
         scriptLines = neighbourDialogue.script[(int)neighbourData.mood].lines;
     }

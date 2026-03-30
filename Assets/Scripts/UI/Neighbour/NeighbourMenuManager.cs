@@ -52,7 +52,6 @@ class NeighbourMenuManager : MonoBehaviour
             neighbourData.MoodXP %= MAX_MOOD_XP;
             neighbourData.ImproveMood();
 
-            ParticleSystemManager.Instance.PlaySplash(moodImage.gameObject.transform.position,Color.yellow);
             moodImage.sprite = neighbourData.GetMoodImage();
         }
         statusBar.UpdateStatusBar(neighbourData.MoodXP/MAX_MOOD_XP);
